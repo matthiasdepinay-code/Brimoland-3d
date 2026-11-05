@@ -1,5 +1,6 @@
 'use strict';
-// Exporte les données de la magie depuis le jeu 2D (L'Atelier des Sceaux) et calcule les vecteurs de parité :
+// Exporte les données de la magie depuis le jeu 2D (L'Atelier des Sceaux), copie ses scripts de dessin pour la maquette,
+// et calcule les vecteurs de parité :
 // des milliers de sceaux tirés au hasard, avec ce que le jeu 2D en dit (coût, paramètres, fusion, taille...).
 // Le cœur C++ (Core/) doit donner exactement les mêmes réponses.
 //   node outils/depuis-le-jeu-2d.js [chemin du jeu 2D]      (par défaut : ../Jjk2, ou $BRIMO_JEU2D)
@@ -37,6 +38,10 @@ const donnees = {
 };
 const ecrire = (f, o, compact) => { fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f, (compact ? JSON.stringify(o) : JSON.stringify(o, null, 1)) + '\n'); console.log('écrit ' + path.relative(RACINE, f) + ' (' + Math.round(fs.statSync(f).size / 1024) + ' Ko)'); };
 ecrire(path.join(RACINE, 'Core', 'donnees', 'brimo.json'), donnees);
+
+// ---------- 1 bis. les scripts de dessin du jeu 2D, pour la maquette de la DA (le papier, les sceaux, les halos) ----------
+for (const f of ['util', 'data', 'seal', 'fx']) { const dst = path.join(RACINE, 'maquette', '2d', f + '.js'); fs.mkdirSync(path.dirname(dst), { recursive: true }); fs.copyFileSync(path.join(JEU2D, 'js', f + '.js'), dst); }
+console.log('copié maquette/2d/ (util, data, seal, fx)');
 
 // ---------- 2. les vecteurs de parité ----------
 let graine = 20261105;

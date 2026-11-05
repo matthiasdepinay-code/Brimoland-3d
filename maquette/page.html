@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brimoland 3D — maquette de la DA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+<style>
+  :root { --papier: #efe3c4; --encre: #1f1a16; --sepia: #6b4f2a; --or: #c9a244; }
+  html, body { margin: 0; height: 100%; overflow: hidden; background: var(--papier); color: var(--encre); font-family: 'IM Fell English', Georgia, serif; }
+  #scene, #scene canvas { position: fixed; inset: 0; width: 100%; height: 100%; display: block; touch-action: none; }
+  .carte { position: fixed; background: rgba(246, 238, 216, 0.92); border: 2px solid var(--encre); border-radius: 6px; box-shadow: 3px 3px 0 rgba(31, 26, 22, 0.25); padding: 10px 14px; }
+  #titre { top: 14px; left: 14px; max-width: 360px; }
+  #titre h1 { margin: 0 0 2px; font-family: 'IM Fell English SC', Georgia, serif; font-weight: normal; font-size: 24px; letter-spacing: 0.5px; }
+  #titre p { margin: 2px 0; font-size: 14px; line-height: 1.35; }
+  #titre .muet { color: var(--sepia); font-style: italic; font-size: 13px; }
+  #reglages { right: 14px; bottom: 14px; display: flex; flex-wrap: wrap; gap: 6px; max-width: 470px; justify-content: flex-end; }
+  #reglages .label { width: 100%; text-align: right; font-family: 'IM Fell English SC', Georgia, serif; font-size: 14px; color: var(--sepia); }
+  button { font-family: inherit; font-size: 14px; color: var(--encre); background: #f6eed8; border: 1.5px solid var(--encre); border-radius: 4px; padding: 4px 10px; cursor: pointer; }
+  button.on { background: #e9d49a; box-shadow: inset 0 0 0 1px var(--or); }
+  button:not(.on) { color: #7c6a52; border-style: dashed; }
+  #lancer { border-style: solid; color: var(--encre); background: #f3e1a8; }
+  @media (max-width: 640px) { #titre { max-width: calc(100% - 56px); } #titre p:not(.muet) { display: none; } #reglages { left: 14px; max-width: none; } }
+</style>
+</head>
+<body>
+<div id="scene"></div>
+<div id="titre" class="carte">
+  <h1>Brimoland 3D</h1>
+  <p>Maquette de la direction artistique : le Jardin, l'Atelier, l'apprenti(e), Gribouille et Grum, rendus à l'encre sur parchemin.</p>
+  <p class="muet">ZQSD ou flèches : marcher · glisser : tourner · molette : approcher · clic ou E : tracer un sceau</p>
+</div>
+<div id="reglages" class="carte">
+  <div class="label">Réglages du rendu</div>
+  <button data-reglage="encre" title="Rendu encre ou rendu brut (pour comparer)">Encre</button>
+  <button data-reglage="traits" title="Les contours à l'encre">Contours</button>
+  <button data-reglage="hachures" title="Les hachures dans les ombres">Hachures</button>
+  <button data-reglage="papier" title="Le grain du parchemin">Papier</button>
+  <button data-reglage="tremble" title="Le trait qui « bout » 10 fois par seconde">Tremblement</button>
+  <button data-reglage="douze" title="L'animation à 12 images par seconde, comme dessinée à la main">12 images/s</button>
+  <button data-reglage="nuit" title="La nuit : l'encre mange la page depuis les bords">Nuit</button>
+  <button data-reglage="auto" title="La caméra tourne seule">Visite</button>
+  <button id="lancer" title="L'apprenti(e) trace un sceau">Tracer un sceau</button>
+</div>
+<!--2D-->
+<!--MAQUETTE-->
+</body>
+</html>

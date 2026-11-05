@@ -1,0 +1,12 @@
+{
+  "name": "brimoland-maquette-da",
+  "private": true,
+  "description": "Maquette de la DA de Brimoland 3D : rendu encre sur parchemin, dans le navigateur",
+  "scripts": {
+    "construire": "node construire.js"
+  },
+  "devDependencies": {
+    "esbuild": "0.24.0",
+    "three": "0.170.0"
+  }
+}

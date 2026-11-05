@@ -12,7 +12,7 @@ L'Atelier des Sceaux en 3D, sous Unreal Engine : un bac à sable de magie en mon
 |---|---|
 | Document de projet | ✔ |
 | **BrimoCore** : la magie en C++ pur, identique au jeu 2D (33 221 vérifications de parité) | ✔ |
-| Maquette de la DA (rendu encre en 3D) | à venir |
+| **Maquette de la DA** : un petit Jardin en 3D rendu à l'encre sur parchemin, dans le navigateur ([maquette/](maquette/LISEZMOI.md), [captures](docs/captures/)) | à valider |
 | Projet Unreal | quand le PC sera prêt (voir §10 du document) |
 
 ## BrimoCore
@@ -55,6 +55,7 @@ Le test dit alors ce qu'il faut reporter dans `Core/src/`.
 
 ```
 Core/       BrimoCore (include/, src/, donnees/, tests/)
+maquette/   la maquette de la DA (three.js), en un seul fichier : maquette/dist/maquette-da.html
 outils/     export depuis le jeu 2D
 docs/       le document de projet
 Unreal/     le projet Unreal (à venir)
