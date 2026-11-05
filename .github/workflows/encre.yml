@@ -1,0 +1,40 @@
+name: Encre
+
+# Le nœud d'encre d'Unreal (Unreal/Rendu/BrimoEncre.hlsl) doit rester la traduction fidèle de la maquette :
+# on le compile (glslang, SPIRV-Cross) et on compare son rendu à celui de la maquette, sur la même scène.
+on:
+  push:
+    branches: [main]
+    paths: ['Unreal/Rendu/**', 'outils/shaders/**', 'maquette/**', '.github/workflows/encre.yml']
+  pull_request:
+    paths: ['Unreal/Rendu/**', 'outils/shaders/**', 'maquette/**', '.github/workflows/encre.yml']
+  workflow_dispatch:
+
+concurrency:
+  group: encre-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  encre:
+    name: Le nœud d'encre, vérifié dans la maquette
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Les outils
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q glslang-tools spirv-cross
+          cd maquette && npm ci && npm install --no-save playwright@1.63.0 && npx playwright install --with-deps chromium
+      - name: Compiler le nœud (HLSL → SPIR-V → GLSL)
+        run: node outils/shaders/compiler.js encre
+      - name: Le comparer à la maquette
+        run: node outils/shaders/verifier.js encre
+      - name: Les images, en cas d'écart
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: encre
+          path: encre/

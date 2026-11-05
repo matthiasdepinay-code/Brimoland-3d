@@ -184,8 +184,11 @@ Brimoland3D/
 │   ├── donnees/brimo.json    les données exportées du jeu 2D
 │   └── tests/                vecteurs.json (réponses du jeu 2D) et parite.cpp
 ├── outils/
-│   └── depuis-le-jeu-2d.js   exporte les données et recalcule les vecteurs depuis le jeu 2D
-├── Unreal/                   le projet Unreal (à venir, quand le PC sera là)
+│   ├── depuis-le-jeu-2d.js   exporte les données et recalcule les vecteurs depuis le jeu 2D
+│   └── shaders/              le banc d'essai du nœud d'encre : compilé, puis comparé à la maquette
+├── Unreal/
+│   └── Rendu/                le rendu à l'encre : BrimoEncre.hlsl (un nœud Custom) et RECETTE.md  ← fait
+│                             (le projet Unreal viendra à côté, quand le PC sera là)
 └── docs/PROJET.md            ce document
 ```
 
@@ -213,7 +216,7 @@ On avance par **tranche verticale** : une petite partie du jeu, complète et bel
 | Jalon | Contenu | Où |
 |---|---|---|
 | **J0** | ce document ; BrimoCore et sa parité avec le jeu 2D | ici, sans le PC ✔ |
-| J0 bis | une maquette de la DA (rendu encre et papier en 3D) jouable dans le navigateur, pour valider le style avant Unreal ; les shaders d'encre prêts à recopier dans Unreal | ici, sans le PC |
+| J0 bis | une maquette de la DA (rendu encre et papier en 3D) jouable dans le navigateur, pour valider le style avant Unreal ; les shaders d'encre prêts à recopier dans Unreal | ici, sans le PC ✔ |
 | **J1** | installer Unreal et Visual Studio ; créer le projet C++ ; brancher BrimoCore ; le post-process d'encre sur la carte d'exemple | sur le PC |
 | **J2** | la table des sceaux en jeu ; Feu, Eau, Terre, Vent en projectile, zone et sur soi ; le tracé visible | PC |
 | **J3** | les élans de ces quatre essences, la caméra, une île de test | PC |

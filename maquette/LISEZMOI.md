@@ -24,6 +24,8 @@ Captures : [`docs/captures/`](../docs/captures/).
 | Les sceaux | dessinés par le jeu 2D lui-même (`Seal.draw`, `Seal.drawTrace`) : au sol, et tracés dans l'air anneau par anneau | des décalques dont la texture est dessinée de la même façon |
 | L'animation | à 12 images par seconde, comme dessinée à la main | la même cadence, sur les personnages |
 
+**Pour Unreal**, tout cela tient dans un nœud Custom : [`Unreal/Rendu/BrimoEncre.hlsl`](../Unreal/Rendu/BrimoEncre.hlsl), avec sa [recette pas à pas](../Unreal/Rendu/RECETTE.md). `outils/shaders/verifier.js` le fait tourner sur cette scène (`banc/`) et vérifie qu'il redonne le même rendu ([capture](../docs/captures/e7-encre-unreal.jpg)).
+
 Les personnages (l'apprenti(e), Gribouille, Grum) et le décor sont des **formes simples** aux bonnes proportions : on juge ici le rendu, pas les modèles.
 
 ## Le code
@@ -37,6 +39,8 @@ src/main.js         la caméra en troisième personne, la marche, les compagnons
 page.html           la page et ses réglages
 2d/                 les scripts de dessin du jeu 2D (copiés par outils/depuis-le-jeu-2d.js)
 construire.js       assemble tout en un seul fichier : dist/maquette-da.html
+banc/               le banc d'essai du nœud d'encre d'Unreal (la scène rendue « comme Unreal »)
+gabarits/           l'export des gabarits .glb pour Blender (Art/Reference/Gabarits)
 ```
 
 Reconstruire : `npm install` puis `npm run construire` (three.js 0.170 et esbuild 0.24, versions figées).

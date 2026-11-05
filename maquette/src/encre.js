@@ -11,7 +11,7 @@ export const PALETTE = {
 };
 
 // ---------- 1. le matériau de la scène ----------
-const VERT = /* glsl */ `
+export const VERT = /* glsl */ `
 uniform mat4 lumiereMatrice;
 out vec3 vNormalW; out vec3 vNormalV; out vec4 vPosL; out vec3 vCouleur;
 void main() {
@@ -34,7 +34,7 @@ void main() {
   gl_Position = projectionMatrix * viewMatrix * pw;
 }`;
 
-const FRAG = /* glsl */ `
+export const FRAG = /* glsl */ `
 precision highp float;
 uniform vec3 albedo; uniform vec3 soleilDir; uniform vec3 soleilCouleur; uniform vec3 ciel;
 uniform sampler2D ombreTex; uniform float poidsTrait; uniform float emissif; uniform float opacite; uniform float recoitOmbre;

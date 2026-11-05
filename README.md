@@ -14,6 +14,7 @@ L'Atelier des Sceaux en 3D, sous Unreal Engine : un bac à sable de magie en mon
 | Document de projet | ✔ |
 | **BrimoCore** : la magie en C++ pur, identique au jeu 2D (33 221 vérifications de parité) | ✔ |
 | **Maquette de la DA** : un petit Jardin en 3D rendu à l'encre sur parchemin, dans le navigateur ([maquette/](maquette/LISEZMOI.md), [captures](docs/captures/)) | ✔ validée |
+| **Le rendu à l'encre pour Unreal** : un nœud Custom et sa recette pas à pas, vérifiés dans la maquette ([Unreal/Rendu/](Unreal/Rendu/RECETTE.md), [capture](docs/captures/e7-encre-unreal.jpg)) | ✔ |
 | **Assets du Jardin** : la liste et le cahier des charges ; les gabarits, la palette et les planches de référence ([Art/](Art/)) | en cours |
 | Projet Unreal | quand le PC sera prêt (voir §10 du document) |
 
@@ -59,7 +60,7 @@ Le test dit alors ce qu'il faut reporter dans `Core/src/`.
 Core/       BrimoCore (include/, src/, donnees/, tests/)
 maquette/   la maquette de la DA (three.js), en un seul fichier : maquette/dist/maquette-da.html
 Art/        les assets : Source/ (.blend), Export/ (.fbx), Textures/ (T_Palette...), Reference/ (gabarits .glb, planches)
-outils/     export depuis le jeu 2D, palette (palette.js), planches (planches.js)
+outils/     export depuis le jeu 2D, palette, papier, planches ; shaders/ : le banc d'essai du nœud d'encre
 docs/       le document de projet
-Unreal/     le projet Unreal (à venir)
+Unreal/     Rendu/ : le rendu à l'encre (BrimoEncre.hlsl, RECETTE.md) ; le projet Unreal (à venir)
 ```
