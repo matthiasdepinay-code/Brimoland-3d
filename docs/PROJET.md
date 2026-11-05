@@ -187,8 +187,8 @@ Brimoland3D/
 │   ├── depuis-le-jeu-2d.js   exporte les données et recalcule les vecteurs depuis le jeu 2D
 │   └── shaders/              le banc d'essai du nœud d'encre : compilé, puis comparé à la maquette
 ├── Unreal/
-│   └── Rendu/                le rendu à l'encre : BrimoEncre.hlsl (un nœud Custom) et RECETTE.md  ← fait
-│                             (le projet Unreal viendra à côté, quand le PC sera là)
+│   ├── Rendu/                le rendu à l'encre : BrimoEncre.hlsl (un nœud Custom) et RECETTE.md  ← fait
+│   └── Brimoland/            le projet Unreal : module de jeu, BrimoCore branché, sous-système Grimoire  ← squelette prêt
 └── docs/PROJET.md            ce document
 ```
 
@@ -199,10 +199,10 @@ Brimoland3D/
 - **Parité** : `outils/depuis-le-jeu-2d.js` fait calculer au jeu 2D lui-même 1 500 sceaux tirés au hasard ; `Core/tests/parite` vérifie que le C++ donne exactement les mêmes réponses (33 221 vérifications). Le jour où une règle change dans le jeu 2D, on relance l'outil, et le test dit ce qu'il faut reporter.
 - Aucune dépendance : il compile avec n'importe quel compilateur C++17 (GCC, Clang, MSVC). La CI GitHub le vérifie sous Linux et sous Windows.
 
-### 8.2 Le module Unreal (à venir)
-- Le projet `Unreal/Brimoland` (C++, modèle « troisième personne »), avec un module de jeu qui **compile BrimoCore avec lui** (les sources de `Core/` ajoutées au module).
-- Un sous-système de jeu (`UBrimoGrimoire`, un *GameInstanceSubsystem*) qui charge `brimo.json` et expose aux Blueprints : coût, nom, relecture, lancement, élan.
-- Des structures Unreal (`FBrimoSceau`...) qui reflètent le sceau, pour l'interface et les sauvegardes.
+### 8.2 Le module Unreal (le squelette est prêt : [Unreal/Brimoland](../Unreal/Brimoland/LISEZMOI.md))
+- Le projet `Unreal/Brimoland` (C++, Unreal 5.8), avec un module de jeu qui **compile BrimoCore avec lui** : `BrimoCoreSources.cpp` inclut les sources de `Core/` telles quelles, sans en-tête précompilé. La CI compile ce même fichier en C++20 sans RTTI, comme Unreal, et il repasse toute la parité.
+- Un sous-système de jeu (`UBrimoGrimoire`, un *GameInstanceSubsystem*) qui charge `brimo.json` et expose aux Blueprints : coût, nom, relecture, validité, tracé, lancement, élan, fusions, JSON. La commande `brimo.essai` le vérifie dans la console.
+- Des structures Unreal (`FBrimoSceau`, `FBrimoLancement`...) qui reflètent le sceau, pour l'interface et les sauvegardes, à travers un pont sans exception (`Core/include/brimo/pont.h`, testé sur les 1 500 sceaux de parité).
 - Le gameplay en C++ : l'apprenti(e) (`ACharacter`), les composants d'élan, les sorts (projectiles, zones, murs...), les phénomènes, la chimie.
 - Les plugins d'Unreal : Enhanced Input (commandes), Niagara (effets), StateTree (comportements), World Partition et PCG (monde).
 - Gros fichiers (modèles, textures, cartes) dans **Git LFS** (`.gitattributes` est prêt).
@@ -230,8 +230,9 @@ On avance par **tranche verticale** : une petite partie du jeu, complète et bel
 ## 10. Ce qu'il faudra sur le PC
 
 - Windows 10 ou 11, une carte graphique récente (DirectX 12), 32 Go de mémoire conseillés, un SSD avec 150 Go libres au moins.
-- **Unreal Engine** (la dernière version 5.x stable), depuis l'Epic Games Launcher.
-- **Visual Studio 2022** (Community suffit) avec la charge de travail « Développement de jeux en C++ » et le SDK Windows.
+- **Unreal Engine 5.8**, depuis l'Epic Games Launcher.
+- **Visual Studio 2026** (Community suffit ; 2022 en 17.14 marche aussi) avec la charge de travail « Développement de jeux en C++ » et le SDK Windows.
+- Le pas à pas, avec une vérification à chaque étape : [docs/INSTALLER-LE-PC.md](INSTALLER-LE-PC.md).
 - **Git** et **Git LFS**.
 - **Blender** (gratuit) pour les modèles, si tu modélises toi-même.
 

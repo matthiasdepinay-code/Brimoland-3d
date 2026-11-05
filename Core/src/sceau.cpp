@@ -9,7 +9,7 @@ namespace brimo {
 namespace {
 
 const Id VIDE_ID;
-const double PI = 3.141592653589793;
+const double DEMI_TOUR = 3.141592653589793;  // π (pas « PI » : Unreal en fait une macro)
 // Math.round de JavaScript (les demis vont vers +∞)
 double jsRound(double x) { return std::floor(x + 0.5); }
 template <class T>
@@ -231,7 +231,7 @@ std::map<int, Id> Grimoire::liaisons(const Sceau& s) const {
 Equilibre Grimoire::equilibre(const Sceau& s) const {
   auto it = D.modAngles.find(s.taille.empty() ? "moyen" : s.taille); const auto& ang = it != D.modAngles.end() ? it->second : D.modAngles.at("moyen");
   const int nb = nbSlots(s, NMODS); double x = 0, y = 0; int n = 0;
-  for (int i = 0; i < NMODS; i++) { if (s.mods[i].vide() || i >= nb || i >= (int)ang.size()) continue; const double a = ang[i] * PI / 180; x += std::cos(a); y += std::sin(a); n++; }
+  for (int i = 0; i < NMODS; i++) { if (s.mods[i].vide() || i >= nb || i >= (int)ang.size()) continue; const double a = ang[i] * DEMI_TOUR / 180; x += std::cos(a); y += std::sin(a); n++; }
   if (n < 2) return {"neutre", 0, n};
   const double d = std::hypot(x, y) / n;
   return {d <= 0.15 ? "equilibre" : d >= 0.75 ? "bancal" : "neutre", d, n};

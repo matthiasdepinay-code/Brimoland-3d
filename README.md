@@ -16,7 +16,8 @@ L'Atelier des Sceaux en 3D, sous Unreal Engine : un bac à sable de magie en mon
 | **Maquette de la DA** : un petit Jardin en 3D rendu à l'encre sur parchemin, dans le navigateur ([maquette/](maquette/LISEZMOI.md), [captures](docs/captures/)) | ✔ validée |
 | **Le rendu à l'encre pour Unreal** : un nœud Custom et sa recette pas à pas, vérifiés dans la maquette ([Unreal/Rendu/](Unreal/Rendu/RECETTE.md), [capture](docs/captures/e7-encre-unreal.jpg)) | ✔ |
 | **Assets du Jardin** : la liste et le cahier des charges ; les gabarits, la palette et les planches de référence ([Art/](Art/)) | en cours |
-| Projet Unreal | quand le PC sera prêt (voir §10 du document) |
+| **Projet Unreal** : le squelette (module C++, BrimoCore branché, sous-système Grimoire), prêt à ouvrir ([Unreal/Brimoland/](Unreal/Brimoland/LISEZMOI.md)) | ✔, à compiler sur le PC |
+| **Installer le PC** : Unreal 5.8, Visual Studio 2026, Git LFS, Blender, pas à pas ([docs/INSTALLER-LE-PC.md](docs/INSTALLER-LE-PC.md)) | prêt |
 
 ## BrimoCore
 
@@ -35,7 +36,7 @@ using namespace brimo;
 Grimoire G(Donnees::charger("Core/donnees/brimo.json"));
 Sceau s = G.creer("moyen");
 s.core = "feu"; s.core2 = "gravite"; s.shape = "zone"; s.mods[0] = Mod("puissance");
-G.cout(s);                      // 15 (exemple)
+G.cout(s);                      // 15
 G.nom(s);                       // "Zone de petit soleil puissance"
 G.parametres(s).ess["gravite"]; // la Puissance posée juste sous la Gravité ne sert qu'elle
 G.lancement(s).combo;           // "feu|gravite"
@@ -61,6 +62,6 @@ Core/       BrimoCore (include/, src/, donnees/, tests/)
 maquette/   la maquette de la DA (three.js), en un seul fichier : maquette/dist/maquette-da.html
 Art/        les assets : Source/ (.blend), Export/ (.fbx), Textures/ (T_Palette...), Reference/ (gabarits .glb, planches)
 outils/     export depuis le jeu 2D, palette, papier, planches ; shaders/ : le banc d'essai du nœud d'encre
-docs/       le document de projet
-Unreal/     Rendu/ : le rendu à l'encre (BrimoEncre.hlsl, RECETTE.md) ; le projet Unreal (à venir)
+docs/       le document de projet, l'installation du PC, les captures
+Unreal/     Rendu/ : le rendu à l'encre (BrimoEncre.hlsl, RECETTE.md) ; Brimoland/ : le projet Unreal
 ```
