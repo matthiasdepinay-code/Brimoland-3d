@@ -5,6 +5,7 @@ L'Atelier des Sceaux en 3D, sous Unreal Engine : un bac à sable de magie en mon
 - Le jeu 2D, qui reste le labo des règles : [matthiasdepinay-code/Jjk2](https://github.com/matthiasdepinay-code/Jjk2)
 - Le document de projet (DA, monde, magie, élans, architecture, jalons) : [docs/PROJET.md](docs/PROJET.md)
 - Le journal de bord (les étapes une par une, les décisions, le carnet) : [Journal de bord — Brimoland 3D](https://claude.ai/artifact/KRqmKT5r7uW1WPxd7DHL1K)
+- La liste des assets de la première zone et leur cahier des charges : [Assets du Jardin — cahier des charges](https://claude.ai/artifact/WmauJYKvrmNiisvzjPFPWH)
 
 ## Où en est-on
 
@@ -12,7 +13,8 @@ L'Atelier des Sceaux en 3D, sous Unreal Engine : un bac à sable de magie en mon
 |---|---|
 | Document de projet | ✔ |
 | **BrimoCore** : la magie en C++ pur, identique au jeu 2D (33 221 vérifications de parité) | ✔ |
-| **Maquette de la DA** : un petit Jardin en 3D rendu à l'encre sur parchemin, dans le navigateur ([maquette/](maquette/LISEZMOI.md), [captures](docs/captures/)) | à valider |
+| **Maquette de la DA** : un petit Jardin en 3D rendu à l'encre sur parchemin, dans le navigateur ([maquette/](maquette/LISEZMOI.md), [captures](docs/captures/)) | ✔ validée |
+| **Assets du Jardin** : la liste et le cahier des charges ; les gabarits, la palette et les planches de référence ([Art/](Art/)) | en cours |
 | Projet Unreal | quand le PC sera prêt (voir §10 du document) |
 
 ## BrimoCore
@@ -56,7 +58,8 @@ Le test dit alors ce qu'il faut reporter dans `Core/src/`.
 ```
 Core/       BrimoCore (include/, src/, donnees/, tests/)
 maquette/   la maquette de la DA (three.js), en un seul fichier : maquette/dist/maquette-da.html
-outils/     export depuis le jeu 2D
+Art/        les assets : Source/ (.blend), Export/ (.fbx), Textures/ (T_Palette...), Reference/ (gabarits .glb, planches)
+outils/     export depuis le jeu 2D, palette (palette.js), planches (planches.js)
 docs/       le document de projet
 Unreal/     le projet Unreal (à venir)
 ```

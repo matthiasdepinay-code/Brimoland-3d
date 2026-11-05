@@ -11,7 +11,7 @@ export const COULEURS = {
 };
 
 // un bruit doux et reproductible
-function hasard(graine) { let a = graine >>> 0; return () => { a = (a + 0x6D2B79F5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
+export function hasard(graine) { let a = graine >>> 0; return () => { a = (a + 0x6D2B79F5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
 const h2 = (x, y) => { const s = Math.sin(x * 127.1 + y * 311.7) * 43758.5453; return s - Math.floor(s); };
 function bruit(x, y) { const i = Math.floor(x), j = Math.floor(y), f = x - i, g = y - j, u = f * f * (3 - 2 * f), v = g * g * (3 - 2 * g);
   return (h2(i, j) * (1 - u) + h2(i + 1, j) * u) * (1 - v) + (h2(i, j + 1) * (1 - u) + h2(i + 1, j + 1) * u) * v; }
@@ -54,9 +54,9 @@ function terrain() {
 }
 
 function facettes(g) { const f = g.toNonIndexed(); f.computeVertexNormals(); return f; }
-function caillou(rnd, r) { const g = new THREE.DodecahedronGeometry(r, 0); const P = g.attributes.position; for (let i = 0; i < P.count; i++) P.setXYZ(i, P.getX(i) * (0.8 + rnd() * 0.4), P.getY(i) * (0.55 + rnd() * 0.3), P.getZ(i) * (0.8 + rnd() * 0.4)); return facettes(g); }
+export function caillou(rnd, r) { const g = new THREE.DodecahedronGeometry(r, 0); const P = g.attributes.position; for (let i = 0; i < P.count; i++) P.setXYZ(i, P.getX(i) * (0.8 + rnd() * 0.4), P.getY(i) * (0.55 + rnd() * 0.3), P.getZ(i) * (0.8 + rnd() * 0.4)); return facettes(g); }
 
-function arbre(rnd, x, z) {
+export function arbre(rnd, x, z) {
   const g = new THREE.Group(), y = hauteur(x, z), s = 0.8 + rnd() * 0.7;
   const tronc = new THREE.Mesh(new THREE.CylinderGeometry(0.18 * s, 0.3 * s, 2.6 * s, 7), materiau(COULEURS.tronc, { trait: 0.8 })); tronc.position.y = 1.3 * s; g.add(tronc);
   if (rnd() < 0.3) { // un sapin : des cônes empilés
@@ -68,7 +68,7 @@ function arbre(rnd, x, z) {
   g.position.set(x, y - 0.1, z); g.rotation.y = rnd() * 6.28; return g;
 }
 
-function atelier() {
+export function atelier() {
   const g = new THREE.Group(), y = hauteur(ATELIER.x, ATELIER.z);
   const murs = new THREE.Mesh(new THREE.BoxGeometry(7, 4.2, 6), materiau(COULEURS.mur, { trait: 0.9 })); murs.position.y = 2.1; g.add(murs);
   // les colombages

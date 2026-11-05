@@ -40,8 +40,9 @@ const ecrire = (f, o, compact) => { fs.mkdirSync(path.dirname(f), { recursive: t
 ecrire(path.join(RACINE, 'Core', 'donnees', 'brimo.json'), donnees);
 
 // ---------- 1 bis. les scripts de dessin du jeu 2D, pour la maquette de la DA (le papier, les sceaux, les halos) ----------
-for (const f of ['util', 'data', 'seal', 'fx']) { const dst = path.join(RACINE, 'maquette', '2d', f + '.js'); fs.mkdirSync(path.dirname(dst), { recursive: true }); fs.copyFileSync(path.join(JEU2D, 'js', f + '.js'), dst); }
-console.log('copié maquette/2d/ (util, data, seal, fx)');
+// (perso et mascottes : pour les planches de référence, voir outils/planches.js)
+for (const f of ['util', 'data', 'seal', 'fx', 'perso', 'mascottes']) { const dst = path.join(RACINE, 'maquette', '2d', f + '.js'); fs.mkdirSync(path.dirname(dst), { recursive: true }); fs.copyFileSync(path.join(JEU2D, 'js', f + '.js'), dst); }
+console.log('copié maquette/2d/ (util, data, seal, fx, perso, mascottes)');
 
 // ---------- 2. les vecteurs de parité ----------
 let graine = 20261105;
