@@ -1,0 +1,24 @@
+# compilation du cœur
+build/
+out/
+
+# Unreal Engine
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+.vs/
+.vscode/
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+Unreal/**/Plugins/**/Binaries/
+Unreal/**/Plugins/**/Intermediate/
+
+# divers
+.DS_Store
+Thumbs.db
+node_modules/

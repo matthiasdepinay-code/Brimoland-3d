@@ -1,0 +1,61 @@
+# Brimoland 3D
+
+L'Atelier des Sceaux en 3D, sous Unreal Engine : un bac à sable de magie en monde ouvert, dessiné à l'encre sur du parchemin. On compose ses sorts en cercles, comme dans le jeu 2D.
+
+- Le jeu 2D, qui reste le labo des règles : [matthiasdepinay-code/Jjk2](https://github.com/matthiasdepinay-code/Jjk2)
+- Le document de projet (DA, monde, magie, élans, architecture, jalons) : [docs/PROJET.md](docs/PROJET.md)
+- Le journal de bord (les étapes une par une, les décisions, le carnet) : [Journal de bord — Brimoland 3D](https://claude.ai/artifact/KRqmKT5r7uW1WPxd7DHL1K)
+
+## Où en est-on
+
+| | |
+|---|---|
+| Document de projet | ✔ |
+| **BrimoCore** : la magie en C++ pur, identique au jeu 2D (33 221 vérifications de parité) | ✔ |
+| Maquette de la DA (rendu encre en 3D) | à venir |
+| Projet Unreal | quand le PC sera prêt (voir §10 du document) |
+
+## BrimoCore
+
+La magie de L'Atelier des Sceaux en C++17, sans Unreal ni aucune dépendance : le modèle du sceau (coût, paramètres, aspects, liaisons, équilibre, taille, tracé, sort en deux temps, relecture, nom), les fusions, le lancement et l'élan. Le projet Unreal le compilera avec lui.
+
+```sh
+cmake -S Core -B build
+cmake --build build
+ctest --test-dir build --output-on-failure
+```
+
+```cpp
+#include "brimo/magie.h"
+using namespace brimo;
+
+Grimoire G(Donnees::charger("Core/donnees/brimo.json"));
+Sceau s = G.creer("moyen");
+s.core = "feu"; s.core2 = "gravite"; s.shape = "zone"; s.mods[0] = Mod("puissance");
+G.cout(s);                      // 15 (exemple)
+G.nom(s);                       // "Zone de petit soleil puissance"
+G.parametres(s).ess["gravite"]; // la Puissance posée juste sous la Gravité ne sert qu'elle
+G.lancement(s).combo;           // "feu|gravite"
+```
+
+### La parité avec le jeu 2D
+
+`outils/depuis-le-jeu-2d.js` charge le jeu 2D (par défaut `../Jjk2`), exporte ses données dans `Core/donnees/brimo.json`, et lui fait calculer 1 500 sceaux tirés au hasard (`Core/tests/vecteurs.json`). Le test `parite` vérifie que BrimoCore donne exactement les mêmes réponses.
+
+Quand une règle change dans le jeu 2D :
+
+```sh
+node outils/depuis-le-jeu-2d.js ../Jjk2
+cmake --build build && ctest --test-dir build --output-on-failure
+```
+
+Le test dit alors ce qu'il faut reporter dans `Core/src/`.
+
+## Rangement
+
+```
+Core/       BrimoCore (include/, src/, donnees/, tests/)
+outils/     export depuis le jeu 2D
+docs/       le document de projet
+Unreal/     le projet Unreal (à venir)
+```

@@ -1,0 +1,28 @@
+name: BrimoCore
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: coeur-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  parite:
+    name: Parité avec le jeu 2D (${{ matrix.os }})
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compiler
+        run: |
+          cmake -S Core -B build -DCMAKE_BUILD_TYPE=Release
+          cmake --build build --config Release
+      - name: Tester
+        run: ctest --test-dir build -C Release --output-on-failure

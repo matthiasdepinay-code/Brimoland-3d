@@ -1,0 +1,1507 @@
+{
+ "source": "L'Atelier des Sceaux (jeu 2D), commit b849a48",
+ "essences": [
+  "feu",
+  "eau",
+  "terre",
+  "vent",
+  "vie",
+  "lumiere",
+  "foudre",
+  "gravite",
+  "temps",
+  "portail",
+  "esprit",
+  "transmutation",
+  "contre",
+  "metamorphose"
+ ],
+ "cores": {
+  "feu": {
+   "nom": "Feu",
+   "couleur": "#d9622b",
+   "cout": 3,
+   "desc": "Braise et flamme : le feu transforme ce qu'il touche par la chaleur. Il brûle le bois et l'herbe, fond la glace et la neige, évapore l'eau, vitrifie le sable. Sur soi : une gerbe de flammes te propulse vers la souris (le sol s'embrase un peu derrière toi), et tu retombes sans mal. Maintenu sur soi : tu voles sur tes flammes."
+  },
+  "vent": {
+   "nom": "Vent",
+   "couleur": "#3f9c9b",
+   "cout": 2,
+   "desc": "Le mouvement libre : le vent souffle les gaz, le sable, l'eau et les flammes, repousse les créatures. Ses aspects en font une tornade ou une onde de son. Sur soi : une bourrasque te jette vers la souris, puis tu planes. Maintenu sur soi : tu voles où pointe la souris."
+  },
+  "eau": {
+   "nom": "Eau",
+   "couleur": "#3b6fb6",
+   "cout": 2,
+   "desc": "Ce qui coule et prend la forme de tout : l'eau jaillit, éteint, arrose, fait de la boue, dissipe les follets. Ses aspects la font geler, jaillir en jet, ou courir comme un torrent. Sur soi : un jet d'eau te pousse (très vite dans l'eau), et tu respires l'eau un moment. Maintenu sur soi : le jet te porte où tu vises."
+  },
+  "terre": {
+   "nom": "Terre",
+   "couleur": "#8a6b2f",
+   "cout": 3,
+   "desc": "Ce qui est lourd et qui reste : la terre surgit, bâtit, bouche, porte. Ses aspects la tassent en pierre ou en cristal, en tirent le métal, la font trembler. Sur soi : un pilier te soulève (de pierre avec Persistance : il reste) ; en l'air, vise en bas pour t'abattre en onde de choc. Peau de pierre. Maintenu sur soi : tu creuses comme une taupe (la pierre cède plus lentement, sauf avec Puissance)."
+  },
+  "lumiere": {
+   "nom": "Lumière",
+   "couleur": "#d8a63a",
+   "cout": 2,
+   "desc": "Révéler : la lumière éclaire, révèle les runes, éblouit, effraie les limaces. Inversée, elle devient l'ombre : tu disparais, les créatures se perdent dans le noir. Sur soi : tu files en un rayon jusqu'au mur, aveuglant ce que tu traverses, et tu luis. Maintenu sur soi : tu deviens lumière : rien ne te touche, tu files où tu vises."
+  },
+  "ombre": {
+   "nom": "Ombre",
+   "couleur": "#5a4a7d",
+   "cout": 3,
+   "desc": "Endort les créatures. Sur soi : invisible.",
+   "interne": true
+  },
+  "vie": {
+   "nom": "Vie",
+   "couleur": "#5c8f3e",
+   "cout": 4,
+   "desc": "La croissance : soigner, faire pousser l'herbe, les plantes et les vignes, rendre la cendre à la terre. La vie n'apprivoise pas : une créature se gagne avec le temps. Sur soi : elle te soigne, et une liane t'emporte vers le mur visé (grimpe-y avec ↑). Maintenu sur soi : la liane te tient en corde, et tu te régénères."
+  },
+  "force": {
+   "nom": "Force",
+   "couleur": "#9a4a8c",
+   "cout": 4,
+   "desc": "Attire tout vers un point, même les liquides et le sable. Sur soi : élan.",
+   "interne": true
+  },
+  "froid": {
+   "nom": "Froid",
+   "couleur": "#7fb4d8",
+   "cout": 3,
+   "desc": "Gèle l'eau en glace, fige la lave, condense la vapeur. Sur soi : patins de glace sur l'eau.",
+   "interne": true
+  },
+  "foudre": {
+   "nom": "Foudre",
+   "couleur": "#e0c43a",
+   "cout": 4,
+   "desc": "L'énergie : la foudre court dans l'eau et le métal, embrase l'huile, vitrifie le sable, secoue les créatures et allume ce qu'elle touche. Sur soi : un éclair : tu fonces d'un coup, ce que tu traverses est foudroyé, puis tes jambes crépitent. Maintenu sur soi : une tempête d'éclairs, de bond en bond vers la souris."
+  },
+  "acide": {
+   "nom": "Acide",
+   "couleur": "#8fbf2a",
+   "cout": 3,
+   "desc": "Fait couler de l'acide qui ronge pierre, terre, bois et métal. Sur soi : tu dissous ce que tu touches.",
+   "interne": true
+  },
+  "gravite": {
+   "nom": "Gravité",
+   "couleur": "#6c5ab8",
+   "cout": 5,
+   "desc": "La pesanteur : un champ orienté dans le sens du lancer, où tout tombe de ce côté. Ses aspects attirent, repoussent, alourdissent ou tendent un fil. Inverser : apesanteur. Sur soi : marcher aux murs, au plafond, voler, devenir une enclume. Maintenu sur soi : tu lévites vers la souris."
+  },
+  "temps": {
+   "nom": "Temps",
+   "couleur": "#8a8f9a",
+   "cout": 4,
+   "desc": "Pose une bulle où le temps file : tout y vieillit à toute allure. Les plantes poussent en buissons, les graines grimpent, le feu s'épuise, la glace fond, la lave refroidit, la cendre redevient terre, le métal rouille ; les petits grandissent, les effets en cours (brûlure, sommeil, métamorphose) s'achèvent, les sorts posés s'usent. Inverser : une bulle de temps lent où créatures et projectiles avancent au ralenti. Sur soi : tu vas plus vite que le monde (pas et encre). Aspects : Rembobiner (remonter le temps), Figer (arrêter tout dans la bulle). Maintenu sur soi : le monde ralentit autour de toi ; toi, non."
+  },
+  "transmutation": {
+   "nom": "Transmutation",
+   "couleur": "#c08a3a",
+   "cout": 4,
+   "desc": "L'alchimie : changer une matière en une autre (pierre en sable, sable en terre, eau en huile, glace en verre...). Son aspect Corrosion en fait un acide qui ronge. Sur soi : ton corps devient sable fin : tu traverses la roche (↓ pour t'enfoncer dans le sol). Maintenu sur soi : sable fin tant que tu tiens."
+  },
+  "son": {
+   "nom": "Son",
+   "couleur": "#d08ab0",
+   "cout": 3,
+   "desc": "Onde de choc : repousse, réveille, brise le verre, attire les créatures curieuses.",
+   "interne": true
+  },
+  "esprit": {
+   "nom": "Esprit",
+   "couleur": "#b08ad8",
+   "cout": 5,
+   "desc": "La conscience : prendre la tête d'une créature et voir par ses yeux (E pour revenir). Ses aspects endorment, ou font fuir. Sur soi : sur une bête, tu entres dans sa tête ; sinon ton esprit s'élance et prend la première qu'il touche. Maintenu sur soi : ton esprit sort de ton corps : promène-le à travers les murs, il lit les bêtes et entre dans celle qu'il touche."
+  },
+  "lien": {
+   "nom": "Lien",
+   "couleur": "#c9a63a",
+   "cout": 3,
+   "desc": "Une corde magique vers ce que le sort touche : on s'y hisse, on s'y balance (Espace pour lâcher).",
+   "interne": true
+  },
+  "portail": {
+   "nom": "Espace",
+   "couleur": "#4fb0a0",
+   "cout": 5,
+   "desc": "L'espace se plie : deux lancers posent deux portails, et tout ce qui entre dans l'un sort par l'autre, même les liquides. Ses aspects font sauter d'un point à un autre, ou posent des repères. Sur soi : tu te téléportes là où tu vises, même derrière un mur ; sur une bête, vous échangez vos places ; vers un portail, tu ressors par l'autre. Maintenu sur soi : vise où paraître, lâche : tu y es (plus loin)."
+  },
+  "marque": {
+   "nom": "Marque",
+   "couleur": "#e0b050",
+   "cout": 1,
+   "desc": "Pose un repère lumineux là où le sort touche (sur une créature, il la suit). Trois au plus. Les sorts ciblés « Marque » visent le plus récent, même hors de vue.",
+   "interne": true
+  },
+  "contre": {
+   "nom": "Contre-sort",
+   "couleur": "#a8a29a",
+   "cout": 3,
+   "desc": "Défaire la magie : dissipe les champs, pièges, totems, bulles, sorts en attente, portails, pesanteurs et marques. Sur soi : tout s'arrête : tu restes suspendu(e) un instant, un miroir renvoie les tirs, la magie alentour se dissipe. Maintenu sur soi : suspendu(e) dans l'air, et les tirs te reviennent dessus... renvoyés."
+  },
+  "metamorphose": {
+   "nom": "Métamorphose",
+   "couleur": "#c06aa0",
+   "cout": 5,
+   "desc": "Change une créature en une autre pour un moment (même un golem en grenouille), une caisse en rocher. Sur soi : tu prends une forme animale, selon le glyphe fusionné (eau : grenouille, vent : chauve-souris, vie : lapin, terre : golem). Inverser : rend sa vraie forme. Maintenu sur soi : tu gardes ta forme tant que tu tiens."
+  },
+  "rembobinage": {
+   "nom": "Rembobinage",
+   "couleur": "#7a8ad0",
+   "cout": 5,
+   "desc": "Remonte le temps de quelques secondes dans la zone : la matière revient comme avant, les créatures reculent (et se relèvent). Sur soi : tu reviens là où tu étais, avec ta vitalité d'alors. Durée : remonte plus loin.",
+   "interne": true
+  },
+  "metal": {
+   "nom": "Métal",
+   "couleur": "#737e86",
+   "cout": 4,
+   "desc": "Fait surgir du métal, qui conduit la foudre et résiste à l'acide. Attire caisses, rochers et golems. Sur soi : armure.",
+   "interne": true
+  }
+ },
+ "pseudo": {
+  "creuser": {
+   "nom": "Creuser",
+   "couleur": "#6b4f2a"
+  },
+  "fanaison": {
+   "nom": "Fanaison",
+   "couleur": "#8a6b2f"
+  },
+  "neutraliser": {
+   "nom": "Neutraliser",
+   "couleur": "#8fb8d8"
+  },
+  "poids": {
+   "nom": "Poids",
+   "couleur": "#4a4a55"
+  },
+  "secheresse": {
+   "nom": "Sécheresse",
+   "couleur": "#d9c48a"
+  },
+  "ralentir": {
+   "nom": "Ralentir",
+   "couleur": "#5a6070"
+  },
+  "silence": {
+   "nom": "Sommeil",
+   "couleur": "#6a5a7a"
+  },
+  "rouille": {
+   "nom": "Rouille",
+   "couleur": "#9a5a3a"
+  },
+  "repulsion": {
+   "nom": "Répulsion",
+   "couleur": "#8a6ad8"
+  },
+  "fumee": {
+   "nom": "Fumée",
+   "couleur": "#6e6660"
+  },
+  "explosion": {
+   "nom": "Explosion",
+   "couleur": "#e0622b"
+  },
+  "courant": {
+   "nom": "Courant",
+   "couleur": "#2f6fb0"
+  },
+  "seisme": {
+   "nom": "Séisme",
+   "couleur": "#7a5a2a"
+  },
+  "figer": {
+   "nom": "Figer",
+   "couleur": "#9aa8c8"
+  },
+  "saut": {
+   "nom": "Saut",
+   "couleur": "#4fb0a0"
+  },
+  "peur": {
+   "nom": "Peur",
+   "couleur": "#8a5aa8"
+  },
+  "lecture": {
+   "nom": "Lecture",
+   "couleur": "#b08ad8"
+  },
+  "revelation": {
+   "nom": "Révélation",
+   "couleur": "#f0d070"
+  }
+ },
+ "inverse": {
+  "marque": "marque",
+  "contre": "contre",
+  "feu": "froid",
+  "froid": "feu",
+  "force": "repulsion",
+  "vent": "force",
+  "lumiere": "ombre",
+  "ombre": "lumiere",
+  "terre": "creuser",
+  "vie": "fanaison",
+  "acide": "neutraliser",
+  "foudre": "neutraliser",
+  "gravite": "poids",
+  "eau": "secheresse",
+  "temps": "ralentir",
+  "son": "silence",
+  "metal": "rouille",
+  "transmutation": "transmutation",
+  "esprit": "esprit",
+  "lien": "lien",
+  "portail": "portail",
+  "metamorphose": "metamorphose",
+  "rembobinage": "temps",
+  "repulsion": "force",
+  "fumee": "vent",
+  "explosion": "force",
+  "courant": "secheresse",
+  "seisme": "seisme",
+  "figer": "temps",
+  "saut": "saut",
+  "peur": "esprit",
+  "lecture": "lecture",
+  "revelation": "ombre"
+ },
+ "mods": {
+  "puissance": {
+   "nom": "Puissance",
+   "cout": 2,
+   "desc": "Effet plus fort. Brise les rochers fissurés."
+  },
+  "portee": {
+   "nom": "Portée",
+   "cout": 1,
+   "desc": "Va plus loin."
+  },
+  "duree": {
+   "nom": "Durée",
+   "cout": 2,
+   "desc": "L'effet dure plus longtemps."
+  },
+  "taille": {
+   "nom": "Taille",
+   "cout": 2,
+   "desc": "Zone d'effet plus grande."
+  },
+  "reduire": {
+   "nom": "Réduction",
+   "cout": 0,
+   "desc": "Effet plus petit et plus précis : à peu près moitié moins grand. Se cumule (un tout petit tas de terre, une flammèche, une goutte)."
+  },
+  "rebond": {
+   "nom": "Rebond",
+   "cout": 1,
+   "desc": "Le projectile rebondit sur les murs."
+  },
+  "persistance": {
+   "nom": "Persistance",
+   "cout": 3,
+   "desc": "Laisse une trace durable (flammes, pierre au lieu de terre, lueur...)."
+  },
+  "vitesse": {
+   "nom": "Vitesse",
+   "cout": 1,
+   "desc": "Projectile plus rapide et plus droit."
+  },
+  "double": {
+   "nom": "Double",
+   "cout": 3,
+   "desc": "Deux fois l'effet, en éventail."
+  },
+  "inverser": {
+   "nom": "Inverser",
+   "cout": 2,
+   "desc": "Retourne l'effet : le feu refroidit, la terre creuse, la vie fane, l'eau assèche, la lumière devient ombre, l'attraction repousse..."
+  },
+  "echo": {
+   "nom": "Écho",
+   "cout": 3,
+   "desc": "L'effet se répète deux fois de plus, au même endroit."
+  },
+  "teleguide": {
+   "nom": "Téléguidé",
+   "cout": 2,
+   "desc": "Le projectile suit la souris."
+  },
+  "orbite": {
+   "nom": "Orbite",
+   "cout": 3,
+   "desc": "Trois billes tournent autour de toi un moment."
+  },
+  "canalise": {
+   "nom": "Canalisé",
+   "cout": 2,
+   "desc": "Tant que tu maintiens le clic, l'effet suit la souris et consomme de l'encre."
+  },
+  "matiere": {
+   "nom": "Matière",
+   "cout": 2,
+   "desc": "L'effet devient matière solide. Un projectile devient une lame (glace, pierre, métal, cristal, bois...) qui frappe et transperce, puis laisse sa matière. Un mur, une zone, une colonne ou un trait se remplissent de cette matière : mur de glace, pont, pilier de cristal, bloc de pierre. Une pluie devient grêle."
+  },
+  "rafale": {
+   "nom": "Rafale",
+   "cout": 3,
+   "desc": "Le sort part plusieurs fois de suite, vers la souris : trois tirs (cinq avec deux Rafales)."
+  },
+  "zigzag": {
+   "nom": "Zigzag",
+   "cout": 1,
+   "desc": "Le projectile file en zigzag, en angles vifs."
+  },
+  "cloche": {
+   "nom": "Cloche",
+   "cout": 1,
+   "desc": "Le projectile est lancé en cloche et retombe juste là où tu vises, même derrière un mur."
+  },
+  "percant": {
+   "nom": "Perçant",
+   "cout": 2,
+   "desc": "Le projectile traverse les créatures et éclate sur chacune, sans s'arrêter."
+  },
+  "gerbe": {
+   "nom": "Gerbe",
+   "cout": 3,
+   "desc": "À l'éclat, le sort se brise en cinq éclats qui partent en gerbe."
+  },
+  "boomerang": {
+   "nom": "Boomerang",
+   "cout": 2,
+   "desc": "Le projectile file, traverse ce qu'il touche en éclatant, puis revient dans ta main."
+  },
+  "spirale": {
+   "nom": "Spirale",
+   "cout": 1,
+   "desc": "Le projectile tourne en vrille autour de sa course : il balaie plus large."
+  },
+  "rasesol": {
+   "nom": "Rase-sol",
+   "cout": 1,
+   "desc": "Le projectile court au ras du sol, épouse les pentes et grimpe les marches."
+  },
+  "sous": {
+   "nom": "Sous-sceau",
+   "cout": 0,
+   "desc": "Un sceau consigné entier, lancé là où celui-ci éclate."
+  },
+  "chaleur": {
+   "nom": "Chaleur",
+   "cout": 2,
+   "desc": "Aspect du Feu, qui le renforce. ×1 : Flamme blanche : brûle plus fort, vitrifie le sable, fond glace et neige d'un coup. ×2 (Adepte) : Flamme bleue : si chaude qu'elle fond la pierre et le métal en lave, et entame le golem. Muet sans son essence.",
+   "aspect": "feu",
+   "langue": "feu"
+  },
+  "pression": {
+   "nom": "Pression",
+   "cout": 2,
+   "desc": "Aspect de l'Eau, qui le renforce. ×1 : Jet : l'eau frappe fort, repousse et creuse terre, sable et boue. ×2 (Adepte) : Lame d'eau : elle entaille le bois, use la pierre et brise la glace. Muet sans son essence.",
+   "aspect": "eau",
+   "langue": "eau"
+  },
+  "densite": {
+   "nom": "Densité",
+   "cout": 2,
+   "desc": "Aspect de la Terre, qui le renforce. ×1 : La terre surgit déjà tassée en pierre. ×2 (Adepte) : La pierre se serre jusqu'au cristal, qui luit dans le noir. Muet sans son essence.",
+   "aspect": "terre",
+   "langue": "terre"
+  },
+  "tourbillon": {
+   "nom": "Tourbillon",
+   "cout": 2,
+   "desc": "Aspect du Vent, qui le renforce. ×1 : Le vent tourne et soulève : créatures, eau et sable montent. ×2 (Adepte) : Tornade : une colonne tournoyante reste quelques secondes et aspire tout ce qui passe. Muet sans son essence.",
+   "aspect": "vent",
+   "langue": "vent"
+  },
+  "tension": {
+   "nom": "Tension",
+   "cout": 2,
+   "desc": "Aspect de la Foudre, qui le renforce. ×1 : Arc : l'éclair saute vers trois cibles proches. ×2 (Adepte) : Foudre violette : six cibles, et tout ce qui brûle s'embrase. Muet sans son essence.",
+   "aspect": "foudre",
+   "langue": "foudre"
+  },
+  "floraison": {
+   "nom": "Floraison",
+   "cout": 2,
+   "desc": "Aspect de la Vie, qui le renforce. ×1 : L'herbe et les plantes poussent deux fois plus, le soin est doublé. ×2 (Adepte) : Croissance : un arbre jaillit du sol. Muet sans son essence.",
+   "aspect": "vie",
+   "langue": "vie"
+  },
+  "focale": {
+   "nom": "Focale",
+   "cout": 2,
+   "desc": "Aspect de la Lumière, qui le renforce. ×1 : Loupe : la lumière concentrée enflamme le bois et l'herbe, et éblouit plus longtemps. ×2 (Adepte) : Soleil : elle vitrifie le sable, fond la neige et aveugle longuement. Muet sans son essence.",
+   "aspect": "lumiere",
+   "langue": "lumiere"
+  },
+  "masse": {
+   "nom": "Masse",
+   "cout": 2,
+   "desc": "Aspect de la Gravité, qui le renforce. ×1 : Champ plus large et plus lourd. ×2 (Adepte) : Effondrement : le champ se creuse en un puits qui avale puis recrache ce qui l'entoure. Muet sans son essence.",
+   "aspect": "gravite",
+   "langue": "gravite"
+  },
+  "fumee": {
+   "nom": "Fumée",
+   "cout": 2,
+   "desc": "Aspect du Feu. Le feu sans flamme : un épais nuage de fumée qui cache, étouffe et fait tousser les créatures. Muet sans son essence.",
+   "aspect": "feu",
+   "devient": "fumee"
+  },
+  "explosion": {
+   "nom": "Explosion",
+   "cout": 2,
+   "desc": "Aspect du Feu. Le feu d'un coup : un souffle qui creuse un cratère, projette tout et enflamme alentour. Muet sans son essence.",
+   "aspect": "feu",
+   "devient": "explosion"
+  },
+  "gel": {
+   "nom": "Gel",
+   "cout": 2,
+   "desc": "Aspect de l'Eau. L'eau qui se fige : geler l'eau, faire neiger, figer la lave, engourdir les créatures. Sur soi : des patins pour marcher sur l'eau. ×2 (Adepte) : gel profond, les créatures restent prises dans la glace. Muet sans son essence.",
+   "aspect": "eau",
+   "devient": "froid"
+  },
+  "courant": {
+   "nom": "Courant",
+   "cout": 2,
+   "desc": "Aspect de l'Eau. L'eau qui court : un torrent dans le sens du lancer, qui emporte créatures, caisses et liquides. Muet sans son essence.",
+   "aspect": "eau",
+   "devient": "courant"
+  },
+  "minerai": {
+   "nom": "Minerai",
+   "cout": 2,
+   "desc": "Aspect de la Terre. La terre en tire son métal : il surgit, conduit la foudre, résiste à l'acide, attire caisses et golems. Sur soi : une armure. Muet sans son essence.",
+   "aspect": "terre",
+   "devient": "metal"
+  },
+  "seisme": {
+   "nom": "Séisme",
+   "cout": 2,
+   "desc": "Aspect de la Terre. La terre qui tremble : tout ce qui est debout tombe, les rochers fissurés éclatent, le verre se brise. Muet sans son essence.",
+   "aspect": "terre",
+   "devient": "seisme"
+  },
+  "son": {
+   "nom": "Son",
+   "cout": 2,
+   "desc": "Aspect du Vent. Le vent devenu onde : brise le verre, réveille, repousse, attire les curieux. Muet sans son essence.",
+   "aspect": "vent",
+   "devient": "son"
+  },
+  "attraction": {
+   "nom": "Attraction",
+   "cout": 2,
+   "desc": "Aspect de la Gravité. Tout est attiré vers le point d'impact : créatures, caisses, liquides et sable. Sur soi : un élan vers la souris. Muet sans son essence.",
+   "aspect": "gravite",
+   "devient": "force"
+  },
+  "repulsion": {
+   "nom": "Répulsion",
+   "cout": 2,
+   "desc": "Aspect de la Gravité. Tout est chassé loin du point d'impact. Sur soi : une onde qui écarte tout autour de toi. Muet sans son essence.",
+   "aspect": "gravite",
+   "devient": "repulsion"
+  },
+  "fil": {
+   "nom": "Fil",
+   "cout": 2,
+   "desc": "Aspect de la Gravité. Un fil de pesanteur vers ce que le sort touche : on s'y hisse, on s'y balance (Espace pour lâcher). Muet sans son essence.",
+   "aspect": "gravite",
+   "devient": "lien"
+  },
+  "rembobiner": {
+   "nom": "Rembobiner",
+   "cout": 2,
+   "desc": "Aspect du Temps. Remonter le temps de quelques secondes : la matière revient, les créatures reculent et se relèvent. Sur soi : tu reviens sur tes pas. Muet sans son essence.",
+   "aspect": "temps",
+   "devient": "rembobinage"
+  },
+  "figer": {
+   "nom": "Figer",
+   "cout": 2,
+   "desc": "Aspect du Temps. Une bulle où le temps s'arrête : créatures et projectiles y restent suspendus, puis repartent. Muet sans son essence.",
+   "aspect": "temps",
+   "devient": "figer"
+  },
+  "saut": {
+   "nom": "Saut",
+   "cout": 2,
+   "desc": "Aspect de l'Espace. Plier l'espace d'un coup : ce qui est touché est projeté ailleurs. Sur soi : tu te téléportes là où tu vises. Muet sans son essence.",
+   "aspect": "portail",
+   "devient": "saut"
+  },
+  "marque": {
+   "nom": "Marque",
+   "cout": 2,
+   "desc": "Aspect de l'Espace. Un repère dans l'espace (trois au plus) ; sur une créature, il la suit. Les sorts ciblés « Marque » le visent, même hors de vue. Muet sans son essence.",
+   "aspect": "portail",
+   "devient": "marque"
+  },
+  "sommeil": {
+   "nom": "Sommeil",
+   "cout": 2,
+   "desc": "Aspect de l'Esprit. Plonger les esprits dans le sommeil : les créatures s'endorment et oublient de te chercher. Muet sans son essence.",
+   "aspect": "esprit",
+   "devient": "silence"
+  },
+  "peur": {
+   "nom": "Peur",
+   "cout": 2,
+   "desc": "Aspect de l'Esprit. Une terreur soudaine : les créatures fuient loin du point d'impact. Muet sans son essence.",
+   "aspect": "esprit",
+   "devient": "peur"
+  },
+  "corrosion": {
+   "nom": "Corrosion",
+   "cout": 2,
+   "desc": "Aspect de la Transmutation. La matière se défait : un acide qui ronge pierre, terre, bois et métal. ×2 (Adepte) : même le métal et l'obsidienne cèdent. Muet sans son essence.",
+   "aspect": "transmutation",
+   "devient": "acide"
+  },
+  "lecture": {
+   "nom": "Lecture",
+   "cout": 2,
+   "desc": "Aspect de l'Esprit. Lire dans les pensées : ce que chaque créature touchée aime et craint s'affiche (et entre au bestiaire), avec son affinité pour toi. Muet sans son essence.",
+   "aspect": "esprit",
+   "devient": "lecture"
+  },
+  "revelation": {
+   "nom": "Révélation",
+   "cout": 2,
+   "desc": "Aspect de la Lumière. Une lumière qui traverse tout : les runes se révèlent, la carte se dessine loin alentour, et les coffres, pages, ingrédients et mécanismes cachés luisent à travers la roche un moment. Muet sans son essence.",
+   "aspect": "lumiere",
+   "devient": "revelation"
+  }
+ },
+ "shapes": {
+  "projectile": {
+   "nom": "Projectile",
+   "cout": 1,
+   "desc": "Une bille d'encre qui file dans la direction visée."
+  },
+  "soi": {
+   "nom": "Sur soi",
+   "cout": 1,
+   "desc": "L'effet s'applique à toi-même."
+  },
+  "zone": {
+   "nom": "Zone",
+   "cout": 3,
+   "desc": "L'effet surgit autour du point visé, à portée."
+  },
+  "trait": {
+   "nom": "Trait",
+   "cout": 3,
+   "desc": "Une ligne d'énergie instantanée vers le point visé."
+  },
+  "aura": {
+   "nom": "Aura",
+   "cout": 3,
+   "desc": "L'effet t'entoure et te suit un moment."
+  },
+  "mur": {
+   "nom": "Mur",
+   "cout": 4,
+   "desc": "L'effet se dresse en colonne au point visé."
+  },
+  "totem": {
+   "nom": "Totem",
+   "cout": 5,
+   "desc": "Un piquet planté au point visé répète l'effet toutes les deux secondes."
+  },
+  "chaine": {
+   "nom": "Chaîne",
+   "cout": 4,
+   "desc": "Un projectile qui saute de cible en cible."
+  },
+  "pluie": {
+   "nom": "Pluie",
+   "cout": 5,
+   "desc": "L'effet tombe du ciel sur la zone visée pendant un moment."
+  },
+  "objet": {
+   "nom": "Sur objet",
+   "cout": 3,
+   "desc": "Enchante la caisse ou la créature la plus proche du point visé : elle porte l'effet."
+  },
+  "prise": {
+   "nom": "Prise",
+   "cout": 4,
+   "desc": "Saisit tout ce qui se trouve au point visé : eau, sable, lave, créatures, caisses. La masse suit ta souris ; clique à nouveau pour la lancer (secoue la souris pour viser). Elle s'écrase et rend ce qu'elle porte."
+  },
+  "vague": {
+   "nom": "Vague",
+   "cout": 3,
+   "desc": "Une vague roule au ras du sol dans le sens du lancer : elle porte l'effet tout le long et emporte les créatures."
+  },
+  "colonne": {
+   "nom": "Colonne",
+   "cout": 3,
+   "desc": "Un jet vertical jaillit du sol là où tu vises : il porte l'effet et soulève tout ce qui s'y trouve (geyser d'eau, pilier de feu, courant d'air...)."
+  },
+  "bouclier": {
+   "nom": "Bouclier",
+   "cout": 3,
+   "desc": "Un arc devant toi, tourné vers la souris, qui porte l'élément : le feu brûle ce qui le touche, le froid gèle l'eau, le vent renvoie, la terre bloque. Il repousse aussi l'eau et le sable : marche au fond du lac."
+  },
+  "invocation": {
+   "nom": "Invocation",
+   "cout": 6,
+   "desc": "Fait naître le familier de l'essence du centre : salamandre de braise, ondine, petit golem, sylphe, pousse, luciole, oiseau-tonnerre, petite lune, chouette du temps, renard des failles, chat d'ombre, ouroboros, pie grise ou chenille. Il te suit et défend. Double : deux familiers."
+  }
+ },
+ "triggers": {
+  "immediat": {
+   "nom": "Immédiat",
+   "cout": 0,
+   "desc": "L'effet agit tout de suite, en continu sur ce qu'il touche."
+  },
+  "contact": {
+   "nom": "Au contact",
+   "cout": 1,
+   "desc": "Éclate à la première chose touchée (ou quand on te touche)."
+  },
+  "retarde": {
+   "nom": "Retardé",
+   "cout": 1,
+   "desc": "Se fixe, puis éclate après un délai réglable (1, 2, 5 ou 10 s)."
+  },
+  "commande": {
+   "nom": "Sur commande",
+   "cout": 1,
+   "desc": "Le sort attend là où il arrive (collé à une créature s'il la touche). La touche F fait éclater tous tes sorts en attente."
+  },
+  "repetition": {
+   "nom": "Répétition",
+   "cout": 3,
+   "desc": "Après avoir éclaté, l'effet recommence à intervalle réglable (1, 2 ou 5 s), plusieurs fois."
+  },
+  "proximite": {
+   "nom": "Proximité",
+   "cout": 1,
+   "desc": "Éclate dès qu'une créature approche, sans avoir à la toucher. Posé (zone), c'est une mine."
+  },
+  "tenu": {
+   "nom": "Maintenu",
+   "cout": 1,
+   "desc": "Le sort ne vit que tant que tu gardes le clic enfoncé : il naît dès que tu appuies, se dirige à la souris et disparaît dès que tu lâches. Il boit de l'encre tant qu'il dure. Un petit soleil, une tornade, un rayon, un nuage d'orage... se promènent au bout de ta main. Une Singularité ou une Implosion qu'on tient éclate quand on lâche."
+  },
+  "expiration": {
+   "nom": "À l'expiration",
+   "cout": 2,
+   "desc": "Quand l'effet s'éteint, il éclate une dernière fois."
+  }
+ },
+ "filtres": {
+  "eau": {
+   "nom": "Eau",
+   "cout": 1,
+   "couleur": "#3b6fb6",
+   "mats": [
+    "EAU",
+    "SAUMURE"
+   ]
+  },
+  "feu": {
+   "nom": "Feu",
+   "cout": 1,
+   "couleur": "#d9622b",
+   "mats": [
+    "FEU",
+    "LAVE"
+   ]
+  },
+  "pierre": {
+   "nom": "Pierre",
+   "cout": 1,
+   "couleur": "#a8977a",
+   "mats": [
+    "PIERRE",
+    "OBSIDIENNE",
+    "CRISTAL"
+   ]
+  },
+  "terre": {
+   "nom": "Terre",
+   "cout": 1,
+   "couleur": "#a3844f",
+   "mats": [
+    "TERRE",
+    "MEUBLE",
+    "SABLE",
+    "BOUE",
+    "SEL",
+    "CENDRE"
+   ]
+  },
+  "bois": {
+   "nom": "Bois",
+   "cout": 1,
+   "couleur": "#8d6a3c",
+   "mats": [
+    "BOIS",
+    "PLANTE",
+    "HERBE",
+    "MOUSSE"
+   ]
+  },
+  "metal": {
+   "nom": "Métal",
+   "cout": 1,
+   "couleur": "#737e86",
+   "mats": [
+    "METAL"
+   ]
+  },
+  "glace": {
+   "nom": "Glace",
+   "cout": 1,
+   "couleur": "#7fb4d8",
+   "mats": [
+    "GLACE",
+    "NEIGE"
+   ]
+  },
+  "creature": {
+   "nom": "Créature",
+   "cout": 1,
+   "couleur": "#c45a8a",
+   "mats": []
+  },
+  "liquide": {
+   "nom": "Liquide",
+   "cout": 1,
+   "couleur": "#5f8fb8",
+   "mats": [
+    "EAU",
+    "SAUMURE",
+    "HUILE",
+    "ACIDE",
+    "MIEL",
+    "SEVE",
+    "BOUE",
+    "LAVE"
+   ]
+  },
+  "objet": {
+   "nom": "Objet",
+   "cout": 1,
+   "couleur": "#9a6a34",
+   "mats": []
+  }
+ },
+ "cibles": {
+  "souris": {
+   "nom": "Souris",
+   "cout": 0,
+   "desc": "Le sort part vers la souris (par défaut)."
+  },
+  "creature": {
+   "nom": "Créature proche",
+   "cout": 2,
+   "desc": "Le sort part seul vers la créature hostile la plus proche, et la suit."
+  },
+  "marque": {
+   "nom": "Marque",
+   "cout": 1,
+   "desc": "Le sort part vers ta marque la plus récente, même hors de vue."
+  },
+  "objet": {
+   "nom": "Objet proche",
+   "cout": 1,
+   "desc": "Le sort part seul vers l'objet le plus proche de la souris (brasier, lampe, levier, moulin, roue, caisse, rocher, torche) et le suit."
+  }
+ },
+ "tailles": {
+  "petit": {
+   "nom": "Petit",
+   "slots": 1,
+   "coutMul": 0.5,
+   "coutAdd": 0,
+   "geste": 0.05,
+   "desc": "Centre, forme, un modificateur, un déclencheur. Moitié prix, presque instantané."
+  },
+  "moyen": {
+   "nom": "Moyen",
+   "slots": 3,
+   "coutMul": 1,
+   "coutAdd": 0,
+   "geste": 0.2,
+   "desc": "Le sceau ordinaire : jusqu'à 3 modificateurs, filtre et cible."
+  },
+  "grand": {
+   "nom": "Grand",
+   "slots": 5,
+   "coutMul": 1,
+   "coutAdd": 2,
+   "geste": 0.5,
+   "desc": "5 modificateurs et 2 déclencheurs ; plus long à tracer."
+  }
+ },
+ "dims": {
+  "zone": {
+   "l": "Rayon"
+  },
+  "mur": {
+   "l": "Largeur",
+   "h": "Hauteur"
+  },
+  "colonne": {
+   "l": "Largeur",
+   "h": "Hauteur"
+  },
+  "trait": {
+   "h": "Longueur",
+   "l": "Épaisseur"
+  },
+  "vague": {
+   "h": "Hauteur",
+   "l": "Distance"
+  },
+  "pluie": {
+   "l": "Largeur"
+  },
+  "aura": {
+   "l": "Rayon"
+  },
+  "totem": {
+   "l": "Rayon"
+  },
+  "bouclier": {
+   "l": "Taille"
+  }
+ },
+ "dimVals": [
+  0.25,
+  0.5,
+  1,
+  2,
+  3,
+  4,
+  6
+ ],
+ "matiere": {
+  "froid": "GLACE",
+  "eau": "EAU",
+  "terre": "PIERRE",
+  "metal": "METAL",
+  "feu": "LAVE",
+  "lumiere": "CRISTAL",
+  "foudre": "METAL",
+  "vie": "BOIS",
+  "ombre": "OBSIDIENNE",
+  "acide": "ACIDE",
+  "transmutation": "VERRE",
+  "fanaison": "CENDRE",
+  "secheresse": "SABLE",
+  "rouille": "SABLE",
+  "creuser": "AIR"
+ },
+ "langages": {
+  "feu": {
+   "glyphe": "chaleur",
+   "nom": "Chaleur",
+   "de": "du feu",
+   "paliers": [
+    "Flamme blanche : brûle plus fort, vitrifie le sable, fond glace et neige d'un coup.",
+    "Flamme bleue : si chaude qu'elle fond la pierre et le métal en lave, et entame le golem."
+   ]
+  },
+  "eau": {
+   "glyphe": "pression",
+   "nom": "Pression",
+   "de": "de l'eau",
+   "paliers": [
+    "Jet : l'eau frappe fort, repousse et creuse terre, sable et boue.",
+    "Lame d'eau : elle entaille le bois, use la pierre et brise la glace."
+   ]
+  },
+  "terre": {
+   "glyphe": "densite",
+   "nom": "Densité",
+   "de": "de la terre",
+   "paliers": [
+    "La terre surgit déjà tassée en pierre.",
+    "La pierre se serre jusqu'au cristal, qui luit dans le noir."
+   ]
+  },
+  "vent": {
+   "glyphe": "tourbillon",
+   "nom": "Tourbillon",
+   "de": "du vent",
+   "paliers": [
+    "Le vent tourne et soulève : créatures, eau et sable montent.",
+    "Tornade : une colonne tournoyante reste quelques secondes et aspire tout ce qui passe."
+   ]
+  },
+  "foudre": {
+   "glyphe": "tension",
+   "nom": "Tension",
+   "de": "de la foudre",
+   "paliers": [
+    "Arc : l'éclair saute vers trois cibles proches.",
+    "Foudre violette : six cibles, et tout ce qui brûle s'embrase."
+   ]
+  },
+  "vie": {
+   "glyphe": "floraison",
+   "nom": "Floraison",
+   "de": "de la vie",
+   "paliers": [
+    "L'herbe et les plantes poussent deux fois plus, le soin est doublé.",
+    "Croissance : un arbre jaillit du sol."
+   ]
+  },
+  "lumiere": {
+   "glyphe": "focale",
+   "nom": "Focale",
+   "de": "de la lumière",
+   "paliers": [
+    "Loupe : la lumière concentrée enflamme le bois et l'herbe, et éblouit plus longtemps.",
+    "Soleil : elle vitrifie le sable, fond la neige et aveugle longuement."
+   ]
+  },
+  "gravite": {
+   "glyphe": "masse",
+   "nom": "Masse",
+   "de": "de la gravité",
+   "paliers": [
+    "Champ plus large et plus lourd.",
+    "Effondrement : le champ se creuse en un puits qui avale puis recrache ce qui l'entoure."
+   ]
+  }
+ },
+ "combos": {
+  "eau|feu": {
+   "nom": "Geyser",
+   "desc": "Une colonne de vapeur brûlante jaillit du sol : elle soulève tout et ébouillante.",
+   "indice": "L'eau bout quand le feu la presse."
+  },
+  "feu|terre": {
+   "nom": "Magma",
+   "desc": "Une fontaine de lave crache du sol, puis refroidit en roche.",
+   "indice": "La terre fond quand le feu la travaille."
+  },
+  "feu|vent": {
+   "nom": "Tornade de feu",
+   "desc": "Un tourbillon de flammes qui avance, soulève les petites choses et allume tout.",
+   "indice": "Le vent fait danser la flamme."
+  },
+  "feu|vie": {
+   "nom": "Brûlis",
+   "desc": "Le feu passe sur l'herbe, puis tout repousse, plus vert qu'avant.",
+   "indice": "Après la flamme, la pousse."
+  },
+  "feu|lumiere": {
+   "nom": "Rayon ardent",
+   "desc": "Un rayon de soleil concentré : il vitrifie le sable, allume de loin, fait fondre la pierre.",
+   "indice": "La loupe sous le soleil."
+  },
+  "feu|foudre": {
+   "nom": "Foudre en boule",
+   "desc": "Une boule de plasma qui erre, foudroie ce qui l'approche et éclate dans l'eau.",
+   "indice": "La flamme électrique ne tient pas en place."
+  },
+  "feu|gravite": {
+   "nom": "Petit soleil",
+   "desc": "Une combustion tenue par la pesanteur : une étoile qui flotte, attire, chauffe tout autour, éclaire la nuit et se nourrit de ce qui brûle.",
+   "indice": "Le feu qui ne peut plus s'échapper."
+  },
+  "feu|temps": {
+   "nom": "Feu éternel",
+   "desc": "Une flamme hors du temps : elle ne s'éteint pas, ne se propage pas, réchauffe et redonne de l'encre à qui s'assoit près d'elle.",
+   "indice": "Une flamme qui ne vieillit pas."
+  },
+  "feu|transmutation": {
+   "nom": "Forge",
+   "desc": "La chaleur change la matière : la pierre devient métal, le sable verre, la terre pierre.",
+   "indice": "Le creuset de l'alchimiste."
+  },
+  "eau|terre": {
+   "nom": "Marécage",
+   "desc": "Le sol devient boue : les lourds s'enfoncent, tout s'englue.",
+   "indice": "La terre qui boit trop."
+  },
+  "eau|vent": {
+   "nom": "Nuée",
+   "desc": "Un nuage de pluie qui dérive : il éteint les feux, remplit les trous, fait pousser.",
+   "indice": "L'eau que le vent emporte."
+  },
+  "eau|vie": {
+   "nom": "Source vive",
+   "desc": "Une source qui soigne ceux qui s'y tiennent et fait tout pousser alentour.",
+   "indice": "L'eau qui donne la vie."
+  },
+  "eau|lumiere": {
+   "nom": "Arc-en-ciel",
+   "desc": "Un arc de lumière solide, de toi jusqu'au point visé : on peut marcher dessus.",
+   "indice": "La lumière dans la pluie."
+  },
+  "eau|foudre": {
+   "nom": "Orage",
+   "desc": "Un nuage noir qui foudroie le sol au-dessous, de préférence les créatures et l'eau.",
+   "indice": "Le ciel qui gronde."
+  },
+  "eau|gravite": {
+   "nom": "Sphère d'eau",
+   "desc": "Une bulle d'eau en apesanteur : elle aspire les liquides, emprisonne les créatures et lâche tout à la fin.",
+   "indice": "L'eau qui ne tombe plus."
+  },
+  "eau|temps": {
+   "nom": "Érosion",
+   "desc": "Mille ans d'eau en quelques secondes : elle creuse la terre et use la pierre.",
+   "indice": "La goutte qui creuse la pierre."
+  },
+  "eau|transmutation": {
+   "nom": "Liquéfaction",
+   "desc": "Le sol, même la pierre, devient boue... puis se fige en pierre et retient ce qui s'y est enfoncé.",
+   "indice": "La pierre qui coule."
+  },
+  "terre|vent": {
+   "nom": "Tempête de sable",
+   "desc": "Un mur de sable qui avance : il pousse, aveugle, use et laisse des dunes.",
+   "indice": "La poussière que le vent soulève."
+  },
+  "terre|vie": {
+   "nom": "Racines",
+   "desc": "Des racines jaillissent et ligotent les créatures ; en trait, elles poussent en pont de bois.",
+   "indice": "Ce qui pousse sous la terre."
+  },
+  "lumiere|terre": {
+   "nom": "Géode",
+   "desc": "Des pics de cristal jaillissent du sol, projettent les créatures et luisent ensuite.",
+   "indice": "La lumière prisonnière de la roche."
+  },
+  "foudre|terre": {
+   "nom": "Fulgurite",
+   "desc": "Un éclair qui fore le sol et laisse un tunnel aux parois de verre.",
+   "indice": "La foudre qui entre dans la terre."
+  },
+  "gravite|terre": {
+   "nom": "Météore",
+   "desc": "Un rocher tombe du ciel sur le point visé : cratère, onde de choc, éboulements.",
+   "indice": "La pierre qui tombe d'en haut."
+  },
+  "temps|terre": {
+   "nom": "Pétrification",
+   "desc": "Les créatures deviennent statues un moment ; le bois devient pierre, le miel ambre.",
+   "indice": "Ce que les siècles font de la terre."
+  },
+  "terre|transmutation": {
+   "nom": "Golem de glaise",
+   "desc": "La terre du lieu se lève en golem allié, qui frappe tes ennemis puis retourne au sol.",
+   "indice": "La glaise qu'on anime."
+  },
+  "vent|vie": {
+   "nom": "Pollen",
+   "desc": "Un nuage de pollen : l'herbe pousse sur son passage, les créatures s'endorment.",
+   "indice": "Le vent qui sème."
+  },
+  "lumiere|vent": {
+   "nom": "Lucioles",
+   "desc": "Un essaim de lumières qui dansent longtemps : elles éclairent et attirent les curieux.",
+   "indice": "La lumière portée par la brise."
+  },
+  "foudre|vent": {
+   "nom": "Front d'orage",
+   "desc": "Une rafale chargée qui balaie tout devant elle et foudroie ce qu'elle pousse.",
+   "indice": "La bourrasque avant l'orage."
+  },
+  "gravite|vent": {
+   "nom": "Cyclone",
+   "desc": "Une colonne qui aspire et soulève tout, sable, eau et créatures, puis les recrache.",
+   "indice": "Le vent qui tombe vers le haut."
+  },
+  "temps|vent": {
+   "nom": "Souffle des âges",
+   "desc": "Une bourrasque qui fait vieillir tout ce qu'elle traverse : les plantes poussent et fanent, le métal rouille.",
+   "indice": "Le vent des années."
+  },
+  "transmutation|vent": {
+   "nom": "Air solide",
+   "desc": "L'air se fige en verre invisible : une plateforme, un mur, un pont, qui arrête aussi les sorts.",
+   "indice": "Le vent changé en pierre."
+  },
+  "lumiere|vie": {
+   "nom": "Arbre de lumière",
+   "desc": "Un arbre pousse d'un coup ; son feuillage luit et soigne ceux qui s'abritent dessous.",
+   "indice": "Ce que la lumière fait pousser."
+  },
+  "foudre|vie": {
+   "nom": "Ronces électriques",
+   "desc": "Un roncier épais et chargé : qui le touche est piqué et foudroyé.",
+   "indice": "Les épines qui crépitent."
+  },
+  "gravite|vie": {
+   "nom": "Îlot flottant",
+   "desc": "Une motte de terre herbue flotte dans le ciel... puis retombe, sur qui se trouve dessous.",
+   "indice": "Le jardin qui ne pèse plus."
+  },
+  "temps|vie": {
+   "nom": "Forêt instantanée",
+   "desc": "Des arbres entiers poussent en un instant.",
+   "indice": "Cent printemps d'un coup."
+  },
+  "transmutation|vie": {
+   "nom": "Bois vivant",
+   "desc": "La pierre et la terre deviennent bois et mousse... et le bois, ça brûle.",
+   "indice": "La roche qui se met à vivre."
+  },
+  "foudre|lumiere": {
+   "nom": "Prisme",
+   "desc": "Un prisme flottant qui tire des rayons sur les créatures hostiles proches.",
+   "indice": "La lumière qui se brise en éclairs."
+  },
+  "gravite|lumiere": {
+   "nom": "Trou noir",
+   "desc": "Une pesanteur si forte que la lumière n'en sort plus : elle avale la matière, les sorts et tire tout à elle.",
+   "indice": "La lumière qui tombe."
+  },
+  "lumiere|temps": {
+   "nom": "Aube",
+   "desc": "Le temps du ciel avance : la nuit se lève en aube, le jour tombe en crépuscule.",
+   "indice": "Le soleil qui se presse."
+  },
+  "lumiere|transmutation": {
+   "nom": "Miroir",
+   "desc": "Un miroir qui renvoie les projectiles et barre le passage.",
+   "indice": "La lumière qu'on fige en surface."
+  },
+  "foudre|gravite": {
+   "nom": "Aimant",
+   "desc": "Un champ magnétique : il capture les projectiles, attire golems, rochers et caisses, charge le métal.",
+   "indice": "La foudre qui attire."
+  },
+  "foudre|temps": {
+   "nom": "Foudre suspendue",
+   "desc": "Un éclair figé dans le temps : il reste là et foudroie qui le touche.",
+   "indice": "L'éclair qui ne finit pas."
+  },
+  "foudre|transmutation": {
+   "nom": "Électrolyse",
+   "desc": "La foudre défait l'eau en un gaz léger, qui explose à la moindre flamme.",
+   "indice": "L'eau qui se défait sous la foudre."
+  },
+  "gravite|temps": {
+   "nom": "Horizon",
+   "desc": "Près du centre, le temps ralentit jusqu'à presque s'arrêter ; tout y est attiré, doucement.",
+   "indice": "Le temps qui pèse."
+  },
+  "gravite|transmutation": {
+   "nom": "Presse",
+   "desc": "La pesanteur écrase la matière : le sable devient pierre, la pierre cristal.",
+   "indice": "La pression qui change tout."
+  },
+  "temps|transmutation": {
+   "nom": "Origine",
+   "desc": "Chaque chose redevient ce qu'elle était : le verre sable, l'obsidienne lave, la cendre bois, le métal pierre.",
+   "indice": "Revenir à ce qu'on était."
+  },
+  "froid|vent": {
+   "nom": "Blizzard",
+   "desc": "Une tempête de neige qui dérive, gèle l'eau et engourdit.",
+   "indice": "Le vent glacé."
+  },
+  "froid|gravite": {
+   "nom": "Comète de glace",
+   "desc": "Un bloc de glace tombe du ciel et gèle tout à l'impact.",
+   "indice": "La glace qui tombe d'en haut."
+  },
+  "feu|froid": {
+   "nom": "Choc thermique",
+   "desc": "Chaud puis froid d'un coup : la pierre, le verre et la glace éclatent.",
+   "indice": "Ce qui casse quand on le trempe."
+  },
+  "froid|temps": {
+   "nom": "Cryostase",
+   "desc": "Les créatures sont prises dans des blocs de glace qui ne fondent pas de sitôt.",
+   "indice": "Le froid qui arrête le temps."
+  },
+  "foudre|metal": {
+   "nom": "Bobine",
+   "desc": "Le métal garde la charge et lance des arcs sur les créatures proches.",
+   "indice": "Le métal qui chante sous la foudre."
+  },
+  "feu|metal": {
+   "nom": "Métal rougi",
+   "desc": "Le métal chauffe au rouge : il brûle ce qui le touche et allume ce qui l'approche.",
+   "indice": "Le fer dans la forge."
+  },
+  "acide|feu": {
+   "nom": "Fumée toxique",
+   "desc": "Un nuage âcre qui empoisonne et assoupit.",
+   "indice": "Ce qui fume quand l'acide brûle."
+  },
+  "acide|eau": {
+   "nom": "Pluie acide",
+   "desc": "Un nuage qui pleut de l'acide et ronge ce qui est dessous.",
+   "indice": "La pluie qui ronge."
+  },
+  "foudre|son": {
+   "nom": "Tonnerre",
+   "desc": "Un fracas qui brise le verre, la glace et le cristal, renverse et réveille tout.",
+   "indice": "Le bruit de l'éclair."
+  },
+  "explosion|gravite": {
+   "nom": "Implosion",
+   "desc": "Tout est aspiré vers un point... puis tout explose.",
+   "indice": "L'explosion qui commence à l'envers."
+  },
+  "fumee|vent": {
+   "nom": "Écran de fumée",
+   "desc": "Un mur de fumée : les créatures y perdent ta trace.",
+   "indice": "La fumée qu'on pousse."
+  },
+  "force|terre": {
+   "nom": "Éboulement",
+   "desc": "La roche se défait en éboulis qui glissent, et ce qui tenait dessus s'écroule.",
+   "indice": "La pente qui cède."
+  },
+  "foudre|lien": {
+   "nom": "Fil électrique",
+   "desc": "Un fil tendu jusqu'au point visé, qui foudroie ce qui le franchit.",
+   "indice": "Le fil qui conduit."
+  },
+  "eau|froid": {
+   "nom": "Banquise",
+   "desc": "La surface de l'eau gèle en un grand radeau de glace qui flotte.",
+   "indice": "L'eau qui durcit."
+  },
+  "eau|seisme": {
+   "nom": "Raz-de-marée",
+   "desc": "Une vague immense déferle dans le sens du lancer et emporte tout.",
+   "indice": "La terre qui secoue la mer."
+  },
+  "force|gravite": {
+   "nom": "Singularité",
+   "desc": "Tout est aspiré vers un point, puis recraché.",
+   "indice": "La pesanteur qui se replie."
+  }
+ },
+ "trios": {
+  "feu|gravite|temps": {
+   "nom": "Étoile",
+   "desc": "Un soleil que le temps ne consume plus : plus grand, plus lourd, il brûle longtemps et finit en nova.",
+   "indice": "Le petit soleil qui ne vieillit pas."
+  },
+  "eau|foudre|vent": {
+   "nom": "Ouragan",
+   "desc": "Un orage géant qui marche sur le pays : il foudroie, aspire et soulève tout sous lui.",
+   "indice": "Quand l'orage apprend à marcher."
+  },
+  "feu|gravite|terre": {
+   "nom": "Volcan",
+   "desc": "Un cône de pierre jaillit du sol et crache la lave par son cratère, en bombes brûlantes.",
+   "indice": "La montagne qui s'ouvre."
+  },
+  "eau|gravite|vie": {
+   "nom": "Jardin suspendu",
+   "desc": "Une île flotte, avec son arbre et sa source, puis finit par retomber.",
+   "indice": "Le jardin qui ne pèse plus, et qui boit."
+  },
+  "foudre|gravite|lumiere": {
+   "nom": "Pulsar",
+   "desc": "Une étoile qui tourne sur elle-même et balaie le monde de deux rayons foudroyants.",
+   "indice": "La lumière qui tourne et qui frappe."
+  },
+  "eau|temps|terre": {
+   "nom": "Canyon",
+   "desc": "Des siècles d'érosion d'un coup : un ravin s'ouvre sous le point visé et une rivière y coule.",
+   "indice": "La goutte, la pierre, et beaucoup de temps."
+  },
+  "gravite|lumiere|temps": {
+   "nom": "Trou blanc",
+   "desc": "L'inverse du trou noir : il recrache la matière et la lumière, et repousse tout.",
+   "indice": "Ce que le trou noir finit par rendre."
+  },
+  "lumiere|temps|vie": {
+   "nom": "Printemps éternel",
+   "desc": "Pendant longtemps, tout pousse alentour : herbe, fleurs qui luisent, arbres, et les blessures guérissent.",
+   "indice": "La saison qui ne finit pas."
+  }
+ },
+ "genres": {
+  "portail": {
+   "nom": "Faille",
+   "desc": "Une faille dans l'espace qui crache l'autre effet pendant un moment.",
+   "indice": "L'Espace qui s'ouvre sur un élément."
+  },
+  "esprit": {
+   "nom": "Élémentaire",
+   "desc": "Un esprit fait de l'autre effet, qui chasse tes ennemis.",
+   "indice": "L'Esprit qui habite un élément."
+  },
+  "contre": {
+   "nom": "Absorption",
+   "desc": "Le Contre-sort avale la matière de l'autre effet autour du point visé et te rend un peu d'encre.",
+   "indice": "Défaire un seul élément."
+  },
+  "metamorphose": {
+   "nom": "Chimère",
+   "desc": "La créature touchée devient une créature de l'autre effet et le porte partout où elle va. Sur soi : tu prends cette nature.",
+   "indice": "Changer une bête en élément."
+  }
+ },
+ "aspects": [
+  "fumee",
+  "explosion",
+  "gel",
+  "courant",
+  "minerai",
+  "seisme",
+  "son",
+  "attraction",
+  "repulsion",
+  "fil",
+  "rembobiner",
+  "figer",
+  "saut",
+  "marque",
+  "sommeil",
+  "peur",
+  "corrosion"
+ ],
+ "migration": {
+  "froid": [
+   "eau",
+   "gel"
+  ],
+  "acide": [
+   "transmutation",
+   "corrosion"
+  ],
+  "metal": [
+   "terre",
+   "minerai"
+  ],
+  "son": [
+   "vent",
+   "son"
+  ],
+  "force": [
+   "gravite",
+   "attraction"
+  ],
+  "lien": [
+   "gravite",
+   "fil"
+  ],
+  "rembobinage": [
+   "temps",
+   "rembobiner"
+  ],
+  "marque": [
+   "portail",
+   "marque"
+  ],
+  "ombre": [
+   "lumiere",
+   "inverser"
+  ]
+ },
+ "migrMods": {
+  "givre": "gel",
+  "mordant": "corrosion",
+  "tenebres": null
+ },
+ "elans": {
+  "feu": {
+   "imm": "une gerbe de flammes te propulse vers la souris (le sol s'embrase un peu derrière toi), et tu retombes sans mal.",
+   "tenu": "tu voles sur tes flammes."
+  },
+  "eau": {
+   "imm": "un jet d'eau te pousse (très vite dans l'eau), et tu respires l'eau un moment.",
+   "tenu": "le jet te porte où tu vises."
+  },
+  "terre": {
+   "imm": "un pilier te soulève (de pierre avec Persistance : il reste) ; en l'air, vise en bas pour t'abattre en onde de choc. Peau de pierre.",
+   "tenu": "tu creuses comme une taupe (la pierre cède plus lentement, sauf avec Puissance)."
+  },
+  "vent": {
+   "imm": "une bourrasque te jette vers la souris, puis tu planes.",
+   "tenu": "tu voles où pointe la souris."
+  },
+  "vie": {
+   "imm": "elle te soigne, et une liane t'emporte vers le mur visé (grimpe-y avec ↑).",
+   "tenu": "la liane te tient en corde, et tu te régénères."
+  },
+  "lumiere": {
+   "imm": "tu files en un rayon jusqu'au mur, aveuglant ce que tu traverses, et tu luis.",
+   "tenu": "tu deviens lumière : rien ne te touche, tu files où tu vises."
+  },
+  "foudre": {
+   "imm": "un éclair : tu fonces d'un coup, ce que tu traverses est foudroyé, puis tes jambes crépitent.",
+   "tenu": "une tempête d'éclairs, de bond en bond vers la souris."
+  },
+  "gravite": {
+   "tenu": "tu lévites vers la souris."
+  },
+  "temps": {
+   "tenu": "le monde ralentit autour de toi ; toi, non."
+  },
+  "portail": {
+   "imm": "tu te téléportes là où tu vises, même derrière un mur ; sur une bête, vous échangez vos places ; vers un portail, tu ressors par l'autre.",
+   "tenu": "vise où paraître, lâche : tu y es (plus loin)."
+  },
+  "esprit": {
+   "imm": "sur une bête, tu entres dans sa tête ; sinon ton esprit s'élance et prend la première qu'il touche.",
+   "tenu": "ton esprit sort de ton corps : promène-le à travers les murs, il lit les bêtes et entre dans celle qu'il touche."
+  },
+  "transmutation": {
+   "imm": "ton corps devient sable fin : tu traverses la roche (↓ pour t'enfoncer dans le sol).",
+   "tenu": "sable fin tant que tu tiens."
+  },
+  "contre": {
+   "imm": "tout s'arrête : tu restes suspendu(e) un instant, un miroir renvoie les tirs, la magie alentour se dissipe.",
+   "tenu": "suspendu(e) dans l'air, et les tirs te reviennent dessus... renvoyés."
+  },
+  "metamorphose": {
+   "tenu": "tu gardes ta forme tant que tu tiens."
+  }
+ },
+ "teintes": {
+  "feu": "brûle ce que tu traverses",
+  "eau": "éclabousse et mouille",
+  "terre": "une onde de choc à l'arrivée",
+  "vent": "tu planes ensuite",
+  "vie": "soigne, enlace les bêtes",
+  "lumiere": "aveugle ce que tu traverses",
+  "foudre": "plus vite, intouchable, foudroie",
+  "gravite": "tu deviens léger(ère)",
+  "temps": "le monde ralentit un instant",
+  "portail": "tu y es d'un clin d'œil",
+  "esprit": "effraie ce que tu traverses",
+  "transmutation": "traverse les murs",
+  "contre": "dissipe la magie, puis arrêt net",
+  "metamorphose": "change les bêtes traversées"
+ },
+ "modAngles": {
+  "petit": [
+   90
+  ],
+  "moyen": [
+   90,
+   210,
+   330
+  ],
+  "grand": [
+   90,
+   210,
+   330,
+   165,
+   15
+  ]
+ }
+}
