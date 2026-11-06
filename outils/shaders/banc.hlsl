@@ -43,7 +43,7 @@ float2 GetDefaultSceneTextureUV(FMaterialPixelParameters P, int id) { return P.S
 // le nœud Custom : ses entrées portent les noms qu'elles auront dans Unreal
 float3 NoeudCustom(FMaterialPixelParameters Parameters, float2 UVv, float Temps, Texture2D Papier, SamplerState PapierSampler,
 	float Mode, float PleinSoleil, float Ambiance, float SeuilLueur, float Traits, float HachuresOn, float PapierOn, float TrembleOn,
-	float Nuit, float Brume, float CielLoin, float SortieLineaire, float3 CouleurPapier, float3 CouleurEncre, float3 CouleurCiel, float3 CouleurSoleil)
+	float Nuit, float Brume, float CielLoin, float SortieLineaire, float Dessin, float3 CouleurPapier, float3 CouleurEncre, float3 CouleurCiel, float3 CouleurSoleil)
 {
 #include "../../Unreal/Rendu/BrimoEncre.hlsl"
 }
@@ -56,6 +56,6 @@ float4 main(float4 pos : SV_Position) : SV_Target
 	float2 uvv = pos.xy * View.BufferSizeAndInvSize.zw;
 	float3 c = NoeudCustom(P, uvv, B[0].z, tPapier, sPapier,
 		B[1].x, B[1].y, B[1].z, B[1].w, B[2].x, B[2].y, B[2].z, B[2].w,
-		B[3].x, B[3].y, B[3].z, B[3].w, B[4].xyz, B[5].xyz, B[6].xyz, float3(B[4].w, B[5].w, B[6].w));
+		B[3].x, B[3].y, B[3].z, B[3].w, B[0].w, B[4].xyz, B[5].xyz, B[6].xyz, float3(B[4].w, B[5].w, B[6].w));
 	return float4(c, 1.0);
 }

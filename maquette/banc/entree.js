@@ -122,7 +122,7 @@ window.__banc = async (glsl, vues) => {
     const remettre = versUnreal(sc);
     R.setRenderTarget(rt); R.setClearColor(0x000000, 0); R.clear(); R.render(sc, camera); remettre();
     const p = PALETTE, g = encre.reglages, graine = t;   // la graine du tremblement se calcule dans le nœud, à partir du temps
-    B[0].set(W, H, graine, 0); B[1].set(vue.mode || 0, PLEIN_SOLEIL, AMBIANCE, 1.25); B[2].set(1, 1, 1, 1); B[3].set(vue.nuit || 0, g.brume, 1000, 0);
+    B[0].set(W, H, graine, g.dessin); B[1].set(vue.mode || 0, PLEIN_SOLEIL, AMBIANCE, 1.25); B[2].set(1, 1, 1, 1); B[3].set(vue.nuit || 0, g.brume, 1000, 0);
     B[4].set(p.papier.r, p.papier.g, p.papier.b, 1); B[5].set(p.encre.r, p.encre.g, p.encre.b, 1);
     const ciel = new THREE.Color('#8a8fb0'); B[6].set(ciel.r, ciel.g, ciel.b, 1);
     R.setRenderTarget(null); R.setClearColor(p.papier, 1); R.render(sc2, cam2);

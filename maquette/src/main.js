@@ -57,8 +57,8 @@ function lancer() { if (!E.lance) E.lance = { t0: temps, fin: 0 }; E.inactif = M
 // les réglages : boutons de la page
 for (const b of document.querySelectorAll('[data-reglage]')) {
   const k = b.dataset.reglage;
-  const maj = () => b.classList.toggle('on', k === 'douze' ? E.douze : k === 'nuit' ? E.nuitCible > 0.5 : k === 'auto' ? E.auto : !!R[k]);
-  b.addEventListener('click', () => { if (k === 'douze') E.douze = !E.douze; else if (k === 'nuit') E.nuitCible = E.nuitCible > 0.5 ? 0 : 1; else if (k === 'auto') { E.auto = !E.auto; E.inactif = E.auto ? 99 : 0; } else R[k] = !R[k]; maj(); });
+  const maj = () => b.classList.toggle('on', k === 'douze' ? E.douze : k === 'nuit' ? E.nuitCible > 0.5 : k === 'auto' ? E.auto : k === 'dessin' ? R.dessin > 0.9 : !!R[k]);
+  b.addEventListener('click', () => { if (k === 'douze') E.douze = !E.douze; else if (k === 'nuit') E.nuitCible = E.nuitCible > 0.5 ? 0 : 1; else if (k === 'auto') { E.auto = !E.auto; E.inactif = E.auto ? 99 : 0; } else if (k === 'dessin') R.dessin = R.dessin > 0.9 ? 0.65 : 1; else R[k] = !R[k]; maj(); });
   b.addEventListener('maj', maj); maj();
 }
 document.getElementById('lancer').addEventListener('click', () => lancer());

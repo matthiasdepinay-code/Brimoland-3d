@@ -3,7 +3,12 @@
 Le rendu « dessiné » de la maquette tient dans **un seul nœud Custom**, posé dans un matériau de post-process : [`BrimoEncre.hlsl`](BrimoEncre.hlsl).
 Ce fichier a déjà été compilé et testé hors d'Unreal : le banc d'essai (`outils/shaders/`) le fait tourner sur la scène de la maquette. Le résultat est quasi identique au rendu d'origine : environ 1 / 255 d'écart moyen, avec un seuil d'échec qui attrape une ombre faussée.
 
-Compte une heure la première fois. À chaque étape, il y a une vérification : si elle ne passe pas, arrête-toi et envoie-moi une capture.
+> **Le plus simple : le script.** Les étapes 2 à 5 sont faites par un script de l'éditeur. Les étapes 1, 6 et 7 aussi, si tu lances le Jardin d'essai.
+> Dans l'Output Log, passe le champ de commande en **Python**, puis tape : `import brimo_encre; brimo_encre.monter()`.
+> Pour tout faire d'un coup (l'import des assets, le Jardin d'essai, l'encre) : `import brimo_tout; brimo_tout.lancer()`.
+> La suite de cette page décrit la même chose à la main. Elle sert à comprendre, ou si le script s'arrête sur une erreur.
+
+Compte une heure la première fois à la main. À chaque étape, il y a une vérification : si elle ne passe pas, arrête-toi et envoie-moi une capture.
 
 ---
 
@@ -64,6 +69,7 @@ Le jeu la fera varier de 0 (jour) à 1 (nuit), et tout le rendu suivra.
 | `Brume` | *Scalar Parameter* « Brume » (en mètres) | 95 |
 | `CielLoin` | *Scalar Parameter* « CielLoin » (en mètres) | 2000 |
 | `SortieLineaire` | *Scalar Parameter* « SortieLineaire » | 0 (on le vérifie à l'étape 6) |
+| `Dessin` | *Scalar Parameter* « Dessin » | 0,65 : la force des effets dessinés (hachures, tremblement, papier, vignettage) ; 1 = la première maquette |
 | `CouleurPapier` | *Vector Parameter* « CouleurPapier » | R 0,937 · G 0,890 · B 0,769 |
 | `CouleurEncre` | *Vector Parameter* « CouleurEncre » | R 0,122 · G 0,102 · B 0,086 |
 | `CouleurCiel` | *Vector Parameter* « CouleurCiel » | R 0,541 · G 0,561 · B 0,690 |

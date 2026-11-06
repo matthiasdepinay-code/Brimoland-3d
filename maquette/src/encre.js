@@ -122,7 +122,7 @@ const FRAG_ENCRE = /* glsl */ `
 precision highp float;
 uniform sampler2D tCouleur, tNormale, tOmbre, tProf, tPapier;
 uniform vec2 taille; uniform float graine, near, far, echelle;
-uniform float encre, traits, hachures, papierOn, tremble, nuit, brume;
+uniform float encre, traits, hachures, papierOn, tremble, nuit, brume, dessin;   // dessin : la force des effets dessinés (1 : la maquette d'origine)
 uniform vec3 cPapier, cEncre;
 in vec2 vUv; out vec4 o;
 float hash(vec2 p) { p = fract(p * vec2(123.34, 456.21)); p += dot(p, p + 45.32); return fract(p.x * p.y); }
@@ -139,11 +139,11 @@ void main() {
   if (encre < 0.5) { o = vec4(peinture, 1.0); return; }
   vec2 px = 1.0 / taille, fc = gl_FragCoord.xy / echelle;
   // le trait tremble : les échantillons sont décalés d'un bruit qui change 10 fois par seconde
-  vec2 w = tremble > 0.5 ? (vec2(bruit(fc / 7.0 + graine), bruit(fc / 7.0 + graine + 31.7)) - 0.5) * 2.4 * px * echelle : vec2(0.0);
+  vec2 w = tremble > 0.5 ? (vec2(bruit(fc / 7.0 + graine), bruit(fc / 7.0 + graine + 31.7)) - 0.5) * 2.4 * dessin * px * echelle : vec2(0.0);
   vec2 uvT = vUv + w;
   vec4 nc = texture(tNormale, uvT); vec3 n0 = nc.xyz * 2.0 - 1.0; float poids = nc.a;
   float d0 = profLin(uvT), ciel0 = step(0.9999, texture(tProf, uvT).r);
-  float epais = mix(0.9, 2.1, poids) * clamp(28.0 / d0, 0.55, 1.35) * echelle;
+  float epais = mix(0.9, 2.1, poids) * mix(0.85, 1.0, dessin) * clamp(28.0 / d0, 0.55, 1.35) * echelle;
   float bord = 0.0;
   for (int k = 0; k < 8; k++) {
     float a = float(k) * 0.785398; vec2 off = vec2(cos(a), sin(a)) * epais * px;
@@ -158,8 +158,8 @@ void main() {
   vec4 om = texture(tOmbre, vUv); float s = om.r, lueur = om.g, h = 0.0;
   // le papier du jeu 2D, qui tient la peinture comme une aquarelle
   vec3 papier = papierOn > 0.5 ? texture(tPapier, fc / 1024.0).rgb : cPapier;
-  float grain = papierOn > 0.5 ? 0.94 + 0.12 * bruit(fc * 0.7) : 1.0;
-  float couvre = 0.74 + 0.14 * bruit(fc * 0.018 + 5.0);   // un lavis : la couleur couvre le papier aux trois quarts, inégalement
+  float grain = papierOn > 0.5 ? 1.0 - 0.06 * dessin + 0.12 * dessin * bruit(fc * 0.7) : 1.0;
+  float couvre = mix(0.92, 0.74 + 0.14 * bruit(fc * 0.018 + 5.0), dessin);   // un lavis : la couleur couvre le papier aux trois quarts, inégalement (moins de papier si dessin < 1)
   vec3 c = ciel0 > 0.5 ? papier : mix(papier, peinture * (papier / cPapier), lueur > 0.5 ? 0.95 : couvre) * grain;
   // les hachures, dans l'ombre seulement (pas sur ce qui luit)
   if (ciel0 < 0.5 && hachures > 0.5) {
@@ -171,12 +171,12 @@ void main() {
   // le monde se dissout dans la page au loin
   float loin = ciel0 > 0.5 ? 1.0 : smoothstep(brume * 0.45, brume, d0) * (1.0 - lueur * 0.85);  // ce qui luit perce la brume
   c = mix(c, papier, loin * (1.0 - ciel0));
-  float encreLa = clamp(bord + h * 0.42, 0.0, 1.0) * (1.0 - loin * 0.85);
+  float encreLa = clamp(bord + h * 0.42 * dessin, 0.0, 1.0) * (1.0 - loin * 0.85);
   c = mix(c, cEncre, encreLa);
   // la nuit : l'encre mange la page depuis les bords
   float r = length((vUv - 0.5) * vec2(taille.x / taille.y, 1.0));
   float vign = smoothstep(0.45, 1.05, r);
-  c = mix(c, c * vec3(0.74, 0.64, 0.5), vign * 0.55);
+  c = mix(c, c * vec3(0.74, 0.64, 0.5), vign * 0.55 * dessin);
   c = mix(c, c * vec3(0.32, 0.34, 0.5) + vec3(0.02, 0.02, 0.05), nuit * (0.7 + 0.3 * vign));
   c = mix(c, cEncre, nuit * smoothstep(0.55, 1.15, r) * 0.85);
   o = vec4(c, 1.0);
@@ -185,7 +185,7 @@ void main() {
 export class Encre {
   constructor(renderer) {
     this.renderer = renderer;
-    this.reglages = { encre: true, traits: true, hachures: true, papier: true, tremble: true, nuit: 0, brume: 95 };
+    this.reglages = { encre: true, traits: true, hachures: true, papier: true, tremble: true, nuit: 0, brume: 95, dessin: 0.65 };  // dessin : 0,65 validé le 6 nov. (1 : plus dessiné)
     this.scene2 = new THREE.Scene(); this.cam2 = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
     const papier = U.paper(1024, 1024, 7);
     this.texPapier = new THREE.CanvasTexture(papier); this.texPapier.wrapS = this.texPapier.wrapT = THREE.RepeatWrapping; this.texPapier.colorSpace = THREE.NoColorSpace;
@@ -193,7 +193,7 @@ export class Encre {
       vertexShader: /* glsl */ `out vec2 vUv; void main() { vUv = uv; gl_Position = vec4(position.xy, 0.0, 1.0); }`, fragmentShader: FRAG_ENCRE,
       uniforms: { tCouleur: { value: null }, tNormale: { value: null }, tOmbre: { value: null }, tProf: { value: null }, tPapier: { value: this.texPapier },
         taille: { value: new THREE.Vector2(1, 1) }, graine: { value: 0 }, near: { value: 0.1 }, far: { value: 400 }, echelle: { value: 1 },
-        encre: { value: 1 }, traits: { value: 1 }, hachures: { value: 1 }, papierOn: { value: 1 }, tremble: { value: 1 }, nuit: { value: 0 }, brume: { value: 140 },
+        encre: { value: 1 }, traits: { value: 1 }, hachures: { value: 1 }, papierOn: { value: 1 }, tremble: { value: 1 }, nuit: { value: 0 }, brume: { value: 140 }, dessin: { value: 0.65 },
         cPapier: { value: PALETTE.papier.clone() }, cEncre: { value: PALETTE.encre.clone() } } });
     this.scene2.add(new THREE.Mesh(new THREE.PlaneGeometry(2, 2), this.post));
     // l'ombre portée : une carte de profondeur vue du soleil
@@ -225,7 +225,7 @@ export class Encre {
     // l'encre
     u.near.value = camera.near; u.far.value = camera.far; u.graine.value = g.tremble ? Math.floor(t * 10) * 13.7 % 97 : 0;
     u.encre.value = g.encre ? 1 : 0; u.traits.value = g.traits ? 1 : 0; u.hachures.value = g.hachures ? 1 : 0; u.papierOn.value = g.papier ? 1 : 0; u.tremble.value = g.tremble ? 1 : 0;
-    u.nuit.value = g.nuit; u.brume.value = g.brume;
+    u.nuit.value = g.nuit; u.brume.value = g.brume; u.dessin.value = g.dessin;
     R.setRenderTarget(null); R.render(this.scene2, this.cam2);
   }
 }

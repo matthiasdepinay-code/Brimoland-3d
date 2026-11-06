@@ -16,7 +16,7 @@ L'Atelier des Sceaux en 3D, sous Unreal Engine : un bac à sable de magie en mon
 | **Maquette de la DA** : un petit Jardin en 3D rendu à l'encre sur parchemin, dans le navigateur ([maquette/](maquette/LISEZMOI.md), [captures](docs/captures/)) | ✔ validée |
 | **Le rendu à l'encre pour Unreal** : un nœud Custom et sa recette pas à pas, vérifiés dans la maquette ([Unreal/Rendu/](Unreal/Rendu/RECETTE.md), [capture](docs/captures/e7-encre-unreal.jpg)) | ✔ |
 | **Assets du Jardin** : la liste et le cahier des charges ; la livraison V1 (138 modèles, 187 animations, textures) dans [Art/](Art/), contrôlée et vue à l'encre ([le rapport](Art/Livraisons/V1/RAPPORT.md)) | V1 livrée, à valider |
-| **Projet Unreal** : le squelette (module C++, BrimoCore branché, sous-système Grimoire), prêt à ouvrir ([Unreal/Brimoland/](Unreal/Brimoland/LISEZMOI.md)) | ✔, à compiler sur le PC |
+| **Projet Unreal** : le module C++ (BrimoCore branché, sous-système Grimoire) et les scripts de l'éditeur qui montent tout d'un coup : import des assets, Jardin d'essai, rendu à l'encre ([Unreal/Brimoland/](Unreal/Brimoland/LISEZMOI.md)) | ✔, à lancer sur le PC |
 | **Installer le PC** : Unreal 5.8, Visual Studio 2026, Git LFS, Blender, pas à pas ([docs/INSTALLER-LE-PC.md](docs/INSTALLER-LE-PC.md)) | prêt |
 
 ## BrimoCore

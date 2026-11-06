@@ -1,0 +1,23 @@
+name: Scripts Unreal
+
+# Les scripts Python de l'éditeur (Unreal/Brimoland/Content/Python) : le plan sur les vrais fichiers, et le déroulé
+# complet contre un faux module « unreal » (outils/unreal/tester_scripts.py). Unreal lui-même n'est pas lancé.
+on:
+  push:
+    branches: [main]
+    paths: ['Unreal/Brimoland/Content/Python/**', 'outils/unreal/**', 'Art/Export/**', 'Unreal/Rendu/BrimoEncre.hlsl', '.github/workflows/unreal.yml']
+  pull_request:
+    paths: ['Unreal/Brimoland/Content/Python/**', 'outils/unreal/**', 'Art/Export/**', 'Unreal/Rendu/BrimoEncre.hlsl', '.github/workflows/unreal.yml']
+  workflow_dispatch:
+
+jobs:
+  scripts:
+    name: Le plan et le déroulé des scripts
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # seulement les quelques fichiers LFS que le test lit vraiment (la carte de hauteur, les objets à pièces mobiles)
+      - name: Les fichiers LFS utiles
+        run: git lfs pull --include="Art/Export/Terrain/Jardin_253.r16,Art/Export/Objets/SM_Coffre_*.fbx,Art/Export/Objets/SM_Levier_*.fbx"
+      - name: Tester
+        run: python3 outils/unreal/tester_scripts.py

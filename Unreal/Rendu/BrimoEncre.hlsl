@@ -38,6 +38,7 @@ struct FBrimoEncre
 	float  graine;    // le tremblement du trait : change 10 fois par seconde
 	// les réglages (les entrées du nœud)
 	float  mode, pleinSoleil, ambiance, seuilLueur, traits, hachuresOn, papierOn, trembleOn, nuit, brume, cielLoin, sortieLineaire;
+	float  dessin;    // la force des effets dessinés : hachures, tremblement, papier, vignettage (1 : la maquette d'origine ; 0,65 validé)
 	float3 cPapier, cEncre, cCiel, cSoleil;
 
 	// ---------- l'adaptateur : les seules lignes qui parlent à Unreal ----------
@@ -91,11 +92,11 @@ struct FBrimoEncre
 		float s = lerp(b, 1.0, lueur);
 
 		// 2. les contours : le trait tremble, les échantillons sont décalés d'un bruit qui change 10 fois par seconde
-		float2 w = trembleOn > 0.5 ? (float2(Bruit(fc / 7.0 + graine), Bruit(fc / 7.0 + graine + 31.7)) - 0.5) * 2.4 * px * echelle : float2(0.0, 0.0);
+		float2 w = trembleOn > 0.5 ? (float2(Bruit(fc / 7.0 + graine), Bruit(fc / 7.0 + graine + 31.7)) - 0.5) * 2.4 * dessin * px * echelle : float2(0.0, 0.0);
 		float2 uvT = uv + w;
 		float3 n0 = Normale(uvT); float poids = Pochoir(uvT).x;
 		float  d0 = Prof(uvT), ciel0 = step(cielLoin, d0);
-		float  epais = lerp(0.9, 2.1, poids) * clamp(28.0 / d0, 0.55, 1.35) * echelle;
+		float  epais = lerp(0.9, 2.1, poids) * lerp(0.85, 1.0, dessin) * clamp(28.0 / d0, 0.55, 1.35) * echelle;
 		float  bord = 0.0;
 		for (int k = 0; k < 8; k++)
 		{
@@ -112,8 +113,8 @@ struct FBrimoEncre
 
 		// 3 et 4. le papier du jeu 2D, qui tient la peinture comme une aquarelle ; les hachures dans l'ombre
 		float3 papier = papierOn > 0.5 ? Papier.SampleLevel(PapierSampler, fc / 1024.0, 0).rgb : cPapier;
-		float  grain = papierOn > 0.5 ? 0.94 + 0.12 * Bruit(fc * 0.7) : 1.0;
-		float  couvre = 0.74 + 0.14 * Bruit(fc * 0.018 + 5.0);      // un lavis : la couleur couvre le papier aux trois quarts, inégalement
+		float  grain = papierOn > 0.5 ? 1.0 - 0.06 * dessin + 0.12 * dessin * Bruit(fc * 0.7) : 1.0;
+		float  couvre = lerp(0.92, 0.74 + 0.14 * Bruit(fc * 0.018 + 5.0), dessin);   // un lavis : la couleur couvre le papier aux trois quarts, inégalement (moins de papier si dessin < 1)
 		float3 c = ciel0 > 0.5 ? papier : lerp(papier, peinture * (papier / cPapier), lueur > 0.5 ? 0.95 : couvre) * grain;
 		float  h = 0.0;
 		if (ciel0 < 0.5 && hachuresOn > 0.5)
@@ -126,13 +127,13 @@ struct FBrimoEncre
 		// le monde se dissout dans la page au loin ; ce qui luit perce la brume
 		float loin = ciel0 > 0.5 ? 1.0 : smoothstep(brume * 0.45, brume, d0) * (1.0 - lueur * 0.85);
 		c = lerp(c, papier, loin * (1.0 - ciel0));
-		float encreLa = saturate(bord + h * 0.42) * (1.0 - loin * 0.85);
+		float encreLa = saturate(bord + h * 0.42 * dessin) * (1.0 - loin * 0.85);
 		c = lerp(c, cEncre, encreLa);
 
 		// 5. le vignettage ; la nuit, l'encre mange la page depuis les bords
 		float r = length((uvv - 0.5) * float2(taille.x / taille.y, 1.0));
 		float vign = smoothstep(0.45, 1.05, r);
-		c = lerp(c, c * float3(0.74, 0.64, 0.5), vign * 0.55);
+		c = lerp(c, c * float3(0.74, 0.64, 0.5), vign * 0.55 * dessin);
 		c = lerp(c, c * float3(0.32, 0.34, 0.5) + float3(0.02, 0.02, 0.05), nuit * (0.7 + 0.3 * vign));
 		c = lerp(c, cEncre, nuit * smoothstep(0.55, 1.15, r) * 0.85);
 
@@ -153,6 +154,6 @@ E.echelle = max(1.0, View.ViewSizeAndInvSize.y / 1080.0);
 E.graine = TrembleOn > 0.5 ? fmod(floor(Temps * 10.0) * 13.7, 97.0) : 0.0;
 E.mode = Mode; E.pleinSoleil = PleinSoleil; E.ambiance = Ambiance; E.seuilLueur = SeuilLueur;
 E.traits = Traits; E.hachuresOn = HachuresOn; E.papierOn = PapierOn; E.trembleOn = TrembleOn;
-E.nuit = Nuit; E.brume = Brume; E.cielLoin = CielLoin; E.sortieLineaire = SortieLineaire;
+E.nuit = Nuit; E.brume = Brume; E.cielLoin = CielLoin; E.sortieLineaire = SortieLineaire; E.dessin = Dessin;
 E.cPapier = CouleurPapier; E.cEncre = CouleurEncre; E.cCiel = CouleurCiel; E.cSoleil = CouleurSoleil;
 return E.Rendre(GetDefaultSceneTextureUV(Parameters, BRIMO_SCENE), Parameters.SvPosition.xy, UVv, View.ViewSizeAndInvSize.xy, Papier, PapierSampler);

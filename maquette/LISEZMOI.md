@@ -5,7 +5,7 @@ Un petit Jardin en 3D, rendu à l'encre sur parchemin, pour juger le style **ava
 **L'ouvrir** : `dist/maquette-da.html`, un seul fichier, à ouvrir dans un navigateur récent (Chrome, Firefox, Edge).
 
 - ZQSD ou flèches : marcher · glisser : tourner la caméra · molette : approcher · clic ou E : tracer un sceau
-- Les réglages, en bas à droite : **Encre** (rendu brut ou encre, pour comparer), **Contours**, **Hachures**, **Papier**, **Tremblement**, **12 images/s**, **Nuit**, **Visite** (la caméra tourne seule)
+- Les réglages, en bas à droite : **Encre** (rendu brut ou encre, pour comparer), **Contours**, **Hachures**, **Papier**, **Tremblement**, **Plus dessiné** (les effets à pleine force ; par défaut, le dosage validé, 0,65), **12 images/s**, **Nuit**, **Visite** (la caméra tourne seule)
 
 Captures : [`docs/captures/`](../docs/captures/).
 

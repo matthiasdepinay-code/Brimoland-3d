@@ -104,5 +104,6 @@ La magie du jeu, compilée et testée sur ton PC : c'est la preuve que le compil
 Quand tout est vert, dis-le moi : on passe au **jalon J1**.
 
 1. On ouvre le projet `Unreal\Brimoland\Brimoland.uproject`. Unreal propose de compiler les modules : **Oui**.
-2. On branche BrimoCore : le sous-système Grimoire répond depuis un Blueprint.
-3. On monte le rendu à l'encre, avec [la recette](../Unreal/Rendu/RECETTE.md).
+2. Dans la console, on tape `brimo.essai` : BrimoCore répond.
+3. Dans l'Output Log, en mode **Python** : `import brimo_tout; brimo_tout.lancer()`. Ça importe les assets, monte le Jardin d'essai et pose le rendu à l'encre ([le détail](../Unreal/Brimoland/LISEZMOI.md)).
+4. On règle l'encre avec tes yeux ([la recette](../Unreal/Rendu/RECETTE.md), §6), puis **Play**.
