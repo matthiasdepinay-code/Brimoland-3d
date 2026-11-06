@@ -123,26 +123,27 @@ function touffes(rnd) {
   return [m, fl];
 }
 
-export function creerMonde(scene) {
+// decor : false pour un Jardin sans l'Atelier, les arbres, les rochers, le feu ni l'île de la maquette (les vrais modèles prennent leur place)
+export function creerMonde(scene, { decor = true } = {}) {
   const rnd = hasard(42), anims = [];
   scene.add(terrain());
-  const at = atelier(); scene.add(at);
+  const at = atelier(); if (decor) scene.add(at);
   for (const t of touffes(rnd)) scene.add(t);
   // les arbres, en bosquets, loin de l'Atelier, de la mare et du chemin
-  let n = 0; while (n < 70) { const a = rnd() * 6.28, r = 14 + rnd() * 75, x = Math.cos(a) * r, z = Math.sin(a) * r;
-    if (Math.hypot(x - MARE.x, z - MARE.z) < MARE.r + 3 || surChemin(x, z) || Math.hypot(x - ATELIER.x, z - ATELIER.z) < 10 || (Math.abs(x) < 9 && z > -4 && z < 14)) continue; scene.add(arbre(rnd, x, z)); n++; }
-  for (let k = 0; k < 30; k++) { const a = rnd() * 6.28, r = 8 + rnd() * 60, x = Math.cos(a) * r, z = Math.sin(a) * r; const c = new THREE.Mesh(caillou(rnd, 0.5 + rnd() * 1.4), materiau(COULEURS.pierre, { trait: 0.8 })); c.position.set(x, hauteur(x, z), z); c.rotation.y = rnd() * 6; scene.add(c); }
+  if (decor) { let n = 0; while (n < 70) { const a = rnd() * 6.28, r = 14 + rnd() * 75, x = Math.cos(a) * r, z = Math.sin(a) * r;
+    if (Math.hypot(x - MARE.x, z - MARE.z) < MARE.r + 3 || surChemin(x, z) || Math.hypot(x - ATELIER.x, z - ATELIER.z) < 10 || (Math.abs(x) < 9 && z > -4 && z < 14)) continue; scene.add(arbre(rnd, x, z)); n++; } }
+  if (decor) for (let k = 0; k < 30; k++) { const a = rnd() * 6.28, r = 8 + rnd() * 60, x = Math.cos(a) * r, z = Math.sin(a) * r; const c = new THREE.Mesh(caillou(rnd, 0.5 + rnd() * 1.4), materiau(COULEURS.pierre, { trait: 0.8 })); c.position.set(x, hauteur(x, z), z); c.rotation.y = rnd() * 6; scene.add(c); }
   // la mare et ses ronds dans l'eau
   const eau = new THREE.Mesh(new THREE.CircleGeometry(MARE.r + 1.2, 40), materiau(COULEURS.eau, { trait: 0.4 })); eau.rotation.x = -Math.PI / 2; eau.position.set(MARE.x, MARE.niveau, MARE.z); scene.add(eau);
   const ronds = []; for (let k = 0; k < 3; k++) { const r = new THREE.Mesh(new THREE.TorusGeometry(1, 0.03, 4, 40), materiau('#7f9fc4', { trait: 0, emissif: 0.5 })); r.rotation.x = Math.PI / 2; r.position.set(MARE.x - 1.5 + k, MARE.niveau + 0.02, MARE.z + 0.5 - k * 0.8); scene.add(r); ronds.push(r); }
   anims.push((t) => ronds.forEach((r, k) => { const u = (t * 0.35 + k / 3) % 1; const sc = 0.4 + u * 3.2; r.scale.set(sc, sc, 1); r.material.uniforms.opacite.value = 1; r.visible = u < 0.85; }));
-  const feu = feuDeCamp(5, 1); scene.add(feu);
+  const feu = feuDeCamp(5, 1); if (decor) scene.add(feu);
   anims.push((t) => feu.userData.flammes.forEach((f, k) => { const q = Math.sin(t * 9 + k * 2) * 0.12 + Math.sin(t * 13.7 + k) * 0.08; f.scale.set(1 - q * 0.5, 1 + q, 1 - q * 0.5); f.rotation.y = t * (1 + k * 0.5); }));
-  const ile = ileVolante(-34, 24, -46); scene.add(ile); anims.push((t) => { ile.position.y = 24 + Math.sin(t * 0.5) * 0.8; ile.rotation.y = t * 0.03; });
+  const ile = ileVolante(-34, 24, -46); if (decor) scene.add(ile); anims.push((t) => { ile.position.y = 24 + Math.sin(t * 0.5) * 0.8; ile.rotation.y = t * 0.03; });
   const nuages = []; for (let k = 0; k < 7; k++) { const nu = nuage(rnd); nu.position.set(-80 + k * 26 + rnd() * 10, 30 + rnd() * 10, -60 + rnd() * 50); scene.add(nu); nuages.push(nu); }
   anims.push((t, dt) => nuages.forEach((nu) => { nu.position.x += dt * 0.6; if (nu.position.x > 100) nu.position.x = -100; }));
   // la fumée de la cheminée : des boules qui montent et s'effacent
-  const fumees = []; for (let k = 0; k < 6; k++) { const s = new THREE.Mesh(new THREE.IcosahedronGeometry(0.5, 1), materiau('#e4dccb', { trait: 0.4, emissif: 0.5 })); scene.add(s); fumees.push(s); }
+  const fumees = []; for (let k = 0; k < 6; k++) { const s = new THREE.Mesh(new THREE.IcosahedronGeometry(0.5, 1), materiau('#e4dccb', { trait: 0.4, emissif: 0.5 })); if (decor) scene.add(s); fumees.push(s); }
   anims.push((t) => fumees.forEach((s, k) => { const u = (t * 0.18 + k / 6) % 1, c = at.userData.cheminee; s.position.set(c.x + Math.sin(u * 5 + k) * 0.6 + u * 2, c.y + u * 6, c.z); s.scale.setScalar(0.5 + u * 1.8); s.visible = u < 0.92; }));
   // le soleil, un disque dessiné
   const soleil = new THREE.Mesh(new THREE.SphereGeometry(7, 24, 16), materiau(COULEURS.soleil, { emissif: 1, trait: 0.6 })); scene.add(soleil);

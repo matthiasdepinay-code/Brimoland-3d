@@ -1,0 +1,155 @@
+[
+  {
+    "asset": "Atelier",
+    "famille": "Batiments",
+    "position_m": [
+      0,
+      0,
+      0.0
+    ]
+  },
+  {
+    "asset": "Pancarte",
+    "famille": "Objets",
+    "position_m": [
+      0,
+      -9,
+      -0.023
+    ]
+  },
+  {
+    "asset": "Levier_Inactif",
+    "famille": "Objets",
+    "position_m": [
+      -2,
+      -16,
+      -0.709
+    ]
+  },
+  {
+    "asset": "Coffre_Ferme",
+    "famille": "Objets",
+    "position_m": [
+      1.5,
+      -16,
+      -0.515
+    ]
+  },
+  {
+    "asset": "Mannequin",
+    "famille": "Objets",
+    "position_m": [
+      -2,
+      -25,
+      -1.441
+    ]
+  },
+  {
+    "asset": "Caisse",
+    "famille": "Objets",
+    "position_m": [
+      0,
+      -26,
+      -1.392
+    ]
+  },
+  {
+    "asset": "Stele",
+    "famille": "Objets",
+    "position_m": [
+      1,
+      -34,
+      -1.649
+    ]
+  },
+  {
+    "asset": "Coffre_Scelle",
+    "famille": "Objets",
+    "position_m": [
+      3,
+      -33,
+      -1.608
+    ]
+  },
+  {
+    "asset": "Torche",
+    "famille": "Objets",
+    "position_m": [
+      -1.5,
+      -42,
+      -1.718
+    ]
+  },
+  {
+    "asset": "Plante_Stade_1",
+    "famille": "Objets",
+    "position_m": [
+      1.8,
+      -43,
+      -1.871
+    ]
+  },
+  {
+    "asset": "Puits",
+    "famille": "Objets",
+    "position_m": [
+      4,
+      -53,
+      -2.073
+    ]
+  },
+  {
+    "asset": "Pancarte",
+    "famille": "Objets",
+    "position_m": [
+      6,
+      -53,
+      -2.222
+    ]
+  },
+  {
+    "asset": "Plante_Stade_1",
+    "famille": "Objets",
+    "position_m": [
+      20,
+      -62,
+      -2.936
+    ]
+  },
+  {
+    "asset": "EntRonce",
+    "famille": "Betes",
+    "position_m": [
+      47,
+      -66,
+      -0.547
+    ]
+  },
+  {
+    "asset": "FeuCamp",
+    "famille": "Objets",
+    "position_m": [
+      -11,
+      -30,
+      -1.7
+    ]
+  },
+  {
+    "asset": "Eau_Mare",
+    "famille": "Terrain",
+    "position_m": [
+      18,
+      -23,
+      -0.55
+    ]
+  },
+  {
+    "asset": "Ile_Volante",
+    "famille": "Nature",
+    "position_m": [
+      0,
+      50,
+      45
+    ]
+  }
+]

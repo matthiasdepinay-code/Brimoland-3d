@@ -1,0 +1,704 @@
+[
+  {
+    "id": "feu",
+    "nom": "Feu",
+    "famille": "CORES",
+    "fichier": "T_Glyphe_feu.png"
+  },
+  {
+    "id": "vent",
+    "nom": "Vent",
+    "famille": "CORES",
+    "fichier": "T_Glyphe_vent.png"
+  },
+  {
+    "id": "eau",
+    "nom": "Eau",
+    "famille": "CORES",
+    "fichier": "T_Glyphe_eau.png"
+  },
+  {
+    "id": "terre",
+    "nom": "Terre",
+    "famille": "CORES",
+    "fichier": "T_Glyphe_terre.png"
+  },
+  {
+    "id": "lumiere",
+    "nom": "Lumière",
+    "famille": "CORES",
+    "fichier": "T_Glyphe_lumiere.png"
+  },
+  {
+    "id": "ombre",
+    "nom": "Ombre",
+    "famille": "CORES",
+    "fichier": "T_Glyphe_ombre.png"
+  },
+  {
+    "id": "vie",
+    "nom": "Vie",
+    "famille": "CORES",
+    "fichier": "T_Glyphe_vie.png"
+  },
+  {
+    "id": "force",
+    "nom": "Force",
+    "famille": "CORES",
+    "fichier": "T_Glyphe_force.png"
+  },
+  {
+    "id": "froid",
+    "nom": "Froid",
+    "famille": "CORES",
+    "fichier": "T_Glyphe_froid.png"
+  },
+  {
+    "id": "foudre",
+    "nom": "Foudre",
+    "famille": "CORES",
+    "fichier": "T_Glyphe_foudre.png"
+  },
+  {
+    "id": "acide",
+    "nom": "Acide",
+    "famille": "CORES",
+    "fichier": "T_Glyphe_acide.png"
+  },
+  {
+    "id": "gravite",
+    "nom": "Gravité",
+    "famille": "CORES",
+    "fichier": "T_Glyphe_gravite.png"
+  },
+  {
+    "id": "temps",
+    "nom": "Temps",
+    "famille": "CORES",
+    "fichier": "T_Glyphe_temps.png"
+  },
+  {
+    "id": "transmutation",
+    "nom": "Transmutation",
+    "famille": "CORES",
+    "fichier": "T_Glyphe_transmutation.png"
+  },
+  {
+    "id": "son",
+    "nom": "Son",
+    "famille": "CORES",
+    "fichier": "T_Glyphe_son.png"
+  },
+  {
+    "id": "esprit",
+    "nom": "Esprit",
+    "famille": "CORES",
+    "fichier": "T_Glyphe_esprit.png"
+  },
+  {
+    "id": "lien",
+    "nom": "Lien",
+    "famille": "CORES",
+    "fichier": "T_Glyphe_lien.png"
+  },
+  {
+    "id": "portail",
+    "nom": "Espace",
+    "famille": "CORES",
+    "fichier": "T_Glyphe_portail.png"
+  },
+  {
+    "id": "marque",
+    "nom": "Marque",
+    "famille": "CORES",
+    "fichier": "T_Glyphe_marque.png"
+  },
+  {
+    "id": "contre",
+    "nom": "Contre-sort",
+    "famille": "CORES",
+    "fichier": "T_Glyphe_contre.png"
+  },
+  {
+    "id": "metamorphose",
+    "nom": "Métamorphose",
+    "famille": "CORES",
+    "fichier": "T_Glyphe_metamorphose.png"
+  },
+  {
+    "id": "rembobinage",
+    "nom": "Rembobinage",
+    "famille": "CORES",
+    "fichier": "T_Glyphe_rembobinage.png"
+  },
+  {
+    "id": "metal",
+    "nom": "Métal",
+    "famille": "CORES",
+    "fichier": "T_Glyphe_metal.png"
+  },
+  {
+    "id": "creuser",
+    "nom": "Creuser",
+    "famille": "PSEUDO",
+    "fichier": "T_Glyphe_creuser.png"
+  },
+  {
+    "id": "fanaison",
+    "nom": "Fanaison",
+    "famille": "PSEUDO",
+    "fichier": "T_Glyphe_fanaison.png"
+  },
+  {
+    "id": "neutraliser",
+    "nom": "Neutraliser",
+    "famille": "PSEUDO",
+    "fichier": "T_Glyphe_neutraliser.png"
+  },
+  {
+    "id": "poids",
+    "nom": "Poids",
+    "famille": "PSEUDO",
+    "fichier": "T_Glyphe_poids.png"
+  },
+  {
+    "id": "secheresse",
+    "nom": "Sécheresse",
+    "famille": "PSEUDO",
+    "fichier": "T_Glyphe_secheresse.png"
+  },
+  {
+    "id": "ralentir",
+    "nom": "Ralentir",
+    "famille": "PSEUDO",
+    "fichier": "T_Glyphe_ralentir.png"
+  },
+  {
+    "id": "silence",
+    "nom": "Sommeil",
+    "famille": "PSEUDO",
+    "fichier": "T_Glyphe_silence.png"
+  },
+  {
+    "id": "rouille",
+    "nom": "Rouille",
+    "famille": "PSEUDO",
+    "fichier": "T_Glyphe_rouille.png"
+  },
+  {
+    "id": "repulsion",
+    "nom": "Répulsion",
+    "famille": "PSEUDO",
+    "fichier": "T_Glyphe_repulsion.png"
+  },
+  {
+    "id": "fumee",
+    "nom": "Fumée",
+    "famille": "PSEUDO",
+    "fichier": "T_Glyphe_fumee.png"
+  },
+  {
+    "id": "explosion",
+    "nom": "Explosion",
+    "famille": "PSEUDO",
+    "fichier": "T_Glyphe_explosion.png"
+  },
+  {
+    "id": "courant",
+    "nom": "Courant",
+    "famille": "PSEUDO",
+    "fichier": "T_Glyphe_courant.png"
+  },
+  {
+    "id": "seisme",
+    "nom": "Séisme",
+    "famille": "PSEUDO",
+    "fichier": "T_Glyphe_seisme.png"
+  },
+  {
+    "id": "figer",
+    "nom": "Figer",
+    "famille": "PSEUDO",
+    "fichier": "T_Glyphe_figer.png"
+  },
+  {
+    "id": "saut",
+    "nom": "Saut",
+    "famille": "PSEUDO",
+    "fichier": "T_Glyphe_saut.png"
+  },
+  {
+    "id": "peur",
+    "nom": "Peur",
+    "famille": "PSEUDO",
+    "fichier": "T_Glyphe_peur.png"
+  },
+  {
+    "id": "lecture",
+    "nom": "Lecture",
+    "famille": "PSEUDO",
+    "fichier": "T_Glyphe_lecture.png"
+  },
+  {
+    "id": "revelation",
+    "nom": "Révélation",
+    "famille": "PSEUDO",
+    "fichier": "T_Glyphe_revelation.png"
+  },
+  {
+    "id": "projectile",
+    "nom": "Projectile",
+    "famille": "SHAPES",
+    "fichier": "T_Glyphe_projectile.png"
+  },
+  {
+    "id": "soi",
+    "nom": "Sur soi",
+    "famille": "SHAPES",
+    "fichier": "T_Glyphe_soi.png"
+  },
+  {
+    "id": "zone",
+    "nom": "Zone",
+    "famille": "SHAPES",
+    "fichier": "T_Glyphe_zone.png"
+  },
+  {
+    "id": "trait",
+    "nom": "Trait",
+    "famille": "SHAPES",
+    "fichier": "T_Glyphe_trait.png"
+  },
+  {
+    "id": "aura",
+    "nom": "Aura",
+    "famille": "SHAPES",
+    "fichier": "T_Glyphe_aura.png"
+  },
+  {
+    "id": "mur",
+    "nom": "Mur",
+    "famille": "SHAPES",
+    "fichier": "T_Glyphe_mur.png"
+  },
+  {
+    "id": "totem",
+    "nom": "Totem",
+    "famille": "SHAPES",
+    "fichier": "T_Glyphe_totem.png"
+  },
+  {
+    "id": "chaine",
+    "nom": "Chaîne",
+    "famille": "SHAPES",
+    "fichier": "T_Glyphe_chaine.png"
+  },
+  {
+    "id": "pluie",
+    "nom": "Pluie",
+    "famille": "SHAPES",
+    "fichier": "T_Glyphe_pluie.png"
+  },
+  {
+    "id": "objet",
+    "nom": "Sur objet",
+    "famille": "SHAPES",
+    "fichier": "T_Glyphe_objet.png"
+  },
+  {
+    "id": "prise",
+    "nom": "Prise",
+    "famille": "SHAPES",
+    "fichier": "T_Glyphe_prise.png"
+  },
+  {
+    "id": "vague",
+    "nom": "Vague",
+    "famille": "SHAPES",
+    "fichier": "T_Glyphe_vague.png"
+  },
+  {
+    "id": "colonne",
+    "nom": "Colonne",
+    "famille": "SHAPES",
+    "fichier": "T_Glyphe_colonne.png"
+  },
+  {
+    "id": "bouclier",
+    "nom": "Bouclier",
+    "famille": "SHAPES",
+    "fichier": "T_Glyphe_bouclier.png"
+  },
+  {
+    "id": "invocation",
+    "nom": "Invocation",
+    "famille": "SHAPES",
+    "fichier": "T_Glyphe_invocation.png"
+  },
+  {
+    "id": "puissance",
+    "nom": "Puissance",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_puissance.png"
+  },
+  {
+    "id": "portee",
+    "nom": "Portée",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_portee.png"
+  },
+  {
+    "id": "duree",
+    "nom": "Durée",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_duree.png"
+  },
+  {
+    "id": "taille",
+    "nom": "Taille",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_taille.png"
+  },
+  {
+    "id": "reduire",
+    "nom": "Réduction",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_reduire.png"
+  },
+  {
+    "id": "rebond",
+    "nom": "Rebond",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_rebond.png"
+  },
+  {
+    "id": "persistance",
+    "nom": "Persistance",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_persistance.png"
+  },
+  {
+    "id": "vitesse",
+    "nom": "Vitesse",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_vitesse.png"
+  },
+  {
+    "id": "double",
+    "nom": "Double",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_double.png"
+  },
+  {
+    "id": "inverser",
+    "nom": "Inverser",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_inverser.png"
+  },
+  {
+    "id": "echo",
+    "nom": "Écho",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_echo.png"
+  },
+  {
+    "id": "teleguide",
+    "nom": "Téléguidé",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_teleguide.png"
+  },
+  {
+    "id": "orbite",
+    "nom": "Orbite",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_orbite.png"
+  },
+  {
+    "id": "canalise",
+    "nom": "Canalisé",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_canalise.png"
+  },
+  {
+    "id": "matiere",
+    "nom": "Matière",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_matiere.png"
+  },
+  {
+    "id": "rafale",
+    "nom": "Rafale",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_rafale.png"
+  },
+  {
+    "id": "zigzag",
+    "nom": "Zigzag",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_zigzag.png"
+  },
+  {
+    "id": "cloche",
+    "nom": "Cloche",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_cloche.png"
+  },
+  {
+    "id": "percant",
+    "nom": "Perçant",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_percant.png"
+  },
+  {
+    "id": "gerbe",
+    "nom": "Gerbe",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_gerbe.png"
+  },
+  {
+    "id": "boomerang",
+    "nom": "Boomerang",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_boomerang.png"
+  },
+  {
+    "id": "spirale",
+    "nom": "Spirale",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_spirale.png"
+  },
+  {
+    "id": "rasesol",
+    "nom": "Rase-sol",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_rasesol.png"
+  },
+  {
+    "id": "sous",
+    "nom": "Sous-sceau",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_sous.png"
+  },
+  {
+    "id": "chaleur",
+    "nom": "Chaleur",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_chaleur.png"
+  },
+  {
+    "id": "pression",
+    "nom": "Pression",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_pression.png"
+  },
+  {
+    "id": "densite",
+    "nom": "Densité",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_densite.png"
+  },
+  {
+    "id": "tourbillon",
+    "nom": "Tourbillon",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_tourbillon.png"
+  },
+  {
+    "id": "tension",
+    "nom": "Tension",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_tension.png"
+  },
+  {
+    "id": "floraison",
+    "nom": "Floraison",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_floraison.png"
+  },
+  {
+    "id": "focale",
+    "nom": "Focale",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_focale.png"
+  },
+  {
+    "id": "masse",
+    "nom": "Masse",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_masse.png"
+  },
+  {
+    "id": "gel",
+    "nom": "Gel",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_gel.png"
+  },
+  {
+    "id": "minerai",
+    "nom": "Minerai",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_minerai.png"
+  },
+  {
+    "id": "attraction",
+    "nom": "Attraction",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_attraction.png"
+  },
+  {
+    "id": "fil",
+    "nom": "Fil",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_fil.png"
+  },
+  {
+    "id": "rembobiner",
+    "nom": "Rembobiner",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_rembobiner.png"
+  },
+  {
+    "id": "sommeil",
+    "nom": "Sommeil",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_sommeil.png"
+  },
+  {
+    "id": "corrosion",
+    "nom": "Corrosion",
+    "famille": "MODS",
+    "fichier": "T_Glyphe_corrosion.png"
+  },
+  {
+    "id": "immediat",
+    "nom": "Immédiat",
+    "famille": "TRIGGERS",
+    "fichier": "T_Glyphe_immediat.png"
+  },
+  {
+    "id": "contact",
+    "nom": "Au contact",
+    "famille": "TRIGGERS",
+    "fichier": "T_Glyphe_contact.png"
+  },
+  {
+    "id": "retarde",
+    "nom": "Retardé",
+    "famille": "TRIGGERS",
+    "fichier": "T_Glyphe_retarde.png"
+  },
+  {
+    "id": "commande",
+    "nom": "Sur commande",
+    "famille": "TRIGGERS",
+    "fichier": "T_Glyphe_commande.png"
+  },
+  {
+    "id": "repetition",
+    "nom": "Répétition",
+    "famille": "TRIGGERS",
+    "fichier": "T_Glyphe_repetition.png"
+  },
+  {
+    "id": "proximite",
+    "nom": "Proximité",
+    "famille": "TRIGGERS",
+    "fichier": "T_Glyphe_proximite.png"
+  },
+  {
+    "id": "tenu",
+    "nom": "Maintenu",
+    "famille": "TRIGGERS",
+    "fichier": "T_Glyphe_tenu.png"
+  },
+  {
+    "id": "expiration",
+    "nom": "À l'expiration",
+    "famille": "TRIGGERS",
+    "fichier": "T_Glyphe_expiration.png"
+  },
+  {
+    "id": "f_eau",
+    "nom": "Eau",
+    "famille": "FILTRES",
+    "fichier": "T_Glyphe_f_eau.png"
+  },
+  {
+    "id": "f_feu",
+    "nom": "Feu",
+    "famille": "FILTRES",
+    "fichier": "T_Glyphe_f_feu.png"
+  },
+  {
+    "id": "f_pierre",
+    "nom": "Pierre",
+    "famille": "FILTRES",
+    "fichier": "T_Glyphe_f_pierre.png"
+  },
+  {
+    "id": "f_terre",
+    "nom": "Terre",
+    "famille": "FILTRES",
+    "fichier": "T_Glyphe_f_terre.png"
+  },
+  {
+    "id": "f_bois",
+    "nom": "Bois",
+    "famille": "FILTRES",
+    "fichier": "T_Glyphe_f_bois.png"
+  },
+  {
+    "id": "f_metal",
+    "nom": "Métal",
+    "famille": "FILTRES",
+    "fichier": "T_Glyphe_f_metal.png"
+  },
+  {
+    "id": "f_glace",
+    "nom": "Glace",
+    "famille": "FILTRES",
+    "fichier": "T_Glyphe_f_glace.png"
+  },
+  {
+    "id": "f_creature",
+    "nom": "Créature",
+    "famille": "FILTRES",
+    "fichier": "T_Glyphe_f_creature.png"
+  },
+  {
+    "id": "f_liquide",
+    "nom": "Liquide",
+    "famille": "FILTRES",
+    "fichier": "T_Glyphe_f_liquide.png"
+  },
+  {
+    "id": "f_objet",
+    "nom": "Objet",
+    "famille": "FILTRES",
+    "fichier": "T_Glyphe_f_objet.png"
+  },
+  {
+    "id": "c_souris",
+    "nom": "Souris",
+    "famille": "CIBLES",
+    "fichier": "T_Glyphe_c_souris.png"
+  },
+  {
+    "id": "c_creature",
+    "nom": "Créature proche",
+    "famille": "CIBLES",
+    "fichier": "T_Glyphe_c_creature.png"
+  },
+  {
+    "id": "c_marque",
+    "nom": "Marque",
+    "famille": "CIBLES",
+    "fichier": "T_Glyphe_c_marque.png"
+  },
+  {
+    "id": "c_objet",
+    "nom": "Objet proche",
+    "famille": "CIBLES",
+    "fichier": "T_Glyphe_c_objet.png"
+  }
+]

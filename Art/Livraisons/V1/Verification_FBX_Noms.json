@@ -1,0 +1,721 @@
+[
+  {
+    "asset": "Atelier",
+    "maillages_exportes": [
+      "SM_Atelier"
+    ]
+  },
+  {
+    "asset": "Atelier_Porte",
+    "maillages_exportes": [
+      "SM_Atelier_Porte"
+    ]
+  },
+  {
+    "asset": "Atelier_Vitre",
+    "maillages_exportes": [
+      "SM_Atelier_Vitre"
+    ]
+  },
+  {
+    "asset": "Atelier_Enseigne",
+    "maillages_exportes": [
+      "SM_Atelier_Enseigne"
+    ]
+  },
+  {
+    "asset": "Atelier_Interieur",
+    "maillages_exportes": [
+      "SM_Atelier_Interieur"
+    ]
+  },
+  {
+    "asset": "TableSceaux",
+    "maillages_exportes": [
+      "SM_TableSceaux"
+    ]
+  },
+  {
+    "asset": "Chaudron",
+    "maillages_exportes": [
+      "SM_Chaudron"
+    ]
+  },
+  {
+    "asset": "Miroir",
+    "maillages_exportes": [
+      "SM_Miroir"
+    ]
+  },
+  {
+    "asset": "Etagere",
+    "maillages_exportes": [
+      "SM_Etagere"
+    ]
+  },
+  {
+    "asset": "Bocal_01",
+    "maillages_exportes": [
+      "SM_Bocal_01"
+    ]
+  },
+  {
+    "asset": "Bocal_02",
+    "maillages_exportes": [
+      "SM_Bocal_02"
+    ]
+  },
+  {
+    "asset": "Bocal_03",
+    "maillages_exportes": [
+      "SM_Bocal_03"
+    ]
+  },
+  {
+    "asset": "Bocal_04",
+    "maillages_exportes": [
+      "SM_Bocal_04"
+    ]
+  },
+  {
+    "asset": "Bocal_05",
+    "maillages_exportes": [
+      "SM_Bocal_05"
+    ]
+  },
+  {
+    "asset": "Pupitre",
+    "maillages_exportes": [
+      "SM_Pupitre"
+    ]
+  },
+  {
+    "asset": "Lit",
+    "maillages_exportes": [
+      "SM_Lit"
+    ]
+  },
+  {
+    "asset": "Tapis",
+    "maillages_exportes": [
+      "SM_Tapis"
+    ]
+  },
+  {
+    "asset": "Lanterne_Suspendue",
+    "maillages_exportes": [
+      "SM_Lanterne_Suspendue"
+    ]
+  },
+  {
+    "asset": "Plante_Pot",
+    "maillages_exportes": [
+      "SM_Plante_Pot"
+    ]
+  },
+  {
+    "asset": "Etagere_Trophees",
+    "maillages_exportes": [
+      "SM_Etagere_Trophees"
+    ]
+  },
+  {
+    "asset": "Perchoir",
+    "maillages_exportes": [
+      "SM_Perchoir"
+    ]
+  },
+  {
+    "asset": "Coffre_Ferme",
+    "maillages_exportes": [
+      "SM_Coffre_Ferme",
+      "SM_Coffre_Ferme_Mobile_01"
+    ]
+  },
+  {
+    "asset": "Coffre_Ouvert",
+    "maillages_exportes": [
+      "SM_Coffre_Ouvert",
+      "SM_Coffre_Ouvert_Mobile_01"
+    ]
+  },
+  {
+    "asset": "Coffre_Scelle",
+    "maillages_exportes": [
+      "SM_Coffre_Scelle",
+      "SM_Coffre_Scelle_Mobile_01"
+    ]
+  },
+  {
+    "asset": "Levier_Inactif",
+    "maillages_exportes": [
+      "SM_Levier_Inactif",
+      "SM_Levier_Inactif_Mobile_01"
+    ]
+  },
+  {
+    "asset": "Levier_Actif",
+    "maillages_exportes": [
+      "SM_Levier_Actif",
+      "SM_Levier_Actif_Mobile_01"
+    ]
+  },
+  {
+    "asset": "Stele",
+    "maillages_exportes": [
+      "SM_Stele"
+    ]
+  },
+  {
+    "asset": "Caisse",
+    "maillages_exportes": [
+      "SM_Caisse"
+    ]
+  },
+  {
+    "asset": "Caisse_Morceau_01",
+    "maillages_exportes": [
+      "SM_Caisse_Morceau_01"
+    ]
+  },
+  {
+    "asset": "Caisse_Morceau_02",
+    "maillages_exportes": [
+      "SM_Caisse_Morceau_02"
+    ]
+  },
+  {
+    "asset": "Caisse_Morceau_03",
+    "maillages_exportes": [
+      "SM_Caisse_Morceau_03"
+    ]
+  },
+  {
+    "asset": "Caisse_Morceau_04",
+    "maillages_exportes": [
+      "SM_Caisse_Morceau_04"
+    ]
+  },
+  {
+    "asset": "Caisse_Morceau_05",
+    "maillages_exportes": [
+      "SM_Caisse_Morceau_05"
+    ]
+  },
+  {
+    "asset": "Caisse_Morceau_06",
+    "maillages_exportes": [
+      "SM_Caisse_Morceau_06"
+    ]
+  },
+  {
+    "asset": "Pancarte",
+    "maillages_exportes": [
+      "SM_Pancarte"
+    ]
+  },
+  {
+    "asset": "Torche",
+    "maillages_exportes": [
+      "SM_Torche"
+    ]
+  },
+  {
+    "asset": "Torche_Murale",
+    "maillages_exportes": [
+      "SM_Torche_Murale"
+    ]
+  },
+  {
+    "asset": "Puits",
+    "maillages_exportes": [
+      "SM_Puits"
+    ]
+  },
+  {
+    "asset": "Vigne_Puits",
+    "maillages_exportes": [
+      "SM_Vigne_Puits"
+    ]
+  },
+  {
+    "asset": "FeuCamp",
+    "maillages_exportes": [
+      "SM_FeuCamp"
+    ]
+  },
+  {
+    "asset": "Fiole_Vide",
+    "maillages_exportes": [
+      "SM_Fiole_Vide"
+    ]
+  },
+  {
+    "asset": "Fiole_Eau",
+    "maillages_exportes": [
+      "SM_Fiole_Eau"
+    ]
+  },
+  {
+    "asset": "Fiole_Soin",
+    "maillages_exportes": [
+      "SM_Fiole_Soin"
+    ]
+  },
+  {
+    "asset": "Fiole_Encre",
+    "maillages_exportes": [
+      "SM_Fiole_Encre"
+    ]
+  },
+  {
+    "asset": "Fiole_Saut",
+    "maillages_exportes": [
+      "SM_Fiole_Saut"
+    ]
+  },
+  {
+    "asset": "Fiole_Flamme",
+    "maillages_exportes": [
+      "SM_Fiole_Flamme"
+    ]
+  },
+  {
+    "asset": "Fiole_Vision",
+    "maillages_exportes": [
+      "SM_Fiole_Vision"
+    ]
+  },
+  {
+    "asset": "Plante_Stade_1",
+    "maillages_exportes": [
+      "SM_Plante_Stade_1"
+    ]
+  },
+  {
+    "asset": "Plante_Stade_2",
+    "maillages_exportes": [
+      "SM_Plante_Stade_2"
+    ]
+  },
+  {
+    "asset": "Plante_Stade_3",
+    "maillages_exportes": [
+      "SM_Plante_Stade_3"
+    ]
+  },
+  {
+    "asset": "Ruche",
+    "maillages_exportes": [
+      "SM_Ruche"
+    ]
+  },
+  {
+    "asset": "Page_Dechiree",
+    "maillages_exportes": [
+      "SM_Page_Dechiree"
+    ]
+  },
+  {
+    "asset": "Chapeau_Pointu",
+    "maillages_exportes": [
+      "SM_Chapeau_Pointu"
+    ]
+  },
+  {
+    "asset": "Chapeau_Large",
+    "maillages_exportes": [
+      "SM_Chapeau_Large"
+    ]
+  },
+  {
+    "asset": "Chapeau_Tordu",
+    "maillages_exportes": [
+      "SM_Chapeau_Tordu"
+    ]
+  },
+  {
+    "asset": "Chapeau_Beret",
+    "maillages_exportes": [
+      "SM_Chapeau_Beret"
+    ]
+  },
+  {
+    "asset": "Chapeau_Capuche",
+    "maillages_exportes": [
+      "SM_Chapeau_Capuche"
+    ]
+  },
+  {
+    "asset": "Chapeau_Couronne",
+    "maillages_exportes": [
+      "SM_Chapeau_Couronne"
+    ]
+  },
+  {
+    "asset": "Cheveux_Court",
+    "maillages_exportes": [
+      "SM_Cheveux_Court"
+    ]
+  },
+  {
+    "asset": "Cheveux_Long",
+    "maillages_exportes": [
+      "SM_Cheveux_Long"
+    ]
+  },
+  {
+    "asset": "Cheveux_Tresse",
+    "maillages_exportes": [
+      "SM_Cheveux_Tresse"
+    ]
+  },
+  {
+    "asset": "Cheveux_Boucles",
+    "maillages_exportes": [
+      "SM_Cheveux_Boucles"
+    ]
+  },
+  {
+    "asset": "Cheveux_Chignon",
+    "maillages_exportes": [
+      "SM_Cheveux_Chignon"
+    ]
+  },
+  {
+    "asset": "Cheveux_Ras",
+    "maillages_exportes": [
+      "SM_Cheveux_Ras"
+    ]
+  },
+  {
+    "asset": "Echarpe_Rouge",
+    "maillages_exportes": [
+      "SM_Echarpe_Rouge"
+    ]
+  },
+  {
+    "asset": "Echarpe_Moutarde",
+    "maillages_exportes": [
+      "SM_Echarpe_Moutarde"
+    ]
+  },
+  {
+    "asset": "Echarpe_Vert",
+    "maillages_exportes": [
+      "SM_Echarpe_Vert"
+    ]
+  },
+  {
+    "asset": "Echarpe_Bleu",
+    "maillages_exportes": [
+      "SM_Echarpe_Bleu"
+    ]
+  },
+  {
+    "asset": "Baguette",
+    "maillages_exportes": [
+      "SM_Baguette"
+    ]
+  },
+  {
+    "asset": "Baton",
+    "maillages_exportes": [
+      "SM_Baton"
+    ]
+  },
+  {
+    "asset": "Plume",
+    "maillages_exportes": [
+      "SM_Plume"
+    ]
+  },
+  {
+    "asset": "Grimoire",
+    "maillages_exportes": [
+      "SM_Grimoire"
+    ]
+  },
+  {
+    "asset": "Lanterne",
+    "maillages_exportes": [
+      "SM_Lanterne"
+    ]
+  },
+  {
+    "asset": "Pioche",
+    "maillages_exportes": [
+      "SM_Pioche"
+    ]
+  },
+  {
+    "asset": "Gateau",
+    "maillages_exportes": [
+      "SM_Gateau"
+    ]
+  },
+  {
+    "asset": "Arbre_Feuillu_01",
+    "maillages_exportes": [
+      "SM_Arbre_Feuillu_01"
+    ]
+  },
+  {
+    "asset": "Arbre_Feuillu_02",
+    "maillages_exportes": [
+      "SM_Arbre_Feuillu_02"
+    ]
+  },
+  {
+    "asset": "Arbre_Feuillu_03",
+    "maillages_exportes": [
+      "SM_Arbre_Feuillu_03"
+    ]
+  },
+  {
+    "asset": "Sapin_01",
+    "maillages_exportes": [
+      "SM_Sapin_01"
+    ]
+  },
+  {
+    "asset": "Sapin_02",
+    "maillages_exportes": [
+      "SM_Sapin_02"
+    ]
+  },
+  {
+    "asset": "Buisson_01",
+    "maillages_exportes": [
+      "SM_Buisson_01"
+    ]
+  },
+  {
+    "asset": "Buisson_02",
+    "maillages_exportes": [
+      "SM_Buisson_02"
+    ]
+  },
+  {
+    "asset": "Buisson_03",
+    "maillages_exportes": [
+      "SM_Buisson_03"
+    ]
+  },
+  {
+    "asset": "Rocher_01",
+    "maillages_exportes": [
+      "SM_Rocher_01"
+    ]
+  },
+  {
+    "asset": "Rocher_02",
+    "maillages_exportes": [
+      "SM_Rocher_02"
+    ]
+  },
+  {
+    "asset": "Rocher_03",
+    "maillages_exportes": [
+      "SM_Rocher_03"
+    ]
+  },
+  {
+    "asset": "Rocher_04",
+    "maillages_exportes": [
+      "SM_Rocher_04"
+    ]
+  },
+  {
+    "asset": "Rocher_05",
+    "maillages_exportes": [
+      "SM_Rocher_05"
+    ]
+  },
+  {
+    "asset": "Rocher_Fissure",
+    "maillages_exportes": [
+      "SM_Rocher_Fissure"
+    ]
+  },
+  {
+    "asset": "Rocher_Fissure_Eclat_01",
+    "maillages_exportes": [
+      "SM_Rocher_Fissure_Eclat_01"
+    ]
+  },
+  {
+    "asset": "Rocher_Fissure_Eclat_02",
+    "maillages_exportes": [
+      "SM_Rocher_Fissure_Eclat_02"
+    ]
+  },
+  {
+    "asset": "Rocher_Fissure_Eclat_03",
+    "maillages_exportes": [
+      "SM_Rocher_Fissure_Eclat_03"
+    ]
+  },
+  {
+    "asset": "Rocher_Fissure_Eclat_04",
+    "maillages_exportes": [
+      "SM_Rocher_Fissure_Eclat_04"
+    ]
+  },
+  {
+    "asset": "Rocher_Fissure_Eclat_05",
+    "maillages_exportes": [
+      "SM_Rocher_Fissure_Eclat_05"
+    ]
+  },
+  {
+    "asset": "Rocher_Fissure_Eclat_06",
+    "maillages_exportes": [
+      "SM_Rocher_Fissure_Eclat_06"
+    ]
+  },
+  {
+    "asset": "Herbe_01",
+    "maillages_exportes": [
+      "SM_Herbe_01"
+    ]
+  },
+  {
+    "asset": "Herbe_02",
+    "maillages_exportes": [
+      "SM_Herbe_02"
+    ]
+  },
+  {
+    "asset": "Herbe_03",
+    "maillages_exportes": [
+      "SM_Herbe_03"
+    ]
+  },
+  {
+    "asset": "Fleur_01",
+    "maillages_exportes": [
+      "SM_Fleur_01"
+    ]
+  },
+  {
+    "asset": "Fleur_02",
+    "maillages_exportes": [
+      "SM_Fleur_02"
+    ]
+  },
+  {
+    "asset": "Fleur_03",
+    "maillages_exportes": [
+      "SM_Fleur_03"
+    ]
+  },
+  {
+    "asset": "Fleur_04",
+    "maillages_exportes": [
+      "SM_Fleur_04"
+    ]
+  },
+  {
+    "asset": "Souche",
+    "maillages_exportes": [
+      "SM_Souche"
+    ]
+  },
+  {
+    "asset": "Tronc_Couche",
+    "maillages_exportes": [
+      "SM_Tronc_Couche"
+    ]
+  },
+  {
+    "asset": "Vigne_Panneau",
+    "maillages_exportes": [
+      "SM_Vigne_Panneau"
+    ]
+  },
+  {
+    "asset": "Roseaux",
+    "maillages_exportes": [
+      "SM_Roseaux"
+    ]
+  },
+  {
+    "asset": "Nenuphar",
+    "maillages_exportes": [
+      "SM_Nenuphar"
+    ]
+  },
+  {
+    "asset": "Champignon_01",
+    "maillages_exportes": [
+      "SM_Champignon_01"
+    ]
+  },
+  {
+    "asset": "Champignon_02",
+    "maillages_exportes": [
+      "SM_Champignon_02"
+    ]
+  },
+  {
+    "asset": "Nuage_01",
+    "maillages_exportes": [
+      "SM_Nuage_01"
+    ]
+  },
+  {
+    "asset": "Nuage_02",
+    "maillages_exportes": [
+      "SM_Nuage_02"
+    ]
+  },
+  {
+    "asset": "Nuage_03",
+    "maillages_exportes": [
+      "SM_Nuage_03"
+    ]
+  },
+  {
+    "asset": "Ile_Volante",
+    "maillages_exportes": [
+      "SM_Ile_Volante"
+    ]
+  },
+  {
+    "asset": "Racine_Jaillie",
+    "maillages_exportes": [
+      "SM_Racine_Jaillie"
+    ]
+  },
+  {
+    "asset": "GraineEpineuse",
+    "maillages_exportes": [
+      "SM_GraineEpineuse"
+    ]
+  },
+  {
+    "asset": "Jardin_Blockout",
+    "maillages_exportes": [
+      "SM_Jardin_Blockout"
+    ]
+  },
+  {
+    "asset": "Eau_Mare",
+    "maillages_exportes": [
+      "SM_Eau_Mare"
+    ]
+  },
+  {
+    "asset": "Grib_Chapeau",
+    "maillages_exportes": [
+      "SM_Grib_Chapeau"
+    ]
+  },
+  {
+    "asset": "Grum_Mousse",
+    "maillages_exportes": [
+      "SM_Grum_Mousse"
+    ]
+  }
+]

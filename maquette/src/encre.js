@@ -12,16 +12,25 @@ export const PALETTE = {
 
 // ---------- 1. le matériau de la scène ----------
 export const VERT = /* glsl */ `
+#include <common>
+#include <skinning_pars_vertex>
 uniform mat4 lumiereMatrice;
-out vec3 vNormalW; out vec3 vNormalV; out vec4 vPosL; out vec3 vCouleur;
+out vec3 vNormalW; out vec3 vNormalV; out vec4 vPosL; out vec3 vCouleur; out vec2 vUv;
 void main() {
 #ifdef USE_INSTANCING
   mat4 im = modelMatrix * instanceMatrix;
 #else
   mat4 im = modelMatrix;
 #endif
-  vec4 pw = im * vec4(position, 1.0);
-  vNormalW = normalize(mat3(im) * normal);
+  // les modèles à squelette (les personnages livrés) : la pose de l'os, sur la position et la normale
+  vec3 objectNormal = normal;
+#include <skinbase_vertex>
+#include <skinnormal_vertex>
+  vec3 transformed = position;
+#include <skinning_vertex>
+  vec4 pw = im * vec4(transformed, 1.0);
+  vNormalW = normalize(mat3(im) * objectNormal);
+  vUv = uv;
   vNormalV = normalize(mat3(viewMatrix) * vNormalW);
   vPosL = lumiereMatrice * pw;
   vCouleur = vec3(1.0);
@@ -38,7 +47,8 @@ export const FRAG = /* glsl */ `
 precision highp float;
 uniform vec3 albedo; uniform vec3 soleilDir; uniform vec3 soleilCouleur; uniform vec3 ciel;
 uniform sampler2D ombreTex; uniform float poidsTrait; uniform float emissif; uniform float opacite; uniform float recoitOmbre;
-in vec3 vNormalW; in vec3 vNormalV; in vec4 vPosL; in vec3 vCouleur;
+uniform sampler2D carte; uniform float aCarte;   // une texture de couleur (la palette T_Palette, un visage), lue telle quelle
+in vec3 vNormalW; in vec3 vNormalV; in vec4 vPosL; in vec3 vCouleur; in vec2 vUv;
 layout(location = 0) out vec4 oCouleur;
 layout(location = 1) out vec4 oNormale;
 layout(location = 2) out vec4 oOmbre;
@@ -53,6 +63,9 @@ void main() {
   vec3 N = normalize(vNormalW); vec3 Nv = normalize(vNormalV);
   if (!gl_FrontFacing) { N = -N; Nv = -Nv; }
   vec3 base = albedo * vCouleur;
+  vec4 tx = aCarte > 0.5 ? texture(carte, vUv) : vec4(1.0);  // un visage peint sur la tête a de la transparence
+  base *= tx.rgb;
+  float alpha = opacite * tx.a; if (alpha < 0.02) discard;
   float lum = max(dot(N, normalize(soleilDir)), 0.0) * mix(1.0, ombrePortee(), recoitOmbre);  // un visage ne reçoit pas l'ombre de son chapeau
   // trois tons : lumière, demi-teinte, ombre (avec un rien de flou pour ne pas crénerer)
   float b = 0.5 * smoothstep(0.14, 0.2, lum) + 0.5 * smoothstep(0.52, 0.58, lum);
@@ -61,7 +74,7 @@ void main() {
   vec3 c = b < 0.5 ? mix(ombreTon, demiTon, b * 2.0) : mix(demiTon, base, b * 2.0 - 1.0);
   c *= mix(vec3(1.0), soleilCouleur, 0.35);
   c = mix(c, base, emissif);
-  oCouleur = vec4(c, opacite);
+  oCouleur = vec4(c, alpha);
   oNormale = vec4(Nv * 0.5 + 0.5, poidsTrait);
   oOmbre = vec4(mix(b, 1.0, emissif), emissif, 0.0, 1.0);
 }`;
@@ -80,6 +93,7 @@ export function materiau(couleur, o = {}) {
     uniforms: Object.assign({}, commun, {
       albedo: { value: new THREE.Color(couleur) }, poidsTrait: { value: o.trait == null ? 0.6 : o.trait },
       emissif: { value: o.emissif || 0 }, opacite: { value: o.opacite == null ? 1 : o.opacite }, recoitOmbre: { value: o.ombrePortee === false ? 0 : 1 },
+      carte: { value: o.carte || null }, aCarte: { value: o.carte ? 1 : 0 },
     }),
   });
   return m;

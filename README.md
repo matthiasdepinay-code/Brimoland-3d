@@ -15,7 +15,7 @@ L'Atelier des Sceaux en 3D, sous Unreal Engine : un bac à sable de magie en mon
 | **BrimoCore** : la magie en C++ pur, identique au jeu 2D (33 221 vérifications de parité) | ✔ |
 | **Maquette de la DA** : un petit Jardin en 3D rendu à l'encre sur parchemin, dans le navigateur ([maquette/](maquette/LISEZMOI.md), [captures](docs/captures/)) | ✔ validée |
 | **Le rendu à l'encre pour Unreal** : un nœud Custom et sa recette pas à pas, vérifiés dans la maquette ([Unreal/Rendu/](Unreal/Rendu/RECETTE.md), [capture](docs/captures/e7-encre-unreal.jpg)) | ✔ |
-| **Assets du Jardin** : la liste et le cahier des charges ; les gabarits, la palette et les planches de référence ([Art/](Art/)) | en cours |
+| **Assets du Jardin** : la liste et le cahier des charges ; la livraison V1 (138 modèles, 187 animations, textures) dans [Art/](Art/), contrôlée et vue à l'encre ([le rapport](Art/Livraisons/V1/RAPPORT.md)) | V1 livrée, à valider |
 | **Projet Unreal** : le squelette (module C++, BrimoCore branché, sous-système Grimoire), prêt à ouvrir ([Unreal/Brimoland/](Unreal/Brimoland/LISEZMOI.md)) | ✔, à compiler sur le PC |
 | **Installer le PC** : Unreal 5.8, Visual Studio 2026, Git LFS, Blender, pas à pas ([docs/INSTALLER-LE-PC.md](docs/INSTALLER-LE-PC.md)) | prêt |
 
@@ -61,7 +61,8 @@ Le test dit alors ce qu'il faut reporter dans `Core/src/`.
 Core/       BrimoCore (include/, src/, donnees/, tests/)
 maquette/   la maquette de la DA (three.js), en un seul fichier : maquette/dist/maquette-da.html
 Art/        les assets : Source/ (.blend), Export/ (.fbx), Textures/ (T_Palette...), Reference/ (gabarits .glb, planches)
-outils/     export depuis le jeu 2D, palette, papier, planches ; shaders/ : le banc d'essai du nœud d'encre
+outils/     export depuis le jeu 2D, palette, papier, planches ; shaders/ : le banc d'essai du nœud d'encre ;
+            assets/ : le contrôle d'une livraison (mesurer.js) et son aperçu à l'encre (apercu.js)
 docs/       le document de projet, l'installation du PC, les captures
 Unreal/     Rendu/ : le rendu à l'encre (BrimoEncre.hlsl, RECETTE.md) ; Brimoland/ : le projet Unreal
 ```

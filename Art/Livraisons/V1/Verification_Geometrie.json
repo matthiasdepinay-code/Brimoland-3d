@@ -1,0 +1,153 @@
+[
+  {
+    "asset": "Gribouille",
+    "tiges_corrigees": [],
+    "formes_cles_remises_a_zero": true
+  },
+  {
+    "asset": "Gribouille_Arcaniste",
+    "tiges_corrigees": [],
+    "formes_cles_remises_a_zero": true
+  },
+  {
+    "asset": "Gribouille_Alchimiste",
+    "tiges_corrigees": [],
+    "formes_cles_remises_a_zero": true
+  },
+  {
+    "asset": "Gribouille_Explorateur",
+    "tiges_corrigees": [],
+    "formes_cles_remises_a_zero": true
+  },
+  {
+    "asset": "Gribouille_Ceruleen",
+    "tiges_corrigees": [],
+    "formes_cles_remises_a_zero": true
+  },
+  {
+    "asset": "Grum_Runique",
+    "tiges_corrigees": [],
+    "formes_cles_remises_a_zero": false
+  },
+  {
+    "asset": "Grum_Forgeron",
+    "tiges_corrigees": [],
+    "formes_cles_remises_a_zero": false
+  },
+  {
+    "asset": "Grum_Forestier",
+    "tiges_corrigees": [],
+    "formes_cles_remises_a_zero": false
+  },
+  {
+    "asset": "Grum_Cristallin",
+    "tiges_corrigees": [],
+    "formes_cles_remises_a_zero": false
+  },
+  {
+    "asset": "Stele",
+    "tiges_corrigees": [
+      "Pierre"
+    ],
+    "formes_cles_remises_a_zero": false
+  },
+  {
+    "asset": "Vigne_Puits",
+    "tiges_corrigees": [
+      "Vigne_Tige",
+      "Vigne_Tige.001"
+    ],
+    "formes_cles_remises_a_zero": false
+  },
+  {
+    "asset": "Chapeau_Tordu",
+    "tiges_corrigees": [
+      "SM_Chapeau_Pointu.003"
+    ],
+    "formes_cles_remises_a_zero": false
+  },
+  {
+    "asset": "Baton",
+    "tiges_corrigees": [
+      "Baton"
+    ],
+    "formes_cles_remises_a_zero": false
+  },
+  {
+    "asset": "Arbre_Feuillu_01",
+    "tiges_corrigees": [
+      "Arbre_Tronc"
+    ],
+    "formes_cles_remises_a_zero": false
+  },
+  {
+    "asset": "Arbre_Feuillu_02",
+    "tiges_corrigees": [
+      "Arbre_Tronc.001"
+    ],
+    "formes_cles_remises_a_zero": false
+  },
+  {
+    "asset": "Arbre_Feuillu_03",
+    "tiges_corrigees": [
+      "Arbre_Tronc.002"
+    ],
+    "formes_cles_remises_a_zero": false
+  },
+  {
+    "asset": "Vigne_Panneau",
+    "tiges_corrigees": [
+      "Vigne_Tige.002",
+      "Vigne_Tige.003"
+    ],
+    "formes_cles_remises_a_zero": false
+  },
+  {
+    "asset": "Ile_Volante",
+    "tiges_corrigees": [
+      "Arbre_Ile_1_Tronc",
+      "Arbre_Ile_2_Tronc"
+    ],
+    "formes_cles_remises_a_zero": false
+  },
+  {
+    "asset": "Limace",
+    "tiges_corrigees": [],
+    "formes_cles_remises_a_zero": true
+  },
+  {
+    "asset": "Grenouille",
+    "tiges_corrigees": [],
+    "formes_cles_remises_a_zero": true
+  },
+  {
+    "asset": "Corbeau",
+    "tiges_corrigees": [
+      "Patte",
+      "Patte.001"
+    ],
+    "formes_cles_remises_a_zero": false
+  },
+  {
+    "asset": "Corbeau_Maitre",
+    "tiges_corrigees": [
+      "Patte.002",
+      "Patte.003"
+    ],
+    "formes_cles_remises_a_zero": false
+  },
+  {
+    "asset": "EntRonce",
+    "tiges_corrigees": [
+      "Tronc.001",
+      "Nervure_Ecorce",
+      "Nervure_Ecorce.001",
+      "Nervure_Ecorce.004",
+      "Nervure_Ecorce.005",
+      "Nervure_Ecorce.013",
+      "Nervure_Ecorce.014",
+      "Nervure_Ecorce.017"
+    ],
+    "formes_cles_remises_a_zero": false
+  }
+]

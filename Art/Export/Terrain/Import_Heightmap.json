@@ -1,0 +1,15 @@
+{
+  "resolution": [
+    253,
+    253
+  ],
+  "etendue_m": 250,
+  "echelle_xy_cm": 99.2063492063492,
+  "echelle_z_cm": 100,
+  "zero_uint16": 32768,
+  "conversion": "hauteur_m = (valeur_uint16 - 32768) / 128",
+  "ordre": "uint16 little endian, lignes Y de -125m vers +125m, colonnes X de -125m vers +125m",
+  "hauteur_min_m": -2.9958492357754998,
+  "hauteur_max_m": 104.14063529285202,
+  "statut": "Blockout, pas une integration Unreal"
+}

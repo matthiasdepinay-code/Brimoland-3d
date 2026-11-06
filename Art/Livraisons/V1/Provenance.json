@@ -1,0 +1,19 @@
+{
+  "depot": "https://github.com/matthiasdepinay-code/Brimoland-3d.git",
+  "cahier": "Assets du Jardin — cahier des charges.pdf",
+  "date": "2026-11-06",
+  "statut": "Premiere passe 3D, validation Unreal et artistique a faire",
+  "comptes": {
+    "modeles": 138,
+    "clips": 187,
+    "glyphes": 117
+  },
+  "familles": {
+    "Personnages": 35,
+    "Batiments": 21,
+    "Objets": 34,
+    "Nature": 38,
+    "Betes": 8,
+    "Terrain": 2
+  }
+}

@@ -1,0 +1,3798 @@
+[
+  {
+    "code": "A1",
+    "nom": "Apprenti",
+    "priorite": "P1",
+    "famille": "Personnages",
+    "triangles": 5892,
+    "budget": [
+      6000,
+      9000
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.16,
+      1.16,
+      2.414
+    ],
+    "os": 33,
+    "animations": [
+      "A_Apprenti_Attente",
+      "A_Apprenti_Marche",
+      "A_Apprenti_Tracer_Lever",
+      "A_Apprenti_Tracer_Tenir",
+      "A_Apprenti_Tracer_Lancer",
+      "A_Apprenti_Course",
+      "A_Apprenti_Saut_Depart",
+      "A_Apprenti_Saut_Air",
+      "A_Apprenti_Saut_Reception",
+      "A_Apprenti_Chute",
+      "A_Apprenti_Lancer_Rapide",
+      "A_Apprenti_Canaliser",
+      "A_Apprenti_Elan",
+      "A_Apprenti_Voler",
+      "A_Apprenti_Nager",
+      "A_Apprenti_Grimper",
+      "A_Apprenti_Creuser",
+      "A_Apprenti_Boire",
+      "A_Apprenti_Interagir",
+      "A_Apprenti_Porter",
+      "A_Apprenti_Jeter",
+      "A_Apprenti_Touche",
+      "A_Apprenti_Evanoui"
+    ],
+    "collisions": 0,
+    "source": "Art/Source/Personnages/Apprenti.blend",
+    "fbx": "Art/Export/Personnages/SK_Apprenti.fbx",
+    "notes": [
+      "A1/A1a/A1b : 24 i/s, pose toutes les 2 images ; marche sur place. Variantes A1c livrees separement."
+    ]
+  },
+  {
+    "code": "A2",
+    "nom": "Gribouille",
+    "priorite": "P2",
+    "famille": "Personnages",
+    "triangles": 3592,
+    "budget": [
+      3000,
+      5000
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.24,
+      1.2526,
+      1.7077
+    ],
+    "os": 19,
+    "animations": [
+      "A_Grib_Attente",
+      "A_Grib_Marche",
+      "A_Grib_Course",
+      "A_Grib_Saut",
+      "A_Grib_Levite",
+      "A_Grib_Sort",
+      "A_Grib_Rate",
+      "A_Grib_Victoire",
+      "A_Grib_Theatral",
+      "A_Grib_Lecture",
+      "A_Grib_Dormir",
+      "A_Grib_Effraye",
+      "A_Grib_Chute",
+      "A_Grib_Transfo"
+    ],
+    "collisions": 0,
+    "source": "Art/Source/Personnages/Gribouille.blend",
+    "fbx": "Art/Export/Personnages/SK_Gribouille.fbx",
+    "notes": []
+  },
+  {
+    "code": "A2b",
+    "nom": "Gribouille_Arcaniste",
+    "priorite": "P3",
+    "famille": "Personnages",
+    "triangles": 4270,
+    "budget": [
+      3000,
+      5000
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.24,
+      1.2526,
+      1.7077
+    ],
+    "os": 19,
+    "animations": [
+      "A_Grib_Attente_Gribouille_Arcaniste",
+      "A_Grib_Marche_Gribouille_Arcaniste",
+      "A_Grib_Course_Gribouille_Arcaniste",
+      "A_Grib_Saut_Gribouille_Arcaniste",
+      "A_Grib_Levite_Gribouille_Arcaniste",
+      "A_Grib_Sort_Gribouille_Arcaniste",
+      "A_Grib_Rate_Gribouille_Arcaniste",
+      "A_Grib_Victoire_Gribouille_Arcaniste",
+      "A_Grib_Theatral_Gribouille_Arcaniste",
+      "A_Grib_Lecture_Gribouille_Arcaniste",
+      "A_Grib_Dormir_Gribouille_Arcaniste",
+      "A_Grib_Effraye_Gribouille_Arcaniste",
+      "A_Grib_Chute_Gribouille_Arcaniste",
+      "A_Grib_Transfo_Gribouille_Arcaniste"
+    ],
+    "collisions": 0,
+    "source": "Art/Source/Personnages/Gribouille_Arcaniste.blend",
+    "fbx": "Art/Export/Personnages/SK_Gribouille_Arcaniste.fbx",
+    "notes": []
+  },
+  {
+    "code": "A2b",
+    "nom": "Gribouille_Alchimiste",
+    "priorite": "P3",
+    "famille": "Personnages",
+    "triangles": 4016,
+    "budget": [
+      3000,
+      5000
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.24,
+      1.2526,
+      1.7077
+    ],
+    "os": 19,
+    "animations": [
+      "A_Grib_Attente_Gribouille_Alchimiste",
+      "A_Grib_Marche_Gribouille_Alchimiste",
+      "A_Grib_Course_Gribouille_Alchimiste",
+      "A_Grib_Saut_Gribouille_Alchimiste",
+      "A_Grib_Levite_Gribouille_Alchimiste",
+      "A_Grib_Sort_Gribouille_Alchimiste",
+      "A_Grib_Rate_Gribouille_Alchimiste",
+      "A_Grib_Victoire_Gribouille_Alchimiste",
+      "A_Grib_Theatral_Gribouille_Alchimiste",
+      "A_Grib_Lecture_Gribouille_Alchimiste",
+      "A_Grib_Dormir_Gribouille_Alchimiste",
+      "A_Grib_Effraye_Gribouille_Alchimiste",
+      "A_Grib_Chute_Gribouille_Alchimiste",
+      "A_Grib_Transfo_Gribouille_Alchimiste"
+    ],
+    "collisions": 0,
+    "source": "Art/Source/Personnages/Gribouille_Alchimiste.blend",
+    "fbx": "Art/Export/Personnages/SK_Gribouille_Alchimiste.fbx",
+    "notes": []
+  },
+  {
+    "code": "A2b",
+    "nom": "Gribouille_Explorateur",
+    "priorite": "P3",
+    "famille": "Personnages",
+    "triangles": 3794,
+    "budget": [
+      3000,
+      5000
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.2512,
+      1.2526,
+      1.7077
+    ],
+    "os": 19,
+    "animations": [
+      "A_Grib_Attente_Gribouille_Explorateur",
+      "A_Grib_Marche_Gribouille_Explorateur",
+      "A_Grib_Course_Gribouille_Explorateur",
+      "A_Grib_Saut_Gribouille_Explorateur",
+      "A_Grib_Levite_Gribouille_Explorateur",
+      "A_Grib_Sort_Gribouille_Explorateur",
+      "A_Grib_Rate_Gribouille_Explorateur",
+      "A_Grib_Victoire_Gribouille_Explorateur",
+      "A_Grib_Theatral_Gribouille_Explorateur",
+      "A_Grib_Lecture_Gribouille_Explorateur",
+      "A_Grib_Dormir_Gribouille_Explorateur",
+      "A_Grib_Effraye_Gribouille_Explorateur",
+      "A_Grib_Chute_Gribouille_Explorateur",
+      "A_Grib_Transfo_Gribouille_Explorateur"
+    ],
+    "collisions": 0,
+    "source": "Art/Source/Personnages/Gribouille_Explorateur.blend",
+    "fbx": "Art/Export/Personnages/SK_Gribouille_Explorateur.fbx",
+    "notes": []
+  },
+  {
+    "code": "A2b",
+    "nom": "Gribouille_Ceruleen",
+    "priorite": "P3",
+    "famille": "Personnages",
+    "triangles": 4270,
+    "budget": [
+      3000,
+      5000
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.24,
+      1.2526,
+      1.7077
+    ],
+    "os": 19,
+    "animations": [
+      "A_Grib_Attente_Gribouille_Ceruleen",
+      "A_Grib_Marche_Gribouille_Ceruleen",
+      "A_Grib_Course_Gribouille_Ceruleen",
+      "A_Grib_Saut_Gribouille_Ceruleen",
+      "A_Grib_Levite_Gribouille_Ceruleen",
+      "A_Grib_Sort_Gribouille_Ceruleen",
+      "A_Grib_Rate_Gribouille_Ceruleen",
+      "A_Grib_Victoire_Gribouille_Ceruleen",
+      "A_Grib_Theatral_Gribouille_Ceruleen",
+      "A_Grib_Lecture_Gribouille_Ceruleen",
+      "A_Grib_Dormir_Gribouille_Ceruleen",
+      "A_Grib_Effraye_Gribouille_Ceruleen",
+      "A_Grib_Chute_Gribouille_Ceruleen",
+      "A_Grib_Transfo_Gribouille_Ceruleen"
+    ],
+    "collisions": 0,
+    "source": "Art/Source/Personnages/Gribouille_Ceruleen.blend",
+    "fbx": "Art/Export/Personnages/SK_Gribouille_Ceruleen.fbx",
+    "notes": []
+  },
+  {
+    "code": "A4",
+    "nom": "Grum",
+    "priorite": "P2",
+    "famille": "Personnages",
+    "triangles": 3120,
+    "budget": [
+      4000,
+      6000
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.485,
+      0.8175,
+      1.48
+    ],
+    "os": 9,
+    "animations": [
+      "A_Grum_Attente",
+      "A_Grum_Marche",
+      "A_Grum_Course",
+      "A_Grum_Saut",
+      "A_Grum_Frappe",
+      "A_Grum_Aide",
+      "A_Grum_Manger",
+      "A_Grum_Repos",
+      "A_Grum_Dormir",
+      "A_Grum_Joie"
+    ],
+    "collisions": 0,
+    "source": "Art/Source/Personnages/Grum.blend",
+    "fbx": "Art/Export/Personnages/SK_Grum.fbx",
+    "notes": []
+  },
+  {
+    "code": "A4b",
+    "nom": "Grum_Runique",
+    "priorite": "P3",
+    "famille": "Personnages",
+    "triangles": 3200,
+    "budget": [
+      4000,
+      6000
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.485,
+      0.8175,
+      1.48
+    ],
+    "os": 9,
+    "animations": [
+      "A_Grum_Attente_Grum_Runique",
+      "A_Grum_Marche_Grum_Runique",
+      "A_Grum_Course_Grum_Runique",
+      "A_Grum_Saut_Grum_Runique",
+      "A_Grum_Frappe_Grum_Runique",
+      "A_Grum_Aide_Grum_Runique",
+      "A_Grum_Manger_Grum_Runique",
+      "A_Grum_Repos_Grum_Runique",
+      "A_Grum_Dormir_Grum_Runique",
+      "A_Grum_Joie_Grum_Runique"
+    ],
+    "collisions": 0,
+    "source": "Art/Source/Personnages/Grum_Runique.blend",
+    "fbx": "Art/Export/Personnages/SK_Grum_Runique.fbx",
+    "notes": []
+  },
+  {
+    "code": "A4b",
+    "nom": "Grum_Forgeron",
+    "priorite": "P3",
+    "famille": "Personnages",
+    "triangles": 3048,
+    "budget": [
+      4000,
+      6000
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.485,
+      1.1145,
+      1.5
+    ],
+    "os": 9,
+    "animations": [
+      "A_Grum_Attente_Grum_Forgeron",
+      "A_Grum_Marche_Grum_Forgeron",
+      "A_Grum_Course_Grum_Forgeron",
+      "A_Grum_Saut_Grum_Forgeron",
+      "A_Grum_Frappe_Grum_Forgeron",
+      "A_Grum_Aide_Grum_Forgeron",
+      "A_Grum_Manger_Grum_Forgeron",
+      "A_Grum_Repos_Grum_Forgeron",
+      "A_Grum_Dormir_Grum_Forgeron",
+      "A_Grum_Joie_Grum_Forgeron"
+    ],
+    "collisions": 0,
+    "source": "Art/Source/Personnages/Grum_Forgeron.blend",
+    "fbx": "Art/Export/Personnages/SK_Grum_Forgeron.fbx",
+    "notes": []
+  },
+  {
+    "code": "A4b",
+    "nom": "Grum_Forestier",
+    "priorite": "P3",
+    "famille": "Personnages",
+    "triangles": 3450,
+    "budget": [
+      4000,
+      6000
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.485,
+      0.8175,
+      1.48
+    ],
+    "os": 9,
+    "animations": [
+      "A_Grum_Attente_Grum_Forestier",
+      "A_Grum_Marche_Grum_Forestier",
+      "A_Grum_Course_Grum_Forestier",
+      "A_Grum_Saut_Grum_Forestier",
+      "A_Grum_Frappe_Grum_Forestier",
+      "A_Grum_Aide_Grum_Forestier",
+      "A_Grum_Manger_Grum_Forestier",
+      "A_Grum_Repos_Grum_Forestier",
+      "A_Grum_Dormir_Grum_Forestier",
+      "A_Grum_Joie_Grum_Forestier"
+    ],
+    "collisions": 0,
+    "source": "Art/Source/Personnages/Grum_Forestier.blend",
+    "fbx": "Art/Export/Personnages/SK_Grum_Forestier.fbx",
+    "notes": []
+  },
+  {
+    "code": "A4b",
+    "nom": "Grum_Cristallin",
+    "priorite": "P3",
+    "famille": "Personnages",
+    "triangles": 2408,
+    "budget": [
+      4000,
+      6000
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.485,
+      0.8175,
+      1.8001
+    ],
+    "os": 9,
+    "animations": [
+      "A_Grum_Attente_Grum_Cristallin",
+      "A_Grum_Marche_Grum_Cristallin",
+      "A_Grum_Course_Grum_Cristallin",
+      "A_Grum_Saut_Grum_Cristallin",
+      "A_Grum_Frappe_Grum_Cristallin",
+      "A_Grum_Aide_Grum_Cristallin",
+      "A_Grum_Manger_Grum_Cristallin",
+      "A_Grum_Repos_Grum_Cristallin",
+      "A_Grum_Dormir_Grum_Cristallin",
+      "A_Grum_Joie_Grum_Cristallin"
+    ],
+    "collisions": 0,
+    "source": "Art/Source/Personnages/Grum_Cristallin.blend",
+    "fbx": "Art/Export/Personnages/SK_Grum_Cristallin.fbx",
+    "notes": []
+  },
+  {
+    "code": "A3",
+    "nom": "GigaGribouille",
+    "priorite": "P3",
+    "famille": "Personnages",
+    "triangles": 7276,
+    "budget": [
+      6000,
+      8000
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      3.78,
+      1.32,
+      4.5077
+    ],
+    "os": 10,
+    "animations": [
+      "A_Giga_Attente",
+      "A_Giga_Marche",
+      "A_Giga_Frappe",
+      "A_Giga_Retour"
+    ],
+    "collisions": 0,
+    "source": "Art/Source/Personnages/GigaGribouille.blend",
+    "fbx": "Art/Export/Personnages/SK_GigaGribouille.fbx",
+    "notes": []
+  },
+  {
+    "code": "B1",
+    "nom": "Atelier",
+    "priorite": "P1",
+    "famille": "Batiments",
+    "triangles": 6290,
+    "budget": [
+      6000,
+      10000
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      8.15,
+      7.575,
+      9.011
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 17,
+    "source": "Art/Source/Batiments/Atelier.blend",
+    "fbx": "Art/Export/Batiments/SM_Atelier.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Atelier"
+    ]
+  },
+  {
+    "code": "B1",
+    "nom": "Atelier_Porte",
+    "priorite": "P1",
+    "famille": "Batiments",
+    "triangles": 492,
+    "budget": [
+      100,
+      1000
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.395,
+      0.164,
+      2.4
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Batiments/Atelier_Porte.blend",
+    "fbx": "Art/Export/Batiments/SM_Atelier_Porte.fbx",
+    "notes": [
+      "Pivot sur les gonds X=-0.7 ; ouverture vers interieur de 90 degres autour de Z. Placer a Y=-3.04."
+    ],
+    "maillages_fbx": [
+      "SM_Atelier_Porte"
+    ]
+  },
+  {
+    "code": "B1",
+    "nom": "Atelier_Vitre",
+    "priorite": "P1",
+    "famille": "Batiments",
+    "triangles": 12,
+    "budget": [
+      2,
+      100
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.1,
+      0.02,
+      1.0
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Batiments/Atelier_Vitre.blend",
+    "fbx": "Art/Export/Batiments/SM_Atelier_Vitre.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Atelier_Vitre"
+    ]
+  },
+  {
+    "code": "B1",
+    "nom": "Atelier_Enseigne",
+    "priorite": "P1",
+    "famille": "Batiments",
+    "triangles": 348,
+    "budget": [
+      100,
+      800
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.72,
+      0.1313,
+      0.99
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Batiments/Atelier_Enseigne.blend",
+    "fbx": "Art/Export/Batiments/SM_Atelier_Enseigne.fbx",
+    "notes": [
+      "Origine au point de suspension. Gravure geometrique provisoire, a remplacer par le decalque C6 du jeu."
+    ],
+    "maillages_fbx": [
+      "SM_Atelier_Enseigne"
+    ]
+  },
+  {
+    "code": "B2",
+    "nom": "Atelier_Interieur",
+    "priorite": "P2",
+    "famille": "Batiments",
+    "triangles": 2400,
+    "budget": [
+      3000,
+      5000
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      12.2,
+      9.2,
+      7.315
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 7,
+    "source": "Art/Source/Batiments/Atelier_Interieur.blend",
+    "fbx": "Art/Export/Batiments/SM_Atelier_Interieur.fbx",
+    "notes": [
+      "Piece independante 12 x 9 m ; blockout meuble et charpente, a valider avec la camera dans Unreal."
+    ],
+    "maillages_fbx": [
+      "SM_Atelier_Interieur"
+    ]
+  },
+  {
+    "code": "B3",
+    "nom": "TableSceaux",
+    "priorite": "P2",
+    "famille": "Batiments",
+    "triangles": 1962,
+    "budget": [
+      1500,
+      3000
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.6,
+      1.6,
+      1.1379
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Batiments/TableSceaux.blend",
+    "fbx": "Art/Export/Batiments/SM_TableSceaux.fbx",
+    "notes": [
+      "Cinq anneaux modeles ; emplacement libre pour le decalque C6 dynamique."
+    ],
+    "maillages_fbx": [
+      "SM_TableSceaux"
+    ]
+  },
+  {
+    "code": "B4",
+    "nom": "Chaudron",
+    "priorite": "P2",
+    "famille": "Batiments",
+    "triangles": 1064,
+    "budget": [
+      800,
+      1500
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.25,
+      1.0,
+      0.9961
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Batiments/Chaudron.blend",
+    "fbx": "Art/Export/Batiments/SM_Chaudron.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Chaudron"
+    ]
+  },
+  {
+    "code": "B5",
+    "nom": "Miroir",
+    "priorite": "P2",
+    "famille": "Batiments",
+    "triangles": 524,
+    "budget": [
+      500,
+      1000
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.11,
+      0.58,
+      1.893
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Batiments/Miroir.blend",
+    "fbx": "Art/Export/Batiments/SM_Miroir.fbx",
+    "notes": [
+      "Glace pastel independante : reflet temps reel a brancher dans Unreal."
+    ],
+    "maillages_fbx": [
+      "SM_Miroir"
+    ]
+  },
+  {
+    "code": "B6",
+    "nom": "Etagere",
+    "priorite": "P3",
+    "famille": "Batiments",
+    "triangles": 160,
+    "budget": [
+      200,
+      1500
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.24,
+      0.4925,
+      2.14
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Batiments/Etagere.blend",
+    "fbx": "Art/Export/Batiments/SM_Etagere.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Etagere"
+    ]
+  },
+  {
+    "code": "B6",
+    "nom": "Bocal_01",
+    "priorite": "P3",
+    "famille": "Batiments",
+    "triangles": 208,
+    "budget": [
+      100,
+      300
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.2,
+      0.2,
+      0.28
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Batiments/Bocal_01.blend",
+    "fbx": "Art/Export/Batiments/SM_Bocal_01.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Bocal_01"
+    ]
+  },
+  {
+    "code": "B6",
+    "nom": "Bocal_02",
+    "priorite": "P3",
+    "famille": "Batiments",
+    "triangles": 208,
+    "budget": [
+      100,
+      300
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.2,
+      0.2,
+      0.28
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Batiments/Bocal_02.blend",
+    "fbx": "Art/Export/Batiments/SM_Bocal_02.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Bocal_02"
+    ]
+  },
+  {
+    "code": "B6",
+    "nom": "Bocal_03",
+    "priorite": "P3",
+    "famille": "Batiments",
+    "triangles": 208,
+    "budget": [
+      100,
+      300
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.2,
+      0.2,
+      0.28
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Batiments/Bocal_03.blend",
+    "fbx": "Art/Export/Batiments/SM_Bocal_03.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Bocal_03"
+    ]
+  },
+  {
+    "code": "B6",
+    "nom": "Bocal_04",
+    "priorite": "P3",
+    "famille": "Batiments",
+    "triangles": 208,
+    "budget": [
+      100,
+      300
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.2,
+      0.2,
+      0.28
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Batiments/Bocal_04.blend",
+    "fbx": "Art/Export/Batiments/SM_Bocal_04.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Bocal_04"
+    ]
+  },
+  {
+    "code": "B6",
+    "nom": "Bocal_05",
+    "priorite": "P3",
+    "famille": "Batiments",
+    "triangles": 208,
+    "budget": [
+      100,
+      300
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.2,
+      0.2,
+      0.28
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Batiments/Bocal_05.blend",
+    "fbx": "Art/Export/Batiments/SM_Bocal_05.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Bocal_05"
+    ]
+  },
+  {
+    "code": "B6",
+    "nom": "Pupitre",
+    "priorite": "P3",
+    "famille": "Batiments",
+    "triangles": 300,
+    "budget": [
+      200,
+      1500
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.72,
+      0.5549,
+      1.0482
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Batiments/Pupitre.blend",
+    "fbx": "Art/Export/Batiments/SM_Pupitre.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Pupitre"
+    ]
+  },
+  {
+    "code": "B6",
+    "nom": "Lit",
+    "priorite": "P3",
+    "famille": "Batiments",
+    "triangles": 420,
+    "budget": [
+      200,
+      1500
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.1,
+      2.1,
+      1.15
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Batiments/Lit.blend",
+    "fbx": "Art/Export/Batiments/SM_Lit.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Lit"
+    ]
+  },
+  {
+    "code": "B6",
+    "nom": "Tapis",
+    "priorite": "P3",
+    "famille": "Batiments",
+    "triangles": 296,
+    "budget": [
+      100,
+      300
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      2.0,
+      2.0,
+      0.0312
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Batiments/Tapis.blend",
+    "fbx": "Art/Export/Batiments/SM_Tapis.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Tapis"
+    ]
+  },
+  {
+    "code": "B6",
+    "nom": "Lanterne_Suspendue",
+    "priorite": "P3",
+    "famille": "Batiments",
+    "triangles": 360,
+    "budget": [
+      100,
+      400
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.24,
+      0.24,
+      0.482
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Batiments/Lanterne_Suspendue.blend",
+    "fbx": "Art/Export/Batiments/SM_Lanterne_Suspendue.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Lanterne_Suspendue"
+    ]
+  },
+  {
+    "code": "B6",
+    "nom": "Plante_Pot",
+    "priorite": "P3",
+    "famille": "Batiments",
+    "triangles": 210,
+    "budget": [
+      200,
+      1500
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.638,
+      0.6091,
+      0.8
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Batiments/Plante_Pot.blend",
+    "fbx": "Art/Export/Batiments/SM_Plante_Pot.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Plante_Pot"
+    ]
+  },
+  {
+    "code": "B6",
+    "nom": "Etagere_Trophees",
+    "priorite": "P3",
+    "famille": "Batiments",
+    "triangles": 12,
+    "budget": [
+      12,
+      100
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.4,
+      0.3,
+      0.1
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Batiments/Etagere_Trophees.blend",
+    "fbx": "Art/Export/Batiments/SM_Etagere_Trophees.fbx",
+    "notes": [
+      "Bloc volontaire, conforme a la demande de blockout B6."
+    ],
+    "maillages_fbx": [
+      "SM_Etagere_Trophees"
+    ]
+  },
+  {
+    "code": "B6",
+    "nom": "Perchoir",
+    "priorite": "P3",
+    "famille": "Batiments",
+    "triangles": 12,
+    "budget": [
+      12,
+      100
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.7,
+      0.5,
+      1.2
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Batiments/Perchoir.blend",
+    "fbx": "Art/Export/Batiments/SM_Perchoir.fbx",
+    "notes": [
+      "Bloc volontaire, conforme a la demande de blockout B6."
+    ],
+    "maillages_fbx": [
+      "SM_Perchoir"
+    ]
+  },
+  {
+    "code": "O1",
+    "nom": "Coffre_Ferme",
+    "priorite": "P2",
+    "famille": "Objets",
+    "triangles": 688,
+    "budget": [
+      500,
+      1000
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.905,
+      0.6723,
+      0.636
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Objets/Coffre_Ferme.blend",
+    "fbx": "Art/Export/Objets/SM_Coffre_Ferme.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Coffre_Ferme",
+      "SM_Coffre_Ferme_Mobile_01"
+    ]
+  },
+  {
+    "code": "O1",
+    "nom": "Coffre_Ouvert",
+    "priorite": "P2",
+    "famille": "Objets",
+    "triangles": 688,
+    "budget": [
+      500,
+      1000
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.905,
+      0.9357,
+      1.0775
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Objets/Coffre_Ouvert.blend",
+    "fbx": "Art/Export/Objets/SM_Coffre_Ouvert.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Coffre_Ouvert",
+      "SM_Coffre_Ouvert_Mobile_01"
+    ]
+  },
+  {
+    "code": "O1",
+    "nom": "Coffre_Scelle",
+    "priorite": "P2",
+    "famille": "Objets",
+    "triangles": 904,
+    "budget": [
+      500,
+      1000
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.905,
+      0.6723,
+      0.636
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Objets/Coffre_Scelle.blend",
+    "fbx": "Art/Export/Objets/SM_Coffre_Scelle.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Coffre_Scelle",
+      "SM_Coffre_Scelle_Mobile_01"
+    ]
+  },
+  {
+    "code": "O2",
+    "nom": "Levier_Inactif",
+    "priorite": "P2",
+    "famille": "Objets",
+    "triangles": 200,
+    "budget": [
+      200,
+      400
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.48,
+      0.5009,
+      0.649
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Objets/Levier_Inactif.blend",
+    "fbx": "Art/Export/Objets/SM_Levier_Inactif.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Levier_Inactif",
+      "SM_Levier_Inactif_Mobile_01"
+    ]
+  },
+  {
+    "code": "O2",
+    "nom": "Levier_Actif",
+    "priorite": "P2",
+    "famille": "Objets",
+    "triangles": 200,
+    "budget": [
+      200,
+      400
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.48,
+      0.5009,
+      0.649
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Objets/Levier_Actif.blend",
+    "fbx": "Art/Export/Objets/SM_Levier_Actif.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Levier_Actif",
+      "SM_Levier_Actif_Mobile_01"
+    ]
+  },
+  {
+    "code": "O3",
+    "nom": "Stele",
+    "priorite": "P2",
+    "famille": "Objets",
+    "triangles": 698,
+    "budget": [
+      400,
+      800
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.12,
+      1.12,
+      2.0203
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Objets/Stele.blend",
+    "fbx": "Art/Export/Objets/SM_Stele.fbx",
+    "notes": [
+      "Symboles et sceau de travail, C5/C6 originaux a brancher."
+    ],
+    "maillages_fbx": [
+      "SM_Stele"
+    ]
+  },
+  {
+    "code": "O4",
+    "nom": "Caisse",
+    "priorite": "P2",
+    "famille": "Objets",
+    "triangles": 296,
+    "budget": [
+      100,
+      300
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.8,
+      0.88,
+      0.8
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Objets/Caisse.blend",
+    "fbx": "Art/Export/Objets/SM_Caisse.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Caisse"
+    ]
+  },
+  {
+    "code": "O4",
+    "nom": "Caisse_Morceau_01",
+    "priorite": "P2",
+    "famille": "Objets",
+    "triangles": 20,
+    "budget": [
+      12,
+      100
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.8,
+      0.24,
+      0.04
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Objets/Caisse_Morceau_01.blend",
+    "fbx": "Art/Export/Objets/SM_Caisse_Morceau_01.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Caisse_Morceau_01"
+    ]
+  },
+  {
+    "code": "O4",
+    "nom": "Caisse_Morceau_02",
+    "priorite": "P2",
+    "famille": "Objets",
+    "triangles": 20,
+    "budget": [
+      12,
+      100
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.8,
+      0.24,
+      0.04
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Objets/Caisse_Morceau_02.blend",
+    "fbx": "Art/Export/Objets/SM_Caisse_Morceau_02.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Caisse_Morceau_02"
+    ]
+  },
+  {
+    "code": "O4",
+    "nom": "Caisse_Morceau_03",
+    "priorite": "P2",
+    "famille": "Objets",
+    "triangles": 20,
+    "budget": [
+      12,
+      100
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.8,
+      0.24,
+      0.04
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Objets/Caisse_Morceau_03.blend",
+    "fbx": "Art/Export/Objets/SM_Caisse_Morceau_03.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Caisse_Morceau_03"
+    ]
+  },
+  {
+    "code": "O4",
+    "nom": "Caisse_Morceau_04",
+    "priorite": "P2",
+    "famille": "Objets",
+    "triangles": 20,
+    "budget": [
+      12,
+      100
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.8,
+      0.24,
+      0.04
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Objets/Caisse_Morceau_04.blend",
+    "fbx": "Art/Export/Objets/SM_Caisse_Morceau_04.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Caisse_Morceau_04"
+    ]
+  },
+  {
+    "code": "O4",
+    "nom": "Caisse_Morceau_05",
+    "priorite": "P2",
+    "famille": "Objets",
+    "triangles": 20,
+    "budget": [
+      12,
+      100
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.8,
+      0.24,
+      0.04
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Objets/Caisse_Morceau_05.blend",
+    "fbx": "Art/Export/Objets/SM_Caisse_Morceau_05.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Caisse_Morceau_05"
+    ]
+  },
+  {
+    "code": "O4",
+    "nom": "Caisse_Morceau_06",
+    "priorite": "P2",
+    "famille": "Objets",
+    "triangles": 20,
+    "budget": [
+      12,
+      100
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.8,
+      0.24,
+      0.04
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Objets/Caisse_Morceau_06.blend",
+    "fbx": "Art/Export/Objets/SM_Caisse_Morceau_06.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Caisse_Morceau_06"
+    ]
+  },
+  {
+    "code": "O5",
+    "nom": "Pancarte",
+    "priorite": "P2",
+    "famille": "Objets",
+    "triangles": 72,
+    "budget": [
+      100,
+      300
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.8171,
+      0.1275,
+      1.2534
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Objets/Pancarte.blend",
+    "fbx": "Art/Export/Objets/SM_Pancarte.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Pancarte"
+    ]
+  },
+  {
+    "code": "O6",
+    "nom": "Mannequin",
+    "priorite": "P2",
+    "famille": "Objets",
+    "triangles": 828,
+    "budget": [
+      600,
+      1200
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.3,
+      0.4154,
+      1.63
+    ],
+    "os": 3,
+    "animations": [
+      "A_Mannequin_Touche"
+    ],
+    "collisions": 0,
+    "source": "Art/Source/Objets/Mannequin.blend",
+    "fbx": "Art/Export/Objets/SK_Mannequin.fbx",
+    "notes": []
+  },
+  {
+    "code": "O7",
+    "nom": "Torche",
+    "priorite": "P2",
+    "famille": "Objets",
+    "triangles": 108,
+    "budget": [
+      100,
+      300
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.28,
+      0.2663,
+      1.63
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Objets/Torche.blend",
+    "fbx": "Art/Export/Objets/SM_Torche.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Torche"
+    ]
+  },
+  {
+    "code": "O7",
+    "nom": "Torche_Murale",
+    "priorite": "P2",
+    "famille": "Objets",
+    "triangles": 164,
+    "budget": [
+      100,
+      300
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.28,
+      0.2663,
+      0.68
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Objets/Torche_Murale.blend",
+    "fbx": "Art/Export/Objets/SM_Torche_Murale.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Torche_Murale"
+    ]
+  },
+  {
+    "code": "O8",
+    "nom": "Puits",
+    "priorite": "P2",
+    "famille": "Objets",
+    "triangles": 1084,
+    "budget": [
+      800,
+      1500
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      2.27,
+      1.6483,
+      2.6268
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 8,
+    "source": "Art/Source/Objets/Puits.blend",
+    "fbx": "Art/Export/Objets/SM_Puits.fbx",
+    "notes": [
+      "Puits ouvert au centre ; pas de fond bouche pour laisser passer vers la grotte."
+    ],
+    "maillages_fbx": [
+      "SM_Puits"
+    ]
+  },
+  {
+    "code": "O8",
+    "nom": "Vigne_Puits",
+    "priorite": "P2",
+    "famille": "Objets",
+    "triangles": 324,
+    "budget": [
+      200,
+      1500
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.7112,
+      0.1955,
+      6.0054
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Objets/Vigne_Puits.blend",
+    "fbx": "Art/Export/Objets/SM_Vigne_Puits.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Vigne_Puits"
+    ]
+  },
+  {
+    "code": "O9",
+    "nom": "FeuCamp",
+    "priorite": "P2",
+    "famille": "Objets",
+    "triangles": 240,
+    "budget": [
+      300,
+      600
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.7578,
+      1.6722,
+      0.3005
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Objets/FeuCamp.blend",
+    "fbx": "Art/Export/Objets/SM_FeuCamp.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_FeuCamp"
+    ]
+  },
+  {
+    "code": "O10",
+    "nom": "Fiole_Vide",
+    "priorite": "P2",
+    "famille": "Objets",
+    "triangles": 228,
+    "budget": [
+      100,
+      300
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.104,
+      0.0989,
+      0.15
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Objets/Fiole_Vide.blend",
+    "fbx": "Art/Export/Objets/SM_Fiole_Vide.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Fiole_Vide"
+    ]
+  },
+  {
+    "code": "O10",
+    "nom": "Fiole_Eau",
+    "priorite": "P2",
+    "famille": "Objets",
+    "triangles": 264,
+    "budget": [
+      100,
+      300
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.104,
+      0.0989,
+      0.15
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Objets/Fiole_Eau.blend",
+    "fbx": "Art/Export/Objets/SM_Fiole_Eau.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Fiole_Eau"
+    ]
+  },
+  {
+    "code": "O10",
+    "nom": "Fiole_Soin",
+    "priorite": "P2",
+    "famille": "Objets",
+    "triangles": 264,
+    "budget": [
+      100,
+      300
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.104,
+      0.0989,
+      0.15
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Objets/Fiole_Soin.blend",
+    "fbx": "Art/Export/Objets/SM_Fiole_Soin.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Fiole_Soin"
+    ]
+  },
+  {
+    "code": "O10",
+    "nom": "Fiole_Encre",
+    "priorite": "P2",
+    "famille": "Objets",
+    "triangles": 264,
+    "budget": [
+      100,
+      300
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.104,
+      0.0989,
+      0.15
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Objets/Fiole_Encre.blend",
+    "fbx": "Art/Export/Objets/SM_Fiole_Encre.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Fiole_Encre"
+    ]
+  },
+  {
+    "code": "O10",
+    "nom": "Fiole_Saut",
+    "priorite": "P2",
+    "famille": "Objets",
+    "triangles": 264,
+    "budget": [
+      100,
+      300
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.104,
+      0.0989,
+      0.15
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Objets/Fiole_Saut.blend",
+    "fbx": "Art/Export/Objets/SM_Fiole_Saut.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Fiole_Saut"
+    ]
+  },
+  {
+    "code": "O10",
+    "nom": "Fiole_Flamme",
+    "priorite": "P2",
+    "famille": "Objets",
+    "triangles": 264,
+    "budget": [
+      100,
+      300
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.104,
+      0.0989,
+      0.15
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Objets/Fiole_Flamme.blend",
+    "fbx": "Art/Export/Objets/SM_Fiole_Flamme.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Fiole_Flamme"
+    ]
+  },
+  {
+    "code": "O10",
+    "nom": "Fiole_Vision",
+    "priorite": "P2",
+    "famille": "Objets",
+    "triangles": 264,
+    "budget": [
+      100,
+      300
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.104,
+      0.0989,
+      0.15
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Objets/Fiole_Vision.blend",
+    "fbx": "Art/Export/Objets/SM_Fiole_Vision.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Fiole_Vision"
+    ]
+  },
+  {
+    "code": "O11",
+    "nom": "Plante_Stade_1",
+    "priorite": "P3",
+    "famille": "Objets",
+    "triangles": 188,
+    "budget": [
+      200,
+      1000
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.3935,
+      0.3232,
+      0.215
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Objets/Plante_Stade_1.blend",
+    "fbx": "Art/Export/Objets/SM_Plante_Stade_1.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Plante_Stade_1"
+    ]
+  },
+  {
+    "code": "O11",
+    "nom": "Plante_Stade_2",
+    "priorite": "P3",
+    "famille": "Objets",
+    "triangles": 82,
+    "budget": [
+      200,
+      1000
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.3935,
+      0.3232,
+      0.58
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Objets/Plante_Stade_2.blend",
+    "fbx": "Art/Export/Objets/SM_Plante_Stade_2.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Plante_Stade_2"
+    ]
+  },
+  {
+    "code": "O11",
+    "nom": "Plante_Stade_3",
+    "priorite": "P3",
+    "famille": "Objets",
+    "triangles": 130,
+    "budget": [
+      200,
+      1000
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.7652,
+      0.774,
+      4.2883
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Objets/Plante_Stade_3.blend",
+    "fbx": "Art/Export/Objets/SM_Plante_Stade_3.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Plante_Stade_3"
+    ]
+  },
+  {
+    "code": "O12",
+    "nom": "Ruche",
+    "priorite": "P3",
+    "famille": "Objets",
+    "triangles": 596,
+    "budget": [
+      300,
+      600
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.706,
+      0.706,
+      1.349
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Objets/Ruche.blend",
+    "fbx": "Art/Export/Objets/SM_Ruche.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Ruche"
+    ]
+  },
+  {
+    "code": "O13",
+    "nom": "Page_Dechiree",
+    "priorite": "P3",
+    "famille": "Objets",
+    "triangles": 8,
+    "budget": [
+      2,
+      50
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.2,
+      0.28,
+      0.03
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Objets/Page_Dechiree.blend",
+    "fbx": "Art/Export/Objets/SM_Page_Dechiree.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Page_Dechiree"
+    ]
+  },
+  {
+    "code": "A1c",
+    "nom": "Chapeau_Pointu",
+    "priorite": "P3",
+    "famille": "Personnages",
+    "triangles": 696,
+    "budget": [
+      100,
+      1500
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.16,
+      1.16,
+      0.894
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Personnages/Chapeau_Pointu.blend",
+    "fbx": "Art/Export/Personnages/SM_Chapeau_Pointu.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Chapeau_Pointu"
+    ]
+  },
+  {
+    "code": "A1c",
+    "nom": "Chapeau_Large",
+    "priorite": "P3",
+    "famille": "Personnages",
+    "triangles": 696,
+    "budget": [
+      100,
+      1500
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.45,
+      1.45,
+      0.894
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Personnages/Chapeau_Large.blend",
+    "fbx": "Art/Export/Personnages/SM_Chapeau_Large.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Chapeau_Large"
+    ]
+  },
+  {
+    "code": "A1c",
+    "nom": "Chapeau_Tordu",
+    "priorite": "P3",
+    "famille": "Personnages",
+    "triangles": 648,
+    "budget": [
+      100,
+      1500
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.16,
+      1.16,
+      0.9187
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Personnages/Chapeau_Tordu.blend",
+    "fbx": "Art/Export/Personnages/SM_Chapeau_Tordu.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Chapeau_Tordu"
+    ]
+  },
+  {
+    "code": "A1c",
+    "nom": "Chapeau_Beret",
+    "priorite": "P3",
+    "famille": "Personnages",
+    "triangles": 460,
+    "budget": [
+      100,
+      1500
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.928,
+      0.87,
+      0.336
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Personnages/Chapeau_Beret.blend",
+    "fbx": "Art/Export/Personnages/SM_Chapeau_Beret.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Chapeau_Beret"
+    ]
+  },
+  {
+    "code": "A1c",
+    "nom": "Chapeau_Capuche",
+    "priorite": "P3",
+    "famille": "Personnages",
+    "triangles": 240,
+    "budget": [
+      100,
+      1500
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.711,
+      0.4025,
+      0.7333
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Personnages/Chapeau_Capuche.blend",
+    "fbx": "Art/Export/Personnages/SM_Chapeau_Capuche.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Chapeau_Capuche"
+    ]
+  },
+  {
+    "code": "A1c",
+    "nom": "Chapeau_Couronne",
+    "priorite": "P3",
+    "famille": "Personnages",
+    "triangles": 912,
+    "budget": [
+      100,
+      1500
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.6731,
+      0.6815,
+      0.11
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Personnages/Chapeau_Couronne.blend",
+    "fbx": "Art/Export/Personnages/SM_Chapeau_Couronne.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Chapeau_Couronne"
+    ]
+  },
+  {
+    "code": "A1c",
+    "nom": "Cheveux_Court",
+    "priorite": "P3",
+    "famille": "Personnages",
+    "triangles": 600,
+    "budget": [
+      100,
+      1500
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.58,
+      0.4976,
+      0.412
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Personnages/Cheveux_Court.blend",
+    "fbx": "Art/Export/Personnages/SM_Cheveux_Court.fbx",
+    "notes": [
+      "Origine de montage au centre de la tete, pas au sol."
+    ],
+    "maillages_fbx": [
+      "SM_Cheveux_Court"
+    ]
+  },
+  {
+    "code": "A1c",
+    "nom": "Cheveux_Long",
+    "priorite": "P3",
+    "famille": "Personnages",
+    "triangles": 1248,
+    "budget": [
+      100,
+      1500
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.62,
+      0.5431,
+      0.892
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Personnages/Cheveux_Long.blend",
+    "fbx": "Art/Export/Personnages/SM_Cheveux_Long.fbx",
+    "notes": [
+      "Origine de montage au centre de la tete, pas au sol."
+    ],
+    "maillages_fbx": [
+      "SM_Cheveux_Long"
+    ]
+  },
+  {
+    "code": "A1c",
+    "nom": "Cheveux_Tresse",
+    "priorite": "P3",
+    "famille": "Personnages",
+    "triangles": 1496,
+    "budget": [
+      100,
+      1500
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.58,
+      0.5462,
+      0.802
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Personnages/Cheveux_Tresse.blend",
+    "fbx": "Art/Export/Personnages/SM_Cheveux_Tresse.fbx",
+    "notes": [
+      "Origine de montage au centre de la tete, pas au sol."
+    ],
+    "maillages_fbx": [
+      "SM_Cheveux_Tresse"
+    ]
+  },
+  {
+    "code": "A1c",
+    "nom": "Cheveux_Boucles",
+    "priorite": "P3",
+    "famille": "Personnages",
+    "triangles": 1497,
+    "budget": [
+      100,
+      1500
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.6511,
+      0.66,
+      0.3336
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Personnages/Cheveux_Boucles.blend",
+    "fbx": "Art/Export/Personnages/SM_Cheveux_Boucles.fbx",
+    "notes": [
+      "Origine de montage au centre de la tete, pas au sol."
+    ],
+    "maillages_fbx": [
+      "SM_Cheveux_Boucles"
+    ]
+  },
+  {
+    "code": "A1c",
+    "nom": "Cheveux_Chignon",
+    "priorite": "P3",
+    "famille": "Personnages",
+    "triangles": 888,
+    "budget": [
+      100,
+      1500
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.58,
+      0.6931,
+      0.412
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Personnages/Cheveux_Chignon.blend",
+    "fbx": "Art/Export/Personnages/SM_Cheveux_Chignon.fbx",
+    "notes": [
+      "Origine de montage au centre de la tete, pas au sol."
+    ],
+    "maillages_fbx": [
+      "SM_Cheveux_Chignon"
+    ]
+  },
+  {
+    "code": "A1c",
+    "nom": "Cheveux_Ras",
+    "priorite": "P3",
+    "famille": "Personnages",
+    "triangles": 264,
+    "budget": [
+      100,
+      1500
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.5514,
+      0.4976,
+      0.3348
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Personnages/Cheveux_Ras.blend",
+    "fbx": "Art/Export/Personnages/SM_Cheveux_Ras.fbx",
+    "notes": [
+      "Origine de montage au centre de la tete, pas au sol."
+    ],
+    "maillages_fbx": [
+      "SM_Cheveux_Ras"
+    ]
+  },
+  {
+    "code": "A1c",
+    "nom": "Echarpe_Rouge",
+    "priorite": "P3",
+    "famille": "Personnages",
+    "triangles": 242,
+    "budget": [
+      100,
+      1500
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.43,
+      0.535,
+      0.4723
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Personnages/Echarpe_Rouge.blend",
+    "fbx": "Art/Export/Personnages/SM_Echarpe_Rouge.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Echarpe_Rouge"
+    ]
+  },
+  {
+    "code": "A1c",
+    "nom": "Echarpe_Moutarde",
+    "priorite": "P3",
+    "famille": "Personnages",
+    "triangles": 242,
+    "budget": [
+      100,
+      1500
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.43,
+      0.535,
+      0.4723
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Personnages/Echarpe_Moutarde.blend",
+    "fbx": "Art/Export/Personnages/SM_Echarpe_Moutarde.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Echarpe_Moutarde"
+    ]
+  },
+  {
+    "code": "A1c",
+    "nom": "Echarpe_Vert",
+    "priorite": "P3",
+    "famille": "Personnages",
+    "triangles": 242,
+    "budget": [
+      100,
+      1500
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.43,
+      0.535,
+      0.4723
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Personnages/Echarpe_Vert.blend",
+    "fbx": "Art/Export/Personnages/SM_Echarpe_Vert.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Echarpe_Vert"
+    ]
+  },
+  {
+    "code": "A1c",
+    "nom": "Echarpe_Bleu",
+    "priorite": "P3",
+    "famille": "Personnages",
+    "triangles": 242,
+    "budget": [
+      100,
+      1500
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.43,
+      0.535,
+      0.4723
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Personnages/Echarpe_Bleu.blend",
+    "fbx": "Art/Export/Personnages/SM_Echarpe_Bleu.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Echarpe_Bleu"
+    ]
+  },
+  {
+    "code": "A1c",
+    "nom": "Baguette",
+    "priorite": "P3",
+    "famille": "Personnages",
+    "triangles": 48,
+    "budget": [
+      20,
+      300
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.0537,
+      0.051,
+      0.49
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Personnages/Baguette.blend",
+    "fbx": "Art/Export/Personnages/SM_Baguette.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Baguette"
+    ]
+  },
+  {
+    "code": "A1c",
+    "nom": "Baton",
+    "priorite": "P3",
+    "famille": "Personnages",
+    "triangles": 70,
+    "budget": [
+      100,
+      500
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.1597,
+      0.1191,
+      1.6514
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Personnages/Baton.blend",
+    "fbx": "Art/Export/Personnages/SM_Baton.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Baton"
+    ]
+  },
+  {
+    "code": "A1c",
+    "nom": "Plume",
+    "priorite": "P3",
+    "famille": "Personnages",
+    "triangles": 22,
+    "budget": [
+      50,
+      300
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.336,
+      0.1085,
+      0.43
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Personnages/Plume.blend",
+    "fbx": "Art/Export/Personnages/SM_Plume.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Plume"
+    ]
+  },
+  {
+    "code": "A1c",
+    "nom": "Grimoire",
+    "priorite": "P3",
+    "famille": "Personnages",
+    "triangles": 120,
+    "budget": [
+      100,
+      600
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.4544,
+      0.5638,
+      0.1408
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Personnages/Grimoire.blend",
+    "fbx": "Art/Export/Personnages/SM_Grimoire.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Grimoire"
+    ]
+  },
+  {
+    "code": "A1c",
+    "nom": "Lanterne",
+    "priorite": "P3",
+    "famille": "Personnages",
+    "triangles": 360,
+    "budget": [
+      100,
+      400
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.24,
+      0.24,
+      0.482
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Personnages/Lanterne.blend",
+    "fbx": "Art/Export/Personnages/SM_Lanterne.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Lanterne"
+    ]
+  },
+  {
+    "code": "A4",
+    "nom": "Pioche",
+    "priorite": "P2",
+    "famille": "Objets",
+    "triangles": 84,
+    "budget": [
+      100,
+      400
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.8266,
+      0.11,
+      0.9276
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Objets/Pioche.blend",
+    "fbx": "Art/Export/Objets/SM_Pioche.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Pioche"
+    ]
+  },
+  {
+    "code": "O14",
+    "nom": "Gateau",
+    "priorite": "P3",
+    "famille": "Objets",
+    "triangles": 200,
+    "budget": [
+      200,
+      400
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.26,
+      0.26,
+      0.167
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Objets/Gateau.blend",
+    "fbx": "Art/Export/Objets/SM_Gateau.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Gateau"
+    ]
+  },
+  {
+    "code": "N1",
+    "nom": "Arbre_Feuillu_01",
+    "priorite": "P1",
+    "famille": "Nature",
+    "triangles": 1928,
+    "budget": [
+      1500,
+      4000
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      4.6131,
+      4.1691,
+      5.7084
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Nature/Arbre_Feuillu_01.blend",
+    "fbx": "Art/Export/Nature/SM_Arbre_Feuillu_01.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Arbre_Feuillu_01"
+    ]
+  },
+  {
+    "code": "N1",
+    "nom": "Arbre_Feuillu_02",
+    "priorite": "P1",
+    "famille": "Nature",
+    "triangles": 1928,
+    "budget": [
+      1500,
+      4000
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      5.7148,
+      5.2242,
+      7.033
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Nature/Arbre_Feuillu_02.blend",
+    "fbx": "Art/Export/Nature/SM_Arbre_Feuillu_02.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Arbre_Feuillu_02"
+    ]
+  },
+  {
+    "code": "N1",
+    "nom": "Arbre_Feuillu_03",
+    "priorite": "P1",
+    "famille": "Nature",
+    "triangles": 2248,
+    "budget": [
+      1500,
+      4000
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      6.9969,
+      6.118,
+      8.1866
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Nature/Arbre_Feuillu_03.blend",
+    "fbx": "Art/Export/Nature/SM_Arbre_Feuillu_03.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Arbre_Feuillu_03"
+    ]
+  },
+  {
+    "code": "N2",
+    "nom": "Sapin_01",
+    "priorite": "P2",
+    "famille": "Nature",
+    "triangles": 204,
+    "budget": [
+      800,
+      2000
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      3.5012,
+      3.503,
+      6.8994
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Nature/Sapin_01.blend",
+    "fbx": "Art/Export/Nature/SM_Sapin_01.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Sapin_01"
+    ]
+  },
+  {
+    "code": "N2",
+    "nom": "Sapin_02",
+    "priorite": "P2",
+    "famille": "Nature",
+    "triangles": 204,
+    "budget": [
+      800,
+      2000
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      4.472,
+      4.4734,
+      8.8053
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Nature/Sapin_02.blend",
+    "fbx": "Art/Export/Nature/SM_Sapin_02.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Sapin_02"
+    ]
+  },
+  {
+    "code": "N3",
+    "nom": "Buisson_01",
+    "priorite": "P2",
+    "famille": "Nature",
+    "triangles": 160,
+    "budget": [
+      300,
+      800
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.2903,
+      0.8751,
+      0.7
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Nature/Buisson_01.blend",
+    "fbx": "Art/Export/Nature/SM_Buisson_01.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Buisson_01"
+    ]
+  },
+  {
+    "code": "N3",
+    "nom": "Buisson_02",
+    "priorite": "P2",
+    "famille": "Nature",
+    "triangles": 240,
+    "budget": [
+      300,
+      800
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.4615,
+      1.2343,
+      0.94
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Nature/Buisson_02.blend",
+    "fbx": "Art/Export/Nature/SM_Buisson_02.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Buisson_02"
+    ]
+  },
+  {
+    "code": "N3",
+    "nom": "Buisson_03",
+    "priorite": "P2",
+    "famille": "Nature",
+    "triangles": 500,
+    "budget": [
+      300,
+      800
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.6327,
+      1.418,
+      1.18
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Nature/Buisson_03.blend",
+    "fbx": "Art/Export/Nature/SM_Buisson_03.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Buisson_03"
+    ]
+  },
+  {
+    "code": "N4",
+    "nom": "Rocher_01",
+    "priorite": "P1",
+    "famille": "Nature",
+    "triangles": 80,
+    "budget": [
+      100,
+      600
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.5153,
+      0.4996,
+      0.48
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Nature/Rocher_01.blend",
+    "fbx": "Art/Export/Nature/SM_Rocher_01.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Rocher_01"
+    ]
+  },
+  {
+    "code": "N4",
+    "nom": "Rocher_02",
+    "priorite": "P1",
+    "famille": "Nature",
+    "triangles": 80,
+    "budget": [
+      100,
+      600
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.9319,
+      0.8466,
+      0.816
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Nature/Rocher_02.blend",
+    "fbx": "Art/Export/Nature/SM_Rocher_02.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Rocher_02"
+    ]
+  },
+  {
+    "code": "N4",
+    "nom": "Rocher_03",
+    "priorite": "P1",
+    "famille": "Nature",
+    "triangles": 320,
+    "budget": [
+      100,
+      600
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.4797,
+      1.387,
+      1.248
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Nature/Rocher_03.blend",
+    "fbx": "Art/Export/Nature/SM_Rocher_03.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Rocher_03"
+    ]
+  },
+  {
+    "code": "N4",
+    "nom": "Rocher_04",
+    "priorite": "P1",
+    "famille": "Nature",
+    "triangles": 320,
+    "budget": [
+      100,
+      600
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      2.2648,
+      2.0512,
+      1.92
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Nature/Rocher_04.blend",
+    "fbx": "Art/Export/Nature/SM_Rocher_04.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Rocher_04"
+    ]
+  },
+  {
+    "code": "N4",
+    "nom": "Rocher_05",
+    "priorite": "P1",
+    "famille": "Nature",
+    "triangles": 320,
+    "budget": [
+      100,
+      600
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      3.6136,
+      3.1695,
+      2.88
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Nature/Rocher_05.blend",
+    "fbx": "Art/Export/Nature/SM_Rocher_05.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Rocher_05"
+    ]
+  },
+  {
+    "code": "N4",
+    "nom": "Rocher_Fissure",
+    "priorite": "P1",
+    "famille": "Nature",
+    "triangles": 356,
+    "budget": [
+      100,
+      600
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      2.3845,
+      2.1349,
+      1.92
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Nature/Rocher_Fissure.blend",
+    "fbx": "Art/Export/Nature/SM_Rocher_Fissure.fbx",
+    "notes": [
+      "Etat entier ; six eclats complementaires exportes sous N4. Le moteur devra effectuer le remplacement."
+    ],
+    "maillages_fbx": [
+      "SM_Rocher_Fissure"
+    ]
+  },
+  {
+    "code": "N4",
+    "nom": "Rocher_Fissure_Eclat_01",
+    "priorite": "P1",
+    "famille": "Nature",
+    "triangles": 112,
+    "budget": [
+      20,
+      600
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.2042,
+      0.8937,
+      1.92
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Nature/Rocher_Fissure_Eclat_01.blend",
+    "fbx": "Art/Export/Nature/SM_Rocher_Fissure_Eclat_01.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Rocher_Fissure_Eclat_01"
+    ]
+  },
+  {
+    "code": "N4",
+    "nom": "Rocher_Fissure_Eclat_02",
+    "priorite": "P1",
+    "famille": "Nature",
+    "triangles": 132,
+    "budget": [
+      20,
+      600
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.0286,
+      1.0429,
+      1.92
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Nature/Rocher_Fissure_Eclat_02.blend",
+    "fbx": "Art/Export/Nature/SM_Rocher_Fissure_Eclat_02.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Rocher_Fissure_Eclat_02"
+    ]
+  },
+  {
+    "code": "N4",
+    "nom": "Rocher_Fissure_Eclat_03",
+    "priorite": "P1",
+    "famille": "Nature",
+    "triangles": 114,
+    "budget": [
+      20,
+      600
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.1803,
+      0.8879,
+      1.92
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Nature/Rocher_Fissure_Eclat_03.blend",
+    "fbx": "Art/Export/Nature/SM_Rocher_Fissure_Eclat_03.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Rocher_Fissure_Eclat_03"
+    ]
+  },
+  {
+    "code": "N4",
+    "nom": "Rocher_Fissure_Eclat_04",
+    "priorite": "P1",
+    "famille": "Nature",
+    "triangles": 108,
+    "budget": [
+      20,
+      600
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.1558,
+      0.9403,
+      1.92
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Nature/Rocher_Fissure_Eclat_04.blend",
+    "fbx": "Art/Export/Nature/SM_Rocher_Fissure_Eclat_04.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Rocher_Fissure_Eclat_04"
+    ]
+  },
+  {
+    "code": "N4",
+    "nom": "Rocher_Fissure_Eclat_05",
+    "priorite": "P1",
+    "famille": "Nature",
+    "triangles": 138,
+    "budget": [
+      20,
+      600
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.0369,
+      1.092,
+      1.92
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Nature/Rocher_Fissure_Eclat_05.blend",
+    "fbx": "Art/Export/Nature/SM_Rocher_Fissure_Eclat_05.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Rocher_Fissure_Eclat_05"
+    ]
+  },
+  {
+    "code": "N4",
+    "nom": "Rocher_Fissure_Eclat_06",
+    "priorite": "P1",
+    "famille": "Nature",
+    "triangles": 112,
+    "budget": [
+      20,
+      600
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.2042,
+      0.8557,
+      1.92
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Nature/Rocher_Fissure_Eclat_06.blend",
+    "fbx": "Art/Export/Nature/SM_Rocher_Fissure_Eclat_06.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Rocher_Fissure_Eclat_06"
+    ]
+  },
+  {
+    "code": "N6",
+    "nom": "Herbe_01",
+    "priorite": "P1",
+    "famille": "Nature",
+    "triangles": 20,
+    "budget": [
+      20,
+      80
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.4962,
+      0.4475,
+      0.3395
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Nature/Herbe_01.blend",
+    "fbx": "Art/Export/Nature/SM_Herbe_01.fbx",
+    "notes": [
+      "Sans collision ni contour, pour le foliage."
+    ],
+    "maillages_fbx": [
+      "SM_Herbe_01"
+    ]
+  },
+  {
+    "code": "N6",
+    "nom": "Herbe_02",
+    "priorite": "P1",
+    "famille": "Nature",
+    "triangles": 28,
+    "budget": [
+      20,
+      80
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.4962,
+      0.4905,
+      0.4581
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Nature/Herbe_02.blend",
+    "fbx": "Art/Export/Nature/SM_Herbe_02.fbx",
+    "notes": [
+      "Sans collision ni contour, pour le foliage."
+    ],
+    "maillages_fbx": [
+      "SM_Herbe_02"
+    ]
+  },
+  {
+    "code": "N6",
+    "nom": "Herbe_03",
+    "priorite": "P1",
+    "famille": "Nature",
+    "triangles": 36,
+    "budget": [
+      20,
+      80
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.4962,
+      0.4905,
+      0.5787
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Nature/Herbe_03.blend",
+    "fbx": "Art/Export/Nature/SM_Herbe_03.fbx",
+    "notes": [
+      "Sans collision ni contour, pour le foliage."
+    ],
+    "maillages_fbx": [
+      "SM_Herbe_03"
+    ]
+  },
+  {
+    "code": "N7",
+    "nom": "Fleur_01",
+    "priorite": "P2",
+    "famille": "Nature",
+    "triangles": 38,
+    "budget": [
+      20,
+      60
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.1302,
+      0.137,
+      0.2906
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Nature/Fleur_01.blend",
+    "fbx": "Art/Export/Nature/SM_Fleur_01.fbx",
+    "notes": [
+      "Sans contour ni collision."
+    ],
+    "maillages_fbx": [
+      "SM_Fleur_01"
+    ]
+  },
+  {
+    "code": "N7",
+    "nom": "Fleur_02",
+    "priorite": "P2",
+    "famille": "Nature",
+    "triangles": 38,
+    "budget": [
+      20,
+      60
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.1302,
+      0.137,
+      0.2906
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Nature/Fleur_02.blend",
+    "fbx": "Art/Export/Nature/SM_Fleur_02.fbx",
+    "notes": [
+      "Sans contour ni collision."
+    ],
+    "maillages_fbx": [
+      "SM_Fleur_02"
+    ]
+  },
+  {
+    "code": "N7",
+    "nom": "Fleur_03",
+    "priorite": "P2",
+    "famille": "Nature",
+    "triangles": 38,
+    "budget": [
+      20,
+      60
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.1302,
+      0.137,
+      0.2906
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Nature/Fleur_03.blend",
+    "fbx": "Art/Export/Nature/SM_Fleur_03.fbx",
+    "notes": [
+      "Sans contour ni collision."
+    ],
+    "maillages_fbx": [
+      "SM_Fleur_03"
+    ]
+  },
+  {
+    "code": "N7",
+    "nom": "Fleur_04",
+    "priorite": "P2",
+    "famille": "Nature",
+    "triangles": 38,
+    "budget": [
+      20,
+      60
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.1302,
+      0.137,
+      0.2906
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Nature/Fleur_04.blend",
+    "fbx": "Art/Export/Nature/SM_Fleur_04.fbx",
+    "notes": [
+      "Sans contour ni collision."
+    ],
+    "maillages_fbx": [
+      "SM_Fleur_04"
+    ]
+  },
+  {
+    "code": "N5",
+    "nom": "Souche",
+    "priorite": "P3",
+    "famille": "Nature",
+    "triangles": 404,
+    "budget": [
+      200,
+      600
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.9595,
+      1.0056,
+      0.6309
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Nature/Souche.blend",
+    "fbx": "Art/Export/Nature/SM_Souche.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Souche"
+    ]
+  },
+  {
+    "code": "N5",
+    "nom": "Tronc_Couche",
+    "priorite": "P3",
+    "famille": "Nature",
+    "triangles": 472,
+    "budget": [
+      200,
+      600
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      4.0308,
+      1.0339,
+      0.7
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Nature/Tronc_Couche.blend",
+    "fbx": "Art/Export/Nature/SM_Tronc_Couche.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Tronc_Couche"
+    ]
+  },
+  {
+    "code": "N8",
+    "nom": "Vigne_Panneau",
+    "priorite": "P2",
+    "famille": "Nature",
+    "triangles": 324,
+    "budget": [
+      200,
+      600
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.7112,
+      0.1955,
+      2.1019
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Nature/Vigne_Panneau.blend",
+    "fbx": "Art/Export/Nature/SM_Vigne_Panneau.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Vigne_Panneau"
+    ]
+  },
+  {
+    "code": "N9",
+    "nom": "Roseaux",
+    "priorite": "P3",
+    "famille": "Nature",
+    "triangles": 160,
+    "budget": [
+      50,
+      200
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.3599,
+      0.3199,
+      1.2005
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Nature/Roseaux.blend",
+    "fbx": "Art/Export/Nature/SM_Roseaux.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Roseaux"
+    ]
+  },
+  {
+    "code": "N9",
+    "nom": "Nenuphar",
+    "priorite": "P3",
+    "famille": "Nature",
+    "triangles": 56,
+    "budget": [
+      50,
+      200
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.3968,
+      0.3989,
+      0.1889
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Nature/Nenuphar.blend",
+    "fbx": "Art/Export/Nature/SM_Nenuphar.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Nenuphar"
+    ]
+  },
+  {
+    "code": "N10",
+    "nom": "Champignon_01",
+    "priorite": "P3",
+    "famille": "Nature",
+    "triangles": 114,
+    "budget": [
+      50,
+      150
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.36,
+      0.3424,
+      0.343
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Nature/Champignon_01.blend",
+    "fbx": "Art/Export/Nature/SM_Champignon_01.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Champignon_01"
+    ]
+  },
+  {
+    "code": "N10",
+    "nom": "Champignon_02",
+    "priorite": "P3",
+    "famille": "Nature",
+    "triangles": 104,
+    "budget": [
+      50,
+      150
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.36,
+      0.3424,
+      0.343
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Nature/Champignon_02.blend",
+    "fbx": "Art/Export/Nature/SM_Champignon_02.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Champignon_02"
+    ]
+  },
+  {
+    "code": "N11",
+    "nom": "Nuage_01",
+    "priorite": "P3",
+    "famille": "Nature",
+    "triangles": 320,
+    "budget": [
+      200,
+      500
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      15.577,
+      7.1993,
+      5.8995
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Nature/Nuage_01.blend",
+    "fbx": "Art/Export/Nature/SM_Nuage_01.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Nuage_01"
+    ]
+  },
+  {
+    "code": "N11",
+    "nom": "Nuage_02",
+    "priorite": "P3",
+    "famille": "Nature",
+    "triangles": 400,
+    "budget": [
+      200,
+      500
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      18.677,
+      7.3605,
+      5.9715
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Nature/Nuage_02.blend",
+    "fbx": "Art/Export/Nature/SM_Nuage_02.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Nuage_02"
+    ]
+  },
+  {
+    "code": "N11",
+    "nom": "Nuage_03",
+    "priorite": "P3",
+    "famille": "Nature",
+    "triangles": 480,
+    "budget": [
+      200,
+      500
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      21.777,
+      7.2954,
+      5.9715
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Nature/Nuage_03.blend",
+    "fbx": "Art/Export/Nature/SM_Nuage_03.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Nuage_03"
+    ]
+  },
+  {
+    "code": "N12",
+    "nom": "Ile_Volante",
+    "priorite": "P3",
+    "famille": "Nature",
+    "triangles": 1868,
+    "budget": [
+      1500,
+      3000
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      20.0,
+      20.0,
+      16.2402
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Nature/Ile_Volante.blend",
+    "fbx": "Art/Export/Nature/SM_Ile_Volante.fbx",
+    "notes": [
+      "Asset lointain, origine au centre du plateau ; aucune collision."
+    ],
+    "maillages_fbx": [
+      "SM_Ile_Volante"
+    ]
+  },
+  {
+    "code": "A5",
+    "nom": "Limace",
+    "priorite": "P2",
+    "famille": "Betes",
+    "triangles": 1248,
+    "budget": [
+      800,
+      1500
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.36,
+      0.601,
+      0.367
+    ],
+    "os": 6,
+    "animations": [
+      "A_Limace_Attente",
+      "A_Limace_Ramper",
+      "A_Limace_Bond",
+      "A_Limace_Gonfler",
+      "A_Limace_Touche",
+      "A_Limace_Fuite",
+      "A_Limace_Fondre"
+    ],
+    "collisions": 0,
+    "source": "Art/Source/Betes/Limace.blend",
+    "fbx": "Art/Export/Betes/SK_Limace.fbx",
+    "notes": []
+  },
+  {
+    "code": "A6",
+    "nom": "Grenouille",
+    "priorite": "P3",
+    "famille": "Betes",
+    "triangles": 996,
+    "budget": [
+      500,
+      1000
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.4403,
+      0.38,
+      0.2921
+    ],
+    "os": 9,
+    "animations": [
+      "A_Grenouille_Attente",
+      "A_Grenouille_Saut",
+      "A_Grenouille_Nage",
+      "A_Grenouille_Chant",
+      "A_Grenouille_Figee"
+    ],
+    "collisions": 0,
+    "source": "Art/Source/Betes/Grenouille.blend",
+    "fbx": "Art/Export/Betes/SK_Grenouille.fbx",
+    "notes": [
+      "Forme cle de gorge et materiau Givree disponibles ; changement de materiau a declencher dans Unreal."
+    ]
+  },
+  {
+    "code": "A7",
+    "nom": "Corbeau",
+    "priorite": "P3",
+    "famille": "Betes",
+    "triangles": 1328,
+    "budget": [
+      800,
+      1500
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.4874,
+      0.536,
+      0.4185
+    ],
+    "os": 10,
+    "animations": [
+      "A_Corbeau_Attente",
+      "A_Corbeau_Sautiller",
+      "A_Corbeau_Envol",
+      "A_Corbeau_Vol",
+      "A_Corbeau_Plane",
+      "A_Corbeau_Pose",
+      "A_Corbeau_Croasse"
+    ],
+    "collisions": 0,
+    "source": "Art/Source/Betes/Corbeau.blend",
+    "fbx": "Art/Export/Betes/SK_Corbeau.fbx",
+    "notes": []
+  },
+  {
+    "code": "A7",
+    "nom": "Corbeau_Maitre",
+    "priorite": "P3",
+    "famille": "Betes",
+    "triangles": 1444,
+    "budget": [
+      800,
+      1500
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.4874,
+      0.536,
+      0.4185
+    ],
+    "os": 10,
+    "animations": [
+      "A_Corbeau_Attente_Corbeau_Maitre",
+      "A_Corbeau_Sautiller_Corbeau_Maitre",
+      "A_Corbeau_Envol_Corbeau_Maitre",
+      "A_Corbeau_Vol_Corbeau_Maitre",
+      "A_Corbeau_Plane_Corbeau_Maitre",
+      "A_Corbeau_Pose_Corbeau_Maitre",
+      "A_Corbeau_Croasse_Corbeau_Maitre"
+    ],
+    "collisions": 0,
+    "source": "Art/Source/Betes/Corbeau_Maitre.blend",
+    "fbx": "Art/Export/Betes/SK_Corbeau_Maitre.fbx",
+    "notes": []
+  },
+  {
+    "code": "A8",
+    "nom": "Poisson",
+    "priorite": "P3",
+    "famille": "Betes",
+    "triangles": 331,
+    "budget": [
+      200,
+      500
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.1186,
+      0.1675,
+      0.12
+    ],
+    "os": 5,
+    "animations": [
+      "A_Poisson_Nage",
+      "A_Poisson_Fuite",
+      "A_Poisson_Etourdi",
+      "A_Poisson_Debat"
+    ],
+    "collisions": 0,
+    "source": "Art/Source/Betes/Poisson.blend",
+    "fbx": "Art/Export/Betes/SK_Poisson.fbx",
+    "notes": []
+  },
+  {
+    "code": "A9",
+    "nom": "EntRonce",
+    "priorite": "P3",
+    "famille": "Betes",
+    "triangles": 3564,
+    "budget": [
+      8000,
+      12000
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      2.9608,
+      1.9586,
+      4.9508
+    ],
+    "os": 30,
+    "animations": [
+      "A_EntRonce_Attente",
+      "A_EntRonce_Marche",
+      "A_EntRonce_Balai",
+      "A_EntRonce_Racines",
+      "A_EntRonce_Graines",
+      "A_EntRonce_Touche",
+      "A_EntRonce_Brule",
+      "A_EntRonce_Soigne",
+      "A_EntRonce_Retour"
+    ],
+    "collisions": 0,
+    "source": "Art/Source/Betes/EntRonce.blend",
+    "fbx": "Art/Export/Betes/SK_EntRonce.fbx",
+    "notes": []
+  },
+  {
+    "code": "A9",
+    "nom": "Racine_Jaillie",
+    "priorite": "P3",
+    "famille": "Betes",
+    "triangles": 76,
+    "budget": [
+      100,
+      600
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.6208,
+      0.4185,
+      1.5005
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Betes/Racine_Jaillie.blend",
+    "fbx": "Art/Export/Betes/SM_Racine_Jaillie.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_Racine_Jaillie"
+    ]
+  },
+  {
+    "code": "A9",
+    "nom": "GraineEpineuse",
+    "priorite": "P3",
+    "famille": "Betes",
+    "triangles": 116,
+    "budget": [
+      100,
+      400
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.4569,
+      0.4519,
+      0.28
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 1,
+    "source": "Art/Source/Betes/GraineEpineuse.blend",
+    "fbx": "Art/Export/Betes/SM_GraineEpineuse.fbx",
+    "notes": [],
+    "maillages_fbx": [
+      "SM_GraineEpineuse"
+    ]
+  },
+  {
+    "code": "T1",
+    "nom": "Jardin_Blockout",
+    "priorite": "P2",
+    "famille": "Terrain",
+    "triangles": 32894,
+    "budget": null,
+    "sous_plafond": null,
+    "dimensions_m": [
+      250.0,
+      250.0,
+      107.1359
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Terrain/Jardin_Blockout.blend",
+    "fbx": "Art/Export/Terrain/SM_Jardin_Blockout.fbx",
+    "notes": [
+      "Blockout 250 x 250 m ; relief et mare. Heightmap 253 x 253 et reperes de progression fournis. A convertir/importer dans le systeme de terrain choisi pour Unreal. Aucun systeme voxel ou gameplay inclus."
+    ],
+    "maillages_fbx": [
+      "SM_Jardin_Blockout"
+    ]
+  },
+  {
+    "code": "T3",
+    "nom": "Eau_Mare",
+    "priorite": "P2",
+    "famille": "Terrain",
+    "triangles": 252,
+    "budget": null,
+    "sous_plafond": null,
+    "dimensions_m": [
+      13.0,
+      13.0,
+      0.012
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Terrain/Eau_Mare.blend",
+    "fbx": "Art/Export/Terrain/SM_Eau_Mare.fbx",
+    "notes": [
+      "Surface et materiau de previsualisation ; rives par profondeur, ronds dessines, flottabilite et nage a integrer dans Unreal."
+    ],
+    "maillages_fbx": [
+      "SM_Eau_Mare"
+    ]
+  },
+  {
+    "code": "A2",
+    "nom": "Grib_Chapeau",
+    "priorite": "P2",
+    "famille": "Personnages",
+    "triangles": 696,
+    "budget": [
+      200,
+      1500
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      1.22,
+      1.22,
+      1.7452
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Personnages/Grib_Chapeau.blend",
+    "fbx": "Art/Export/Personnages/SM_Grib_Chapeau.fbx",
+    "notes": [
+      "Piece detachee a monter sur le squelette du personnage ; pivot de montage au niveau de la base."
+    ],
+    "maillages_fbx": [
+      "SM_Grib_Chapeau"
+    ]
+  },
+  {
+    "code": "A4",
+    "nom": "Grum_Mousse",
+    "priorite": "P2",
+    "famille": "Personnages",
+    "triangles": 792,
+    "budget": [
+      200,
+      1500
+    ],
+    "sous_plafond": true,
+    "dimensions_m": [
+      0.6322,
+      0.26,
+      1.5703
+    ],
+    "os": 0,
+    "animations": [],
+    "collisions": 0,
+    "source": "Art/Source/Personnages/Grum_Mousse.blend",
+    "fbx": "Art/Export/Personnages/SM_Grum_Mousse.fbx",
+    "notes": [
+      "Piece detachee a monter sur le squelette du personnage ; pivot de montage au niveau de la base."
+    ],
+    "maillages_fbx": [
+      "SM_Grum_Mousse"
+    ]
+  }
+]

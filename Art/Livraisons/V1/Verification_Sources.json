@@ -1,0 +1,830 @@
+[
+  {
+    "asset": "Apprenti",
+    "erreurs": [],
+    "triangles": 5892,
+    "budget_ok": true
+  },
+  {
+    "asset": "Gribouille",
+    "erreurs": [],
+    "triangles": 3592,
+    "budget_ok": true
+  },
+  {
+    "asset": "Gribouille_Arcaniste",
+    "erreurs": [],
+    "triangles": 4270,
+    "budget_ok": true
+  },
+  {
+    "asset": "Gribouille_Alchimiste",
+    "erreurs": [],
+    "triangles": 4016,
+    "budget_ok": true
+  },
+  {
+    "asset": "Gribouille_Explorateur",
+    "erreurs": [],
+    "triangles": 3794,
+    "budget_ok": true
+  },
+  {
+    "asset": "Gribouille_Ceruleen",
+    "erreurs": [],
+    "triangles": 4270,
+    "budget_ok": true
+  },
+  {
+    "asset": "Grum",
+    "erreurs": [],
+    "triangles": 3120,
+    "budget_ok": true
+  },
+  {
+    "asset": "Grum_Runique",
+    "erreurs": [],
+    "triangles": 3200,
+    "budget_ok": true
+  },
+  {
+    "asset": "Grum_Forgeron",
+    "erreurs": [],
+    "triangles": 3048,
+    "budget_ok": true
+  },
+  {
+    "asset": "Grum_Forestier",
+    "erreurs": [],
+    "triangles": 3450,
+    "budget_ok": true
+  },
+  {
+    "asset": "Grum_Cristallin",
+    "erreurs": [],
+    "triangles": 2408,
+    "budget_ok": true
+  },
+  {
+    "asset": "GigaGribouille",
+    "erreurs": [],
+    "triangles": 7276,
+    "budget_ok": true
+  },
+  {
+    "asset": "Atelier",
+    "erreurs": [],
+    "triangles": 6290,
+    "budget_ok": true
+  },
+  {
+    "asset": "Atelier_Porte",
+    "erreurs": [],
+    "triangles": 492,
+    "budget_ok": true
+  },
+  {
+    "asset": "Atelier_Vitre",
+    "erreurs": [],
+    "triangles": 12,
+    "budget_ok": true
+  },
+  {
+    "asset": "Atelier_Enseigne",
+    "erreurs": [],
+    "triangles": 348,
+    "budget_ok": true
+  },
+  {
+    "asset": "Atelier_Interieur",
+    "erreurs": [],
+    "triangles": 2400,
+    "budget_ok": true
+  },
+  {
+    "asset": "TableSceaux",
+    "erreurs": [],
+    "triangles": 1962,
+    "budget_ok": true
+  },
+  {
+    "asset": "Chaudron",
+    "erreurs": [],
+    "triangles": 1064,
+    "budget_ok": true
+  },
+  {
+    "asset": "Miroir",
+    "erreurs": [],
+    "triangles": 524,
+    "budget_ok": true
+  },
+  {
+    "asset": "Etagere",
+    "erreurs": [],
+    "triangles": 160,
+    "budget_ok": true
+  },
+  {
+    "asset": "Bocal_01",
+    "erreurs": [],
+    "triangles": 208,
+    "budget_ok": true
+  },
+  {
+    "asset": "Bocal_02",
+    "erreurs": [],
+    "triangles": 208,
+    "budget_ok": true
+  },
+  {
+    "asset": "Bocal_03",
+    "erreurs": [],
+    "triangles": 208,
+    "budget_ok": true
+  },
+  {
+    "asset": "Bocal_04",
+    "erreurs": [],
+    "triangles": 208,
+    "budget_ok": true
+  },
+  {
+    "asset": "Bocal_05",
+    "erreurs": [],
+    "triangles": 208,
+    "budget_ok": true
+  },
+  {
+    "asset": "Pupitre",
+    "erreurs": [],
+    "triangles": 300,
+    "budget_ok": true
+  },
+  {
+    "asset": "Lit",
+    "erreurs": [],
+    "triangles": 420,
+    "budget_ok": true
+  },
+  {
+    "asset": "Tapis",
+    "erreurs": [],
+    "triangles": 296,
+    "budget_ok": true
+  },
+  {
+    "asset": "Lanterne_Suspendue",
+    "erreurs": [],
+    "triangles": 360,
+    "budget_ok": true
+  },
+  {
+    "asset": "Plante_Pot",
+    "erreurs": [],
+    "triangles": 210,
+    "budget_ok": true
+  },
+  {
+    "asset": "Etagere_Trophees",
+    "erreurs": [],
+    "triangles": 12,
+    "budget_ok": true
+  },
+  {
+    "asset": "Perchoir",
+    "erreurs": [],
+    "triangles": 12,
+    "budget_ok": true
+  },
+  {
+    "asset": "Coffre_Ferme",
+    "erreurs": [],
+    "triangles": 688,
+    "budget_ok": true
+  },
+  {
+    "asset": "Coffre_Ouvert",
+    "erreurs": [],
+    "triangles": 688,
+    "budget_ok": true
+  },
+  {
+    "asset": "Coffre_Scelle",
+    "erreurs": [],
+    "triangles": 904,
+    "budget_ok": true
+  },
+  {
+    "asset": "Levier_Inactif",
+    "erreurs": [],
+    "triangles": 200,
+    "budget_ok": true
+  },
+  {
+    "asset": "Levier_Actif",
+    "erreurs": [],
+    "triangles": 200,
+    "budget_ok": true
+  },
+  {
+    "asset": "Stele",
+    "erreurs": [],
+    "triangles": 698,
+    "budget_ok": true
+  },
+  {
+    "asset": "Caisse",
+    "erreurs": [],
+    "triangles": 296,
+    "budget_ok": true
+  },
+  {
+    "asset": "Caisse_Morceau_01",
+    "erreurs": [],
+    "triangles": 20,
+    "budget_ok": true
+  },
+  {
+    "asset": "Caisse_Morceau_02",
+    "erreurs": [],
+    "triangles": 20,
+    "budget_ok": true
+  },
+  {
+    "asset": "Caisse_Morceau_03",
+    "erreurs": [],
+    "triangles": 20,
+    "budget_ok": true
+  },
+  {
+    "asset": "Caisse_Morceau_04",
+    "erreurs": [],
+    "triangles": 20,
+    "budget_ok": true
+  },
+  {
+    "asset": "Caisse_Morceau_05",
+    "erreurs": [],
+    "triangles": 20,
+    "budget_ok": true
+  },
+  {
+    "asset": "Caisse_Morceau_06",
+    "erreurs": [],
+    "triangles": 20,
+    "budget_ok": true
+  },
+  {
+    "asset": "Pancarte",
+    "erreurs": [],
+    "triangles": 72,
+    "budget_ok": true
+  },
+  {
+    "asset": "Mannequin",
+    "erreurs": [],
+    "triangles": 828,
+    "budget_ok": true
+  },
+  {
+    "asset": "Torche",
+    "erreurs": [],
+    "triangles": 108,
+    "budget_ok": true
+  },
+  {
+    "asset": "Torche_Murale",
+    "erreurs": [],
+    "triangles": 164,
+    "budget_ok": true
+  },
+  {
+    "asset": "Puits",
+    "erreurs": [],
+    "triangles": 1084,
+    "budget_ok": true
+  },
+  {
+    "asset": "Vigne_Puits",
+    "erreurs": [],
+    "triangles": 324,
+    "budget_ok": true
+  },
+  {
+    "asset": "FeuCamp",
+    "erreurs": [],
+    "triangles": 240,
+    "budget_ok": true
+  },
+  {
+    "asset": "Fiole_Vide",
+    "erreurs": [],
+    "triangles": 228,
+    "budget_ok": true
+  },
+  {
+    "asset": "Fiole_Eau",
+    "erreurs": [],
+    "triangles": 264,
+    "budget_ok": true
+  },
+  {
+    "asset": "Fiole_Soin",
+    "erreurs": [],
+    "triangles": 264,
+    "budget_ok": true
+  },
+  {
+    "asset": "Fiole_Encre",
+    "erreurs": [],
+    "triangles": 264,
+    "budget_ok": true
+  },
+  {
+    "asset": "Fiole_Saut",
+    "erreurs": [],
+    "triangles": 264,
+    "budget_ok": true
+  },
+  {
+    "asset": "Fiole_Flamme",
+    "erreurs": [],
+    "triangles": 264,
+    "budget_ok": true
+  },
+  {
+    "asset": "Fiole_Vision",
+    "erreurs": [],
+    "triangles": 264,
+    "budget_ok": true
+  },
+  {
+    "asset": "Plante_Stade_1",
+    "erreurs": [],
+    "triangles": 188,
+    "budget_ok": true
+  },
+  {
+    "asset": "Plante_Stade_2",
+    "erreurs": [],
+    "triangles": 82,
+    "budget_ok": true
+  },
+  {
+    "asset": "Plante_Stade_3",
+    "erreurs": [],
+    "triangles": 130,
+    "budget_ok": true
+  },
+  {
+    "asset": "Ruche",
+    "erreurs": [],
+    "triangles": 596,
+    "budget_ok": true
+  },
+  {
+    "asset": "Page_Dechiree",
+    "erreurs": [],
+    "triangles": 8,
+    "budget_ok": true
+  },
+  {
+    "asset": "Chapeau_Pointu",
+    "erreurs": [],
+    "triangles": 696,
+    "budget_ok": true
+  },
+  {
+    "asset": "Chapeau_Large",
+    "erreurs": [],
+    "triangles": 696,
+    "budget_ok": true
+  },
+  {
+    "asset": "Chapeau_Tordu",
+    "erreurs": [],
+    "triangles": 648,
+    "budget_ok": true
+  },
+  {
+    "asset": "Chapeau_Beret",
+    "erreurs": [],
+    "triangles": 460,
+    "budget_ok": true
+  },
+  {
+    "asset": "Chapeau_Capuche",
+    "erreurs": [],
+    "triangles": 240,
+    "budget_ok": true
+  },
+  {
+    "asset": "Chapeau_Couronne",
+    "erreurs": [],
+    "triangles": 912,
+    "budget_ok": true
+  },
+  {
+    "asset": "Cheveux_Court",
+    "erreurs": [],
+    "triangles": 600,
+    "budget_ok": true
+  },
+  {
+    "asset": "Cheveux_Long",
+    "erreurs": [],
+    "triangles": 1248,
+    "budget_ok": true
+  },
+  {
+    "asset": "Cheveux_Tresse",
+    "erreurs": [],
+    "triangles": 1496,
+    "budget_ok": true
+  },
+  {
+    "asset": "Cheveux_Boucles",
+    "erreurs": [],
+    "triangles": 1497,
+    "budget_ok": true
+  },
+  {
+    "asset": "Cheveux_Chignon",
+    "erreurs": [],
+    "triangles": 888,
+    "budget_ok": true
+  },
+  {
+    "asset": "Cheveux_Ras",
+    "erreurs": [],
+    "triangles": 264,
+    "budget_ok": true
+  },
+  {
+    "asset": "Echarpe_Rouge",
+    "erreurs": [],
+    "triangles": 242,
+    "budget_ok": true
+  },
+  {
+    "asset": "Echarpe_Moutarde",
+    "erreurs": [],
+    "triangles": 242,
+    "budget_ok": true
+  },
+  {
+    "asset": "Echarpe_Vert",
+    "erreurs": [],
+    "triangles": 242,
+    "budget_ok": true
+  },
+  {
+    "asset": "Echarpe_Bleu",
+    "erreurs": [],
+    "triangles": 242,
+    "budget_ok": true
+  },
+  {
+    "asset": "Baguette",
+    "erreurs": [],
+    "triangles": 48,
+    "budget_ok": true
+  },
+  {
+    "asset": "Baton",
+    "erreurs": [],
+    "triangles": 70,
+    "budget_ok": true
+  },
+  {
+    "asset": "Plume",
+    "erreurs": [],
+    "triangles": 22,
+    "budget_ok": true
+  },
+  {
+    "asset": "Grimoire",
+    "erreurs": [],
+    "triangles": 120,
+    "budget_ok": true
+  },
+  {
+    "asset": "Lanterne",
+    "erreurs": [],
+    "triangles": 360,
+    "budget_ok": true
+  },
+  {
+    "asset": "Pioche",
+    "erreurs": [],
+    "triangles": 84,
+    "budget_ok": true
+  },
+  {
+    "asset": "Gateau",
+    "erreurs": [],
+    "triangles": 200,
+    "budget_ok": true
+  },
+  {
+    "asset": "Arbre_Feuillu_01",
+    "erreurs": [],
+    "triangles": 1928,
+    "budget_ok": true
+  },
+  {
+    "asset": "Arbre_Feuillu_02",
+    "erreurs": [],
+    "triangles": 1928,
+    "budget_ok": true
+  },
+  {
+    "asset": "Arbre_Feuillu_03",
+    "erreurs": [],
+    "triangles": 2248,
+    "budget_ok": true
+  },
+  {
+    "asset": "Sapin_01",
+    "erreurs": [],
+    "triangles": 204,
+    "budget_ok": true
+  },
+  {
+    "asset": "Sapin_02",
+    "erreurs": [],
+    "triangles": 204,
+    "budget_ok": true
+  },
+  {
+    "asset": "Buisson_01",
+    "erreurs": [],
+    "triangles": 160,
+    "budget_ok": true
+  },
+  {
+    "asset": "Buisson_02",
+    "erreurs": [],
+    "triangles": 240,
+    "budget_ok": true
+  },
+  {
+    "asset": "Buisson_03",
+    "erreurs": [],
+    "triangles": 500,
+    "budget_ok": true
+  },
+  {
+    "asset": "Rocher_01",
+    "erreurs": [],
+    "triangles": 80,
+    "budget_ok": true
+  },
+  {
+    "asset": "Rocher_02",
+    "erreurs": [],
+    "triangles": 80,
+    "budget_ok": true
+  },
+  {
+    "asset": "Rocher_03",
+    "erreurs": [],
+    "triangles": 320,
+    "budget_ok": true
+  },
+  {
+    "asset": "Rocher_04",
+    "erreurs": [],
+    "triangles": 320,
+    "budget_ok": true
+  },
+  {
+    "asset": "Rocher_05",
+    "erreurs": [],
+    "triangles": 320,
+    "budget_ok": true
+  },
+  {
+    "asset": "Rocher_Fissure",
+    "erreurs": [],
+    "triangles": 356,
+    "budget_ok": true
+  },
+  {
+    "asset": "Rocher_Fissure_Eclat_01",
+    "erreurs": [],
+    "triangles": 112,
+    "budget_ok": true
+  },
+  {
+    "asset": "Rocher_Fissure_Eclat_02",
+    "erreurs": [],
+    "triangles": 132,
+    "budget_ok": true
+  },
+  {
+    "asset": "Rocher_Fissure_Eclat_03",
+    "erreurs": [],
+    "triangles": 114,
+    "budget_ok": true
+  },
+  {
+    "asset": "Rocher_Fissure_Eclat_04",
+    "erreurs": [],
+    "triangles": 108,
+    "budget_ok": true
+  },
+  {
+    "asset": "Rocher_Fissure_Eclat_05",
+    "erreurs": [],
+    "triangles": 138,
+    "budget_ok": true
+  },
+  {
+    "asset": "Rocher_Fissure_Eclat_06",
+    "erreurs": [],
+    "triangles": 112,
+    "budget_ok": true
+  },
+  {
+    "asset": "Herbe_01",
+    "erreurs": [],
+    "triangles": 20,
+    "budget_ok": true
+  },
+  {
+    "asset": "Herbe_02",
+    "erreurs": [],
+    "triangles": 28,
+    "budget_ok": true
+  },
+  {
+    "asset": "Herbe_03",
+    "erreurs": [],
+    "triangles": 36,
+    "budget_ok": true
+  },
+  {
+    "asset": "Fleur_01",
+    "erreurs": [],
+    "triangles": 38,
+    "budget_ok": true
+  },
+  {
+    "asset": "Fleur_02",
+    "erreurs": [],
+    "triangles": 38,
+    "budget_ok": true
+  },
+  {
+    "asset": "Fleur_03",
+    "erreurs": [],
+    "triangles": 38,
+    "budget_ok": true
+  },
+  {
+    "asset": "Fleur_04",
+    "erreurs": [],
+    "triangles": 38,
+    "budget_ok": true
+  },
+  {
+    "asset": "Souche",
+    "erreurs": [],
+    "triangles": 404,
+    "budget_ok": true
+  },
+  {
+    "asset": "Tronc_Couche",
+    "erreurs": [],
+    "triangles": 472,
+    "budget_ok": true
+  },
+  {
+    "asset": "Vigne_Panneau",
+    "erreurs": [],
+    "triangles": 324,
+    "budget_ok": true
+  },
+  {
+    "asset": "Roseaux",
+    "erreurs": [],
+    "triangles": 160,
+    "budget_ok": true
+  },
+  {
+    "asset": "Nenuphar",
+    "erreurs": [],
+    "triangles": 56,
+    "budget_ok": true
+  },
+  {
+    "asset": "Champignon_01",
+    "erreurs": [],
+    "triangles": 114,
+    "budget_ok": true
+  },
+  {
+    "asset": "Champignon_02",
+    "erreurs": [],
+    "triangles": 104,
+    "budget_ok": true
+  },
+  {
+    "asset": "Nuage_01",
+    "erreurs": [],
+    "triangles": 320,
+    "budget_ok": true
+  },
+  {
+    "asset": "Nuage_02",
+    "erreurs": [],
+    "triangles": 400,
+    "budget_ok": true
+  },
+  {
+    "asset": "Nuage_03",
+    "erreurs": [],
+    "triangles": 480,
+    "budget_ok": true
+  },
+  {
+    "asset": "Ile_Volante",
+    "erreurs": [],
+    "triangles": 1868,
+    "budget_ok": true
+  },
+  {
+    "asset": "Limace",
+    "erreurs": [],
+    "triangles": 1248,
+    "budget_ok": true
+  },
+  {
+    "asset": "Grenouille",
+    "erreurs": [],
+    "triangles": 996,
+    "budget_ok": true
+  },
+  {
+    "asset": "Corbeau",
+    "erreurs": [],
+    "triangles": 1328,
+    "budget_ok": true
+  },
+  {
+    "asset": "Corbeau_Maitre",
+    "erreurs": [],
+    "triangles": 1444,
+    "budget_ok": true
+  },
+  {
+    "asset": "Poisson",
+    "erreurs": [],
+    "triangles": 331,
+    "budget_ok": true
+  },
+  {
+    "asset": "EntRonce",
+    "erreurs": [],
+    "triangles": 3564,
+    "budget_ok": true
+  },
+  {
+    "asset": "Racine_Jaillie",
+    "erreurs": [],
+    "triangles": 76,
+    "budget_ok": true
+  },
+  {
+    "asset": "GraineEpineuse",
+    "erreurs": [],
+    "triangles": 116,
+    "budget_ok": true
+  },
+  {
+    "asset": "Jardin_Blockout",
+    "erreurs": [],
+    "triangles": 32894,
+    "budget_ok": null
+  },
+  {
+    "asset": "Eau_Mare",
+    "erreurs": [],
+    "triangles": 252,
+    "budget_ok": null
+  },
+  {
+    "asset": "Grib_Chapeau",
+    "erreurs": [],
+    "triangles": 696,
+    "budget_ok": true
+  },
+  {
+    "asset": "Grum_Mousse",
+    "erreurs": [],
+    "triangles": 792,
+    "budget_ok": true
+  }
+]

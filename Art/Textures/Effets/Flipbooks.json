@@ -1,0 +1,28 @@
+{
+  "colonnes": 8,
+  "lignes": 8,
+  "images": 64,
+  "images_par_seconde": 12,
+  "taille_case": 128,
+  "ordre": "gauche a droite puis haut en bas",
+  "boucles": [
+    "Flamme",
+    "Feuilles",
+    "Etoiles",
+    "Lueur",
+    "Gogogo"
+  ],
+  "effets": [
+    "Flamme",
+    "Fumee",
+    "Etincelles",
+    "Eclaboussure",
+    "Poussiere",
+    "Feuilles",
+    "Sueur",
+    "Etoiles",
+    "RondsEau",
+    "Lueur",
+    "Gogogo"
+  ]
+}

@@ -1,0 +1,1683 @@
+[
+  {
+    "asset": "Apprenti",
+    "dimensions_fbx_m": [
+      1.16,
+      1.16,
+      2.414
+    ],
+    "os_importes": 33,
+    "maillages": 25,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Gribouille",
+    "dimensions_fbx_m": [
+      1.24,
+      1.2526,
+      1.7077
+    ],
+    "os_importes": 19,
+    "maillages": 23,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Gribouille_Arcaniste",
+    "dimensions_fbx_m": [
+      1.24,
+      1.2526,
+      1.7077
+    ],
+    "os_importes": 19,
+    "maillages": 26,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Gribouille_Alchimiste",
+    "dimensions_fbx_m": [
+      1.24,
+      1.2526,
+      1.7077
+    ],
+    "os_importes": 19,
+    "maillages": 26,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Gribouille_Explorateur",
+    "dimensions_fbx_m": [
+      1.2512,
+      1.2526,
+      1.7077
+    ],
+    "os_importes": 19,
+    "maillages": 25,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Gribouille_Ceruleen",
+    "dimensions_fbx_m": [
+      1.24,
+      1.2526,
+      1.7077
+    ],
+    "os_importes": 19,
+    "maillages": 26,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Grum",
+    "dimensions_fbx_m": [
+      1.485,
+      0.8175,
+      1.48
+    ],
+    "os_importes": 9,
+    "maillages": 37,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Grum_Runique",
+    "dimensions_fbx_m": [
+      1.485,
+      0.8175,
+      1.48
+    ],
+    "os_importes": 9,
+    "maillages": 41,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Grum_Forgeron",
+    "dimensions_fbx_m": [
+      1.485,
+      1.1145,
+      1.5
+    ],
+    "os_importes": 9,
+    "maillages": 36,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Grum_Forestier",
+    "dimensions_fbx_m": [
+      1.485,
+      0.8175,
+      1.48
+    ],
+    "os_importes": 9,
+    "maillages": 45,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Grum_Cristallin",
+    "dimensions_fbx_m": [
+      1.485,
+      0.8175,
+      1.8001
+    ],
+    "os_importes": 9,
+    "maillages": 27,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "GigaGribouille",
+    "dimensions_fbx_m": [
+      3.78,
+      1.32,
+      4.5077
+    ],
+    "os_importes": 10,
+    "maillages": 15,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Atelier",
+    "dimensions_fbx_m": [
+      8.15,
+      7.575,
+      9.011
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 17,
+    "erreurs": []
+  },
+  {
+    "asset": "Atelier_Porte",
+    "dimensions_fbx_m": [
+      1.395,
+      0.164,
+      2.4
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Atelier_Vitre",
+    "dimensions_fbx_m": [
+      1.1,
+      0.02,
+      1.0
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Atelier_Enseigne",
+    "dimensions_fbx_m": [
+      0.72,
+      0.1313,
+      0.99
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Atelier_Interieur",
+    "dimensions_fbx_m": [
+      12.2,
+      9.2,
+      7.315
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 7,
+    "erreurs": []
+  },
+  {
+    "asset": "TableSceaux",
+    "dimensions_fbx_m": [
+      1.6,
+      1.6,
+      1.1379
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Chaudron",
+    "dimensions_fbx_m": [
+      1.25,
+      1.0,
+      0.9961
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Miroir",
+    "dimensions_fbx_m": [
+      1.11,
+      0.58,
+      1.893
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Etagere",
+    "dimensions_fbx_m": [
+      1.24,
+      0.4925,
+      2.14
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Bocal_01",
+    "dimensions_fbx_m": [
+      0.2,
+      0.2,
+      0.28
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Bocal_02",
+    "dimensions_fbx_m": [
+      0.2,
+      0.2,
+      0.28
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Bocal_03",
+    "dimensions_fbx_m": [
+      0.2,
+      0.2,
+      0.28
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Bocal_04",
+    "dimensions_fbx_m": [
+      0.2,
+      0.2,
+      0.28
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Bocal_05",
+    "dimensions_fbx_m": [
+      0.2,
+      0.2,
+      0.28
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Pupitre",
+    "dimensions_fbx_m": [
+      0.72,
+      0.5549,
+      1.0482
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Lit",
+    "dimensions_fbx_m": [
+      1.1,
+      2.1,
+      1.15
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Tapis",
+    "dimensions_fbx_m": [
+      2.0,
+      2.0,
+      0.0312
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Lanterne_Suspendue",
+    "dimensions_fbx_m": [
+      0.24,
+      0.24,
+      0.482
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Plante_Pot",
+    "dimensions_fbx_m": [
+      0.638,
+      0.6091,
+      0.8
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Etagere_Trophees",
+    "dimensions_fbx_m": [
+      1.4,
+      0.3,
+      0.1
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Perchoir",
+    "dimensions_fbx_m": [
+      0.7,
+      0.5,
+      1.2
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Coffre_Ferme",
+    "dimensions_fbx_m": [
+      0.905,
+      0.6723,
+      0.636
+    ],
+    "os_importes": 0,
+    "maillages": 2,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Coffre_Ouvert",
+    "dimensions_fbx_m": [
+      0.905,
+      0.9357,
+      1.0775
+    ],
+    "os_importes": 0,
+    "maillages": 2,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Coffre_Scelle",
+    "dimensions_fbx_m": [
+      0.905,
+      0.6723,
+      0.636
+    ],
+    "os_importes": 0,
+    "maillages": 2,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Levier_Inactif",
+    "dimensions_fbx_m": [
+      0.48,
+      0.5009,
+      0.649
+    ],
+    "os_importes": 0,
+    "maillages": 2,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Levier_Actif",
+    "dimensions_fbx_m": [
+      0.48,
+      0.5009,
+      0.649
+    ],
+    "os_importes": 0,
+    "maillages": 2,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Stele",
+    "dimensions_fbx_m": [
+      1.12,
+      1.12,
+      2.0203
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Caisse",
+    "dimensions_fbx_m": [
+      0.8,
+      0.88,
+      0.8
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Caisse_Morceau_01",
+    "dimensions_fbx_m": [
+      0.8,
+      0.24,
+      0.04
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Caisse_Morceau_02",
+    "dimensions_fbx_m": [
+      0.8,
+      0.24,
+      0.04
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Caisse_Morceau_03",
+    "dimensions_fbx_m": [
+      0.8,
+      0.24,
+      0.04
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Caisse_Morceau_04",
+    "dimensions_fbx_m": [
+      0.8,
+      0.24,
+      0.04
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Caisse_Morceau_05",
+    "dimensions_fbx_m": [
+      0.8,
+      0.24,
+      0.04
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Caisse_Morceau_06",
+    "dimensions_fbx_m": [
+      0.8,
+      0.24,
+      0.04
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Pancarte",
+    "dimensions_fbx_m": [
+      0.8171,
+      0.1275,
+      1.2534
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Mannequin",
+    "dimensions_fbx_m": [
+      1.3,
+      0.4154,
+      1.63
+    ],
+    "os_importes": 3,
+    "maillages": 7,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Torche",
+    "dimensions_fbx_m": [
+      0.28,
+      0.2663,
+      1.63
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Torche_Murale",
+    "dimensions_fbx_m": [
+      0.28,
+      0.2663,
+      0.68
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Puits",
+    "dimensions_fbx_m": [
+      2.27,
+      1.6483,
+      2.6268
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 8,
+    "erreurs": []
+  },
+  {
+    "asset": "Vigne_Puits",
+    "dimensions_fbx_m": [
+      0.7112,
+      0.1955,
+      6.0054
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "FeuCamp",
+    "dimensions_fbx_m": [
+      1.7578,
+      1.6722,
+      0.3005
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Fiole_Vide",
+    "dimensions_fbx_m": [
+      0.104,
+      0.0989,
+      0.15
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Fiole_Eau",
+    "dimensions_fbx_m": [
+      0.104,
+      0.0989,
+      0.15
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Fiole_Soin",
+    "dimensions_fbx_m": [
+      0.104,
+      0.0989,
+      0.15
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Fiole_Encre",
+    "dimensions_fbx_m": [
+      0.104,
+      0.0989,
+      0.15
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Fiole_Saut",
+    "dimensions_fbx_m": [
+      0.104,
+      0.0989,
+      0.15
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Fiole_Flamme",
+    "dimensions_fbx_m": [
+      0.104,
+      0.0989,
+      0.15
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Fiole_Vision",
+    "dimensions_fbx_m": [
+      0.104,
+      0.0989,
+      0.15
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Plante_Stade_1",
+    "dimensions_fbx_m": [
+      0.3935,
+      0.3232,
+      0.215
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Plante_Stade_2",
+    "dimensions_fbx_m": [
+      0.3935,
+      0.3232,
+      0.58
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Plante_Stade_3",
+    "dimensions_fbx_m": [
+      0.7652,
+      0.774,
+      4.2883
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Ruche",
+    "dimensions_fbx_m": [
+      0.706,
+      0.706,
+      1.349
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Page_Dechiree",
+    "dimensions_fbx_m": [
+      0.2,
+      0.28,
+      0.03
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Chapeau_Pointu",
+    "dimensions_fbx_m": [
+      1.16,
+      1.16,
+      0.894
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Chapeau_Large",
+    "dimensions_fbx_m": [
+      1.45,
+      1.45,
+      0.894
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Chapeau_Tordu",
+    "dimensions_fbx_m": [
+      1.16,
+      1.16,
+      0.9187
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Chapeau_Beret",
+    "dimensions_fbx_m": [
+      0.928,
+      0.87,
+      0.336
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Chapeau_Capuche",
+    "dimensions_fbx_m": [
+      0.711,
+      0.4025,
+      0.7333
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Chapeau_Couronne",
+    "dimensions_fbx_m": [
+      0.6731,
+      0.6815,
+      0.11
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Cheveux_Court",
+    "dimensions_fbx_m": [
+      0.58,
+      0.4976,
+      0.412
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Cheveux_Long",
+    "dimensions_fbx_m": [
+      0.62,
+      0.5431,
+      0.892
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Cheveux_Tresse",
+    "dimensions_fbx_m": [
+      0.58,
+      0.5462,
+      0.802
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Cheveux_Boucles",
+    "dimensions_fbx_m": [
+      0.6511,
+      0.66,
+      0.3336
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Cheveux_Chignon",
+    "dimensions_fbx_m": [
+      0.58,
+      0.6931,
+      0.412
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Cheveux_Ras",
+    "dimensions_fbx_m": [
+      0.5514,
+      0.4976,
+      0.3348
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Echarpe_Rouge",
+    "dimensions_fbx_m": [
+      0.43,
+      0.535,
+      0.4723
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Echarpe_Moutarde",
+    "dimensions_fbx_m": [
+      0.43,
+      0.535,
+      0.4723
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Echarpe_Vert",
+    "dimensions_fbx_m": [
+      0.43,
+      0.535,
+      0.4723
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Echarpe_Bleu",
+    "dimensions_fbx_m": [
+      0.43,
+      0.535,
+      0.4723
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Baguette",
+    "dimensions_fbx_m": [
+      0.0537,
+      0.051,
+      0.49
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Baton",
+    "dimensions_fbx_m": [
+      0.1597,
+      0.1191,
+      1.6514
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Plume",
+    "dimensions_fbx_m": [
+      0.336,
+      0.1085,
+      0.43
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Grimoire",
+    "dimensions_fbx_m": [
+      0.4544,
+      0.5638,
+      0.1408
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Lanterne",
+    "dimensions_fbx_m": [
+      0.24,
+      0.24,
+      0.482
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Pioche",
+    "dimensions_fbx_m": [
+      0.8266,
+      0.11,
+      0.9276
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Gateau",
+    "dimensions_fbx_m": [
+      0.26,
+      0.26,
+      0.167
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Arbre_Feuillu_01",
+    "dimensions_fbx_m": [
+      4.6131,
+      4.1691,
+      5.7084
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Arbre_Feuillu_02",
+    "dimensions_fbx_m": [
+      5.7148,
+      5.2242,
+      7.033
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Arbre_Feuillu_03",
+    "dimensions_fbx_m": [
+      6.9969,
+      6.118,
+      8.1866
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Sapin_01",
+    "dimensions_fbx_m": [
+      3.5012,
+      3.503,
+      6.8994
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Sapin_02",
+    "dimensions_fbx_m": [
+      4.472,
+      4.4734,
+      8.8053
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Buisson_01",
+    "dimensions_fbx_m": [
+      1.2903,
+      0.8751,
+      0.7
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Buisson_02",
+    "dimensions_fbx_m": [
+      1.4615,
+      1.2343,
+      0.94
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Buisson_03",
+    "dimensions_fbx_m": [
+      1.6327,
+      1.418,
+      1.18
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Rocher_01",
+    "dimensions_fbx_m": [
+      0.5153,
+      0.4996,
+      0.48
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Rocher_02",
+    "dimensions_fbx_m": [
+      0.9319,
+      0.8466,
+      0.816
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Rocher_03",
+    "dimensions_fbx_m": [
+      1.4797,
+      1.387,
+      1.248
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Rocher_04",
+    "dimensions_fbx_m": [
+      2.2648,
+      2.0512,
+      1.92
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Rocher_05",
+    "dimensions_fbx_m": [
+      3.6136,
+      3.1695,
+      2.88
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Rocher_Fissure",
+    "dimensions_fbx_m": [
+      2.3845,
+      2.1349,
+      1.92
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Rocher_Fissure_Eclat_01",
+    "dimensions_fbx_m": [
+      1.2042,
+      0.8937,
+      1.92
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Rocher_Fissure_Eclat_02",
+    "dimensions_fbx_m": [
+      1.0286,
+      1.0429,
+      1.92
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Rocher_Fissure_Eclat_03",
+    "dimensions_fbx_m": [
+      1.1803,
+      0.8879,
+      1.92
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Rocher_Fissure_Eclat_04",
+    "dimensions_fbx_m": [
+      1.1558,
+      0.9403,
+      1.92
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Rocher_Fissure_Eclat_05",
+    "dimensions_fbx_m": [
+      1.0369,
+      1.092,
+      1.92
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Rocher_Fissure_Eclat_06",
+    "dimensions_fbx_m": [
+      1.2042,
+      0.8557,
+      1.92
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Herbe_01",
+    "dimensions_fbx_m": [
+      0.4962,
+      0.4475,
+      0.3395
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Herbe_02",
+    "dimensions_fbx_m": [
+      0.4962,
+      0.4905,
+      0.4581
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Herbe_03",
+    "dimensions_fbx_m": [
+      0.4962,
+      0.4905,
+      0.5787
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Fleur_01",
+    "dimensions_fbx_m": [
+      0.1302,
+      0.137,
+      0.2906
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Fleur_02",
+    "dimensions_fbx_m": [
+      0.1302,
+      0.137,
+      0.2906
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Fleur_03",
+    "dimensions_fbx_m": [
+      0.1302,
+      0.137,
+      0.2906
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Fleur_04",
+    "dimensions_fbx_m": [
+      0.1302,
+      0.137,
+      0.2906
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Souche",
+    "dimensions_fbx_m": [
+      0.9595,
+      1.0056,
+      0.6309
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Tronc_Couche",
+    "dimensions_fbx_m": [
+      4.0308,
+      1.0339,
+      0.7
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Vigne_Panneau",
+    "dimensions_fbx_m": [
+      0.7112,
+      0.1955,
+      2.1019
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Roseaux",
+    "dimensions_fbx_m": [
+      0.3599,
+      0.3199,
+      1.2005
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Nenuphar",
+    "dimensions_fbx_m": [
+      0.3968,
+      0.3989,
+      0.1889
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Champignon_01",
+    "dimensions_fbx_m": [
+      0.36,
+      0.3424,
+      0.343
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Champignon_02",
+    "dimensions_fbx_m": [
+      0.36,
+      0.3424,
+      0.343
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Nuage_01",
+    "dimensions_fbx_m": [
+      15.577,
+      7.1993,
+      5.8995
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Nuage_02",
+    "dimensions_fbx_m": [
+      18.677,
+      7.3605,
+      5.9715
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Nuage_03",
+    "dimensions_fbx_m": [
+      21.777,
+      7.2954,
+      5.9715
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Ile_Volante",
+    "dimensions_fbx_m": [
+      20.0,
+      20.0,
+      16.2402
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Limace",
+    "dimensions_fbx_m": [
+      0.36,
+      0.601,
+      0.367
+    ],
+    "os_importes": 6,
+    "maillages": 7,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Grenouille",
+    "dimensions_fbx_m": [
+      0.4403,
+      0.38,
+      0.2921
+    ],
+    "os_importes": 9,
+    "maillages": 12,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Corbeau",
+    "dimensions_fbx_m": [
+      0.4874,
+      0.536,
+      0.4185
+    ],
+    "os_importes": 10,
+    "maillages": 16,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Corbeau_Maitre",
+    "dimensions_fbx_m": [
+      0.4874,
+      0.536,
+      0.4185
+    ],
+    "os_importes": 10,
+    "maillages": 18,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Poisson",
+    "dimensions_fbx_m": [
+      0.072,
+      0.2,
+      0.12
+    ],
+    "os_importes": 5,
+    "maillages": 5,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "EntRonce",
+    "dimensions_fbx_m": [
+      2.9608,
+      1.9586,
+      4.9508
+    ],
+    "os_importes": 30,
+    "maillages": 83,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Racine_Jaillie",
+    "dimensions_fbx_m": [
+      0.6208,
+      0.4185,
+      1.5005
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "GraineEpineuse",
+    "dimensions_fbx_m": [
+      0.4569,
+      0.4519,
+      0.28
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 1,
+    "erreurs": []
+  },
+  {
+    "asset": "Jardin_Blockout",
+    "dimensions_fbx_m": [
+      250.0,
+      250.0,
+      107.1359
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Eau_Mare",
+    "dimensions_fbx_m": [
+      13.0,
+      13.0,
+      0.012
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Grib_Chapeau",
+    "dimensions_fbx_m": [
+      1.22,
+      1.22,
+      1.7452
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "asset": "Grum_Mousse",
+    "dimensions_fbx_m": [
+      0.6322,
+      0.26,
+      1.5703
+    ],
+    "os_importes": 0,
+    "maillages": 1,
+    "collisions": 0,
+    "erreurs": []
+  },
+  {
+    "animation": "A_Apprenti_Attente.fbx",
+    "actions": 1,
+    "erreurs": []
+  },
+  {
+    "animation": "A_Apprenti_Marche.fbx",
+    "actions": 1,
+    "erreurs": []
+  },
+  {
+    "animation": "A_Apprenti_Tracer_Lever.fbx",
+    "actions": 1,
+    "erreurs": []
+  },
+  {
+    "animation": "A_Apprenti_Tracer_Tenir.fbx",
+    "actions": 1,
+    "erreurs": []
+  },
+  {
+    "animation": "A_Apprenti_Tracer_Lancer.fbx",
+    "actions": 1,
+    "erreurs": []
+  }
+]
