@@ -69,7 +69,11 @@ appels = []
 
 class _Meta(type):
     def __getattr__(cls, nom):
-        return Faux()
+        def appel(*a, **k):       # une fonction de classe (unreal.SystemLibrary.execute_console_command...) : on note son nom et ses textes
+            appels.append(nom)
+            appels.extend(x for x in a if isinstance(x, str))
+            return Faux()
+        return appel
 
 class Faux(metaclass=_Meta):
     def __init__(self, *a, **k):
@@ -90,7 +94,18 @@ class Faux(metaclass=_Meta):
 
 faux = types.ModuleType('unreal')
 _classes = {}
+monde = {'carte_existe': True, 'sans_level_editor': False}   # le Jardin existe-t-il déjà ? LevelEditorSubsystem manque-t-il (ligne de commande) ?
+
+class EditorAssetLibrary(Faux):
+    @staticmethod
+    def does_asset_exist(chemin):
+        return monde['carte_existe'] if chemin.endswith('/Cartes/L_Jardin_Essai') else True
+
 def _attribut(nom):
+    if nom == 'EditorAssetLibrary':
+        return EditorAssetLibrary
+    if nom == 'LevelEditorSubsystem' and monde['sans_level_editor']:
+        raise AttributeError(nom)
     if nom == 'Paths':
         return types.SimpleNamespace(project_dir=lambda: os.path.join(DEPOT, 'Unreal', 'Brimoland') + os.sep, convert_relative_path_to_full=lambda p: p)
     if nom in ('log', 'log_warning', 'log_error'):
@@ -110,6 +125,22 @@ except Exception as e:
     attendre(False, 'brimo_tout.lancer() : %s: %s' % (type(e).__name__, e))
 attendre(any('rendu à l\'encre est monté' in str(a) for a in appels), 'le rendu à l\'encre est monté à la fin')
 attendre(any('assets posés' in str(a) for a in appels), 'le Jardin est posé')
+attendre('brimo.essai' in appels, 'la magie du module C++ est essayée d\'abord (brimo.essai)')
+attendre('load_level' in appels and any('J1 : tout est monté (import, Jardin, encre)' in str(a) for a in appels), 'le Jardin existant est rouvert, et le bilan final est écrit')
+
+# la relance, comme en ligne de commande (UnrealEditor-Cmd -run=pythonscript) : sans import, sans LevelEditorSubsystem, niveau neuf
+del appels[:]
+monde.update(carte_existe=False, sans_level_editor=True)
+try:
+    brimo_tout.lancer(importer=False)
+    attendre(True, 'brimo_tout.lancer(importer=False) se déroule jusqu\'au bout, sans LevelEditorSubsystem')
+except Exception as e:
+    import traceback
+    traceback.print_exc()
+    attendre(False, 'brimo_tout.lancer(importer=False) : %s: %s' % (type(e).__name__, e))
+attendre(not any('importés :' in str(a) for a in appels) and any('import sauté' in str(a) for a in appels), 'l\'import est bien sauté')
+attendre('new_blank_map' in appels and 'save_map' in appels and 'save_current_level' in appels and 'load_level' not in appels,
+         'le niveau neuf passe par EditorLoadingAndSavingUtils (créé, enregistré)')
 
 print('\n%s' % ('tout est bon' if not echecs else '%d ÉCHEC(S)' % len(echecs)))
 sys.exit(1 if echecs else 0)

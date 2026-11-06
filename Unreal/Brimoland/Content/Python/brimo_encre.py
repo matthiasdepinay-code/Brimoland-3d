@@ -15,7 +15,7 @@ import os
 import unreal
 
 import brimo_plan
-from brimo_outils import AT, EAL, MEL, charger, creer, dire, avertir, importer, sauver, depot, poser
+from brimo_outils import AT, EAL, MEL, charger, creer, dire, avertir, etiquetes, importer, sauver, depot, poser
 
 DOSSIER = brimo_plan.CONTENU + '/Rendu'
 ETIQUETTE = 'BrimoEncre'   # le Post Process Volume posé par ce script porte cette étiquette
@@ -129,13 +129,12 @@ def _snake(ident):
 def volume(mi):
     """Un Post Process Volume infini avec MI_Encre ; s'il a déjà été posé par ce script, on le réutilise."""
     sub = unreal.get_editor_subsystem(unreal.EditorActorSubsystem)
-    v = None
-    for a in sub.get_all_level_actors():
-        if isinstance(a, unreal.PostProcessVolume) and ETIQUETTE in [str(t) for t in a.tags]:
-            v = a
+    deja = [a for a in etiquetes(ETIQUETTE) if isinstance(a, unreal.PostProcessVolume)]
+    v = deja[0] if deja else None
+    if len(deja) > 1:
+        sub.destroy_actors(deja[1:])   # un seul volume d'encre
     if v is None:
-        v = poser(unreal.PostProcessVolume, unreal.Vector(0, 0, 0))
-        v.set_editor_property('tags', [unreal.Name(ETIQUETTE)])
+        v = poser(unreal.PostProcessVolume, unreal.Vector(0, 0, 0), etiquette=ETIQUETTE)
         v.set_actor_label('PPV_Encre')
     v.set_editor_property('unbound', True)
     s = v.get_editor_property('settings')

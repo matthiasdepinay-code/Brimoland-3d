@@ -68,11 +68,58 @@ def acteurs():
     return unreal.get_editor_subsystem(unreal.EditorActorSubsystem)
 
 
-def poser(classe_ou_asset, position, rotation=unreal.Rotator(0, 0, 0)):
+def poser(classe_ou_asset, position, rotation=unreal.Rotator(0, 0, 0), etiquette=None):
+    """Pose un acteur dans le niveau ouvert. Avec une étiquette, on le retrouve (et on le retire) quand on remonte le niveau."""
     sub = acteurs()
     if isinstance(classe_ou_asset, unreal.Object) and not isinstance(classe_ou_asset, unreal.Class):
-        return sub.spawn_actor_from_object(classe_ou_asset, position, rotation)
-    return sub.spawn_actor_from_class(classe_ou_asset, position, rotation)
+        a = sub.spawn_actor_from_object(classe_ou_asset, position, rotation)
+    else:
+        a = sub.spawn_actor_from_class(classe_ou_asset, position, rotation)
+    if a and etiquette:
+        a.set_editor_property('tags', [unreal.Name(etiquette)])
+    return a
+
+
+def etiquetes(etiquette):
+    """Les acteurs du niveau ouvert qui portent cette étiquette."""
+    return [a for a in acteurs().get_all_level_actors() if etiquette in [str(t) for t in a.get_editor_property('tags')]]
+
+
+# ---------- les niveaux ----------
+# Dans l'éditeur, LevelEditorSubsystem ouvre et enregistre les niveaux. En ligne de commande (UnrealEditor-Cmd
+# -run=pythonscript), son module peut ne pas être chargé : on passe alors par EditorLoadingAndSavingUtils (UnrealEd).
+def _niveaux():
+    classe = getattr(unreal, 'LevelEditorSubsystem', None)
+    return unreal.get_editor_subsystem(classe) if classe else None
+
+
+def ouvrir_carte(chemin):
+    """Ouvre le niveau, ou le crée vide s'il n'existe pas encore. Rend True s'il est neuf."""
+    n, utils = _niveaux(), unreal.EditorLoadingAndSavingUtils
+    if EAL.does_asset_exist(chemin):
+        ok = n.load_level(chemin) if n else utils.load_map(chemin) is not None
+        if not ok:
+            raise RuntimeError("impossible d'ouvrir le niveau " + chemin)
+        return False
+    if n:
+        ok = n.new_level(chemin)
+    else:
+        monde = utils.new_blank_map(False)
+        ok = monde is not None and utils.save_map(monde, chemin)
+    if not ok:
+        raise RuntimeError('impossible de créer le niveau ' + chemin)
+    return True
+
+
+def sauver_carte():
+    n = _niveaux()
+    if not (n.save_current_level() if n else unreal.EditorLoadingAndSavingUtils.save_current_level()):
+        avertir("le niveau n'a pas pu être enregistré")
+
+
+def essai_magie():
+    """La commande brimo.essai du module C++ : sa réponse (14 essences, le sceau d'exemple) s'écrit dans le journal, LogBrimo."""
+    unreal.SystemLibrary.execute_console_command(None, 'brimo.essai')
 
 
 def fichier_present(f):

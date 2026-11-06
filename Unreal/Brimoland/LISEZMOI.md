@@ -29,6 +29,14 @@ Content/Python/                 les scripts de l'éditeur : tout monter d'un cou
 ## Le jalon J1, sur le PC
 
 1. Fais d'abord [l'installation du PC](../../docs/INSTALLER-LE-PC.md).
+
+> **Les étapes 2 à 5 d'une traite, sans ouvrir l'éditeur.** À la racine du dépôt, l'éditeur fermé, dans PowerShell :
+> ```
+> powershell -ExecutionPolicy Bypass -File outils\unreal\j1.ps1
+> ```
+> Il vérifie Git LFS (et lance `git lfs pull` s'il le faut), compile le module, lance `brimo_tout.py` sans fenêtre (`UnrealEditor-Cmd -run=pythonscript`), dont `brimo.essai`, puis le banc des scripts. Il trouve Unreal sous `C:\Unreal` (sinon : `-Moteur <le dossier qui contient Engine>`).
+> Tout est écrit dans `Unreal\Brimoland\Saved\J1\` : envoie-moi `resume.txt`. Après une correction des scripts, `-SansImport -SansCompilation` remonte le Jardin et l'encre en quelques minutes.
+
 2. Double-clique sur `Brimoland.uproject`. Unreal annonce que des modules manquent et propose de les compiler : **Oui**. Compte quelques minutes.
    - En cas d'échec, clic droit sur `Brimoland.uproject` → *Generate Visual Studio project files*. Ouvre `Brimoland.sln`, compile *Development Editor*, et envoie-moi la fenêtre *Sortie*.
 3. L'éditeur s'ouvre, sur une carte vide.
@@ -46,6 +54,7 @@ Content/Python/                 les scripts de l'éditeur : tout monter d'un cou
    - les textures, les matériaux, 119 maillages fixes, 10 personnages et bêtes, 9 tenues, 84 animations ;
    - puis le niveau `/Game/Brimo/Cartes/L_Jardin_Essai`, avec le rendu à l'encre.
    Envoie-moi ces lignes, surtout s'il y a des avertissements ou des échecs.
+   On peut relancer autant qu'on veut : les acteurs que le script avait posés dans le Jardin sont retirés, puis reposés. Pour remonter le Jardin et l'encre sans refaire l'import : `brimo_tout.lancer(importer=False)`.
 6. **Régler l'encre** : [la recette](../Rendu/RECETTE.md), §6. Ce sont deux réglages, à faire avec tes yeux.
 7. Appuie sur **Play** : tu es sur le chemin, face à l'Atelier.
 

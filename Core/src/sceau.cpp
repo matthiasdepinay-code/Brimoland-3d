@@ -47,7 +47,7 @@ std::string minuscules(const std::string& s) {
     unsigned char c = o[i];
     if (c >= 'A' && c <= 'Z') o[i] = char(c + 32);
     else if (c == 0xC3 && i + 1 < o.size()) { unsigned char d = o[i + 1]; if (d >= 0x80 && d <= 0x9E && d != 0x97) o[i + 1] = char(d + 0x20); i++; }
-    else if (c == 0xC5 && i + 1 < o.size()) { if ((unsigned char)o[i + 1] == 0x92) o[i + 1] = char(0x93); i++; }
+    else if (c == 0xC5 && i + 1 < o.size()) { if ((unsigned char)o[i + 1] == 0x92) o[i + 1] = '\x93'; i++; }  // Œ -> œ
   }
   return o;
 }
